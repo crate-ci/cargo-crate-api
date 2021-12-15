@@ -1,4 +1,5 @@
 use std::collections::HashMap;
+use std::collections::VecDeque;
 
 #[derive(Clone, Debug, PartialEq, Eq)]
 pub struct RustDocBuilder {
@@ -98,7 +99,7 @@ impl RustDocBuilder {
             )
         })?;
 
-        let docs: rustdoc_json_types_fork::Crate = serde_json::from_str(&data).map_err(|e| {
+        let raw: rustdoc_json_types_fork::Crate = serde_json::from_str(&data).map_err(|e| {
             crate::Error::new(
                 crate::ErrorKind::ApiParse,
                 format!("Failed when parsing json at {}: {}", json_path.display(), e),
@@ -108,10 +109,72 @@ impl RustDocBuilder {
         let mut api = crate::Api::new();
 
         let mut crate_ids = HashMap::new();
-        for (raw_id, raw) in &docs.external_crates {
-            let crate_ = crate::Crate::new(&raw.name);
-            let crate_id = api.crates.push(crate_);
-            crate_ids.insert(raw_id, crate_id);
+
+        let mut unprocessed = VecDeque::new();
+        unprocessed.push_back((None, &raw.root));
+        while let Some((parent_path_id, raw_item_id)) = unprocessed.pop_front() {
+            let raw_item = raw
+                .index
+                .get(raw_item_id)
+                .expect("all item ids are in `index`");
+
+            let crate_id = (raw_item.crate_id != 0).then(|| {
+                *crate_ids.entry(raw_item.crate_id).or_insert_with(|| {
+                    let raw_crate = raw
+                        .external_crates
+                        .get(&raw_item.crate_id)
+                        .expect("all crate ids are in `external_crates`");
+                    let crate_ = crate::Crate::new(&raw_crate.name);
+                    api.crates.push(crate_)
+                })
+            });
+
+            match &raw_item.inner {
+                rustdoc_json_types_fork::ItemEnum::Module(module) => {
+                    let path_id = raw.paths.get(raw_item_id).map(|raw_path| {
+                        let mut path = crate::Path::new(raw_path.path.join("::"));
+                        path.crate_id = crate_id;
+                        path.span = raw_item.span.clone().map(|raw_span| crate::Span {
+                            filename: raw_span.filename,
+                            begin: raw_span.begin,
+                            end: raw_span.end,
+                        });
+                        let path_id = api.paths.push(path);
+
+                        if let Some(parent_path_id) = parent_path_id {
+                            api.paths
+                                .get_mut(parent_path_id)
+                                .expect("parent_path_id to always be valid")
+                                .paths
+                                .push(path_id);
+                        }
+                        api.root_id.get_or_insert(path_id);
+
+                        path_id
+                    });
+
+                    unprocessed.extend(module.items.iter().map(move |i| (path_id, i)));
+                }
+                _ => {
+                    assert_ne!(api.root_id, None, "Module should be root");
+                    let mut item = crate::Item::new();
+                    item.crate_id = crate_id;
+                    item.name = raw_item.name.clone();
+                    item.span = raw_item.span.clone().map(|raw_span| crate::Span {
+                        filename: raw_span.filename,
+                        begin: raw_span.begin,
+                        end: raw_span.end,
+                    });
+                    let item_id = api.items.push(item);
+                    if let Some(parent_path_id) = parent_path_id {
+                        api.paths
+                            .get_mut(parent_path_id)
+                            .expect("parent_path_id to always be valid")
+                            .items
+                            .push(item_id);
+                    }
+                }
+            }
         }
 
         Ok(api)

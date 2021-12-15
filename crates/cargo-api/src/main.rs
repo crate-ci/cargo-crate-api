@@ -37,7 +37,8 @@ fn run() -> proc_exit::ExitResult {
         .with_code(proc_exit::Code::CONFIG_ERR)?;
     let (selected, _) = args.workspace.partition_packages(&metadata);
     for selected in selected {
-        dbg!(selected);
+        let manifest = crate_api::manifest::Manifest::from(selected);
+        dbg!(manifest);
     }
 
     Ok(())

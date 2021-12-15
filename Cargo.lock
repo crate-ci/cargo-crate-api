@@ -90,6 +90,7 @@ dependencies = [
  "clap-verbosity-flag",
  "concolor-clap",
  "concolor-control",
+ "crate-api",
  "env_logger",
  "eyre",
  "human-panic",
@@ -196,6 +197,13 @@ name = "concolor-query"
 version = "0.0.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "ad159cc964ac8f9d407cbc0aa44b02436c054b541f2b4b5f06972e1efdc54bc7"
+
+[[package]]
+name = "crate-api"
+version = "0.1.0"
+dependencies = [
+ "cargo_metadata",
+]
 
 [[package]]
 name = "doc-comment"

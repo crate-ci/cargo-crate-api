@@ -1,0 +1,18 @@
+[package]
+name = "crate-api"
+description = "Interact with the crate's API"
+version = "0.1.0"
+license = "MIT OR Apache-2.0"
+categories = ["development-tools::cargo-plugins"]
+keywords = ["cargo"]
+edition = "2021"
+include = [
+  "src/**/*",
+  "Cargo.toml",
+  "LICENSE*",
+  "README.md",
+  "examples/**/*"
+]
+
+[dependencies]
+cargo_metadata = "0.14"

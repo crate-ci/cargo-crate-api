@@ -1,0 +1,29 @@
+[package]
+name = "cargo-api"
+description = "Interact with the crate's API"
+version = "0.1.0"
+license = "MIT OR Apache-2.0"
+categories = ["development-tools::cargo-plugins"]
+keywords = ["cargo"]
+edition = "2021"
+include = [
+  "src/**/*",
+  "Cargo.toml",
+  "LICENSE*",
+  "README.md",
+  "examples/**/*"
+]
+
+[dependencies]
+structopt = {version = "0.3.25", default-features = false}
+clap-cargo = { version = "0.7", features = ["cargo_metadata"] }
+clap-verbosity-flag = "0.3"
+log = "0.4"
+env_logger = "0.9"
+proc-exit = "1"
+eyre = "0.6"
+human-panic = "1"
+yansi = "0.5.0"
+concolor-control = { version = "0.0.7" }
+concolor-clap = { version = "0.0.6", features = ["api_unstable"] }
+termtree = "0.2.3"

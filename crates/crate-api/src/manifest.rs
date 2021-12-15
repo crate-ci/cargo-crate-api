@@ -4,6 +4,7 @@ use std::collections::HashMap;
 pub struct Manifest {
     name: String,
     version: cargo_metadata::Version,
+    dependencies: Vec<Dependency>,
     features: HashMap<String, AnyFeature>,
 }
 
@@ -14,17 +15,21 @@ impl<'p> From<&'p cargo_metadata::Package> for Manifest {
             .iter()
             .map(|(k, v)| (k.to_owned(), AnyFeature::Feature(Feature::new(k, v))))
             .collect();
+        let mut dependencies = Vec::new();
         for dep in &pkg.dependencies {
-            if let Some(feature) = Dependency::try_new(dep) {
+            let dependency = Dependency::new(dep);
+            if dep.optional {
                 features
-                    .entry(dep.name.clone())
-                    .or_insert(AnyFeature::Dependency(feature));
+                    .entry(dependency.name.clone())
+                    .or_insert(AnyFeature::Dependency(dependency.clone()));
             }
+            dependencies.push(dependency);
         }
 
         Self {
             name: pkg.name.clone(),
             version: pkg.version.clone(),
+            dependencies,
             features,
         }
     }
@@ -58,10 +63,10 @@ pub struct Dependency {
 }
 
 impl Dependency {
-    fn try_new(dep: &cargo_metadata::Dependency) -> Option<Self> {
-        dep.optional.then(|| Self {
+    fn new(dep: &cargo_metadata::Dependency) -> Self {
+        Self {
             name: dep.name.clone(),
             version: dep.req.clone(),
-        })
+        }
     }
 }

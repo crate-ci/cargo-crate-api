@@ -14,7 +14,7 @@ fn main() {
 
 fn run() -> proc_exit::ExitResult {
     // clap2's `get_matches` uses Failure rather than Unknown, so bypass it for `get_matches_safe`.
-    let args = match args::Args::from_args_safe() {
+    let args::Command::Api(args) = match args::Command::from_args_safe() {
         Ok(args) => args,
         Err(e) if e.use_stderr() => {
             return Err(proc_exit::Code::UNKNOWN.with_message(e));

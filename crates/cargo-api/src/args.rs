@@ -1,13 +1,20 @@
 #[derive(structopt::StructOpt)]
+#[structopt(name = "cargo")]
 #[structopt(
-        setting = structopt::clap::AppSettings::UnifiedHelpMessage,
-        setting = structopt::clap::AppSettings::DeriveDisplayOrder,
-        setting = structopt::clap::AppSettings::DontCollapseArgsInUsage,
-        setting = structopt::clap::AppSettings::ColoredHelp,
-        setting = concolor_clap::color_choice(),
-        about,
-    )]
-pub struct Args {
+        global_setting = structopt::clap::AppSettings::UnifiedHelpMessage,
+        global_setting = structopt::clap::AppSettings::DeriveDisplayOrder,
+        global_setting = structopt::clap::AppSettings::DontCollapseArgsInUsage,
+        global_setting = structopt::clap::AppSettings::ColoredHelp,
+        global_setting = concolor_clap::color_choice(),
+        bin_name = "cargo",
+)]
+pub enum Command {
+    Api(Api),
+}
+
+#[derive(structopt::StructOpt)]
+#[structopt(about)]
+pub struct Api {
     #[structopt(flatten)]
     pub manifest: clap_cargo::Manifest,
 

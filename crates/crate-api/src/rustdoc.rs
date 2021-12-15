@@ -1,3 +1,5 @@
+use std::collections::HashMap;
+
 #[derive(Clone, Debug, PartialEq, Eq)]
 pub struct RustDocBuilder {
     deps: bool,
@@ -32,6 +34,11 @@ impl RustDocBuilder {
                 format!("Failed when loading {}: {}", json_path.display(), e),
             )
         })
+    }
+
+    pub fn into_api(self, manifest_path: &std::path::Path) -> Result<crate::Api, crate::Error> {
+        let json_path = self._dump_raw(manifest_path)?;
+        Self::_parse_api(&json_path)
     }
 
     fn _dump_raw(
@@ -81,6 +88,33 @@ impl RustDocBuilder {
         }
 
         Ok(target_dir.join("doc/cargo_api.json"))
+    }
+
+    fn _parse_api(json_path: &std::path::Path) -> Result<crate::Api, crate::Error> {
+        let data = std::fs::read_to_string(&json_path).map_err(|e| {
+            crate::Error::new(
+                crate::ErrorKind::ApiParse,
+                format!("Failed when loading {}: {}", json_path.display(), e),
+            )
+        })?;
+
+        let docs: rustdoc_json_types_fork::Crate = serde_json::from_str(&data).map_err(|e| {
+            crate::Error::new(
+                crate::ErrorKind::ApiParse,
+                format!("Failed when parsing json at {}: {}", json_path.display(), e),
+            )
+        })?;
+
+        let mut api = crate::Api::new();
+
+        let mut crate_ids = HashMap::new();
+        for (raw_id, raw) in &docs.external_crates {
+            let crate_ = crate::Crate::new(&raw.name);
+            let crate_id = api.crates.push(crate_);
+            crate_ids.insert(raw_id, crate_id);
+        }
+
+        Ok(api)
     }
 }
 

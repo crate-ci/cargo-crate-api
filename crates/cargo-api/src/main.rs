@@ -51,6 +51,26 @@ fn run() -> proc_exit::ExitResult {
                 }
             };
             println!("{}", api);
+        } else if args.dump_api {
+            let api = crate_api::RustDocBuilder::new()
+                .into_api(selected.manifest_path.as_path().as_std_path());
+            let api = match api {
+                Ok(api) => api,
+                Err(err) => {
+                    ::log::error!("{}", err);
+                    success = false;
+                    continue;
+                }
+            };
+            let api = match serde_json::to_string(&api) {
+                Ok(api) => api,
+                Err(err) => {
+                    ::log::error!("{}", err);
+                    success = false;
+                    continue;
+                }
+            };
+            println!("{}", api);
         }
     }
 

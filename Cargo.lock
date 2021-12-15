@@ -96,6 +96,7 @@ dependencies = [
  "human-panic",
  "log",
  "proc-exit",
+ "serde_json",
  "structopt",
  "termtree",
  "yansi",
@@ -204,6 +205,7 @@ version = "0.1.0"
 dependencies = [
  "cargo_metadata",
  "rustdoc-json-types-fork",
+ "serde",
  "serde_json",
 ]
 

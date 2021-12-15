@@ -19,6 +19,9 @@ pub struct Api {
     #[structopt(long, group = "mode")]
     pub dump_raw: bool,
 
+    #[structopt(long, group = "mode")]
+    pub dump_api: bool,
+
     #[structopt(flatten)]
     pub manifest: clap_cargo::Manifest,
 

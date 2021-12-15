@@ -1,12 +1,12 @@
 #[derive(structopt::StructOpt)]
 #[structopt(name = "cargo")]
+#[structopt(bin_name = "cargo")]
 #[structopt(
         global_setting = structopt::clap::AppSettings::UnifiedHelpMessage,
         global_setting = structopt::clap::AppSettings::DeriveDisplayOrder,
         global_setting = structopt::clap::AppSettings::DontCollapseArgsInUsage,
         global_setting = structopt::clap::AppSettings::ColoredHelp,
         global_setting = concolor_clap::color_choice(),
-        bin_name = "cargo",
 )]
 pub enum Command {
     Api(Api),

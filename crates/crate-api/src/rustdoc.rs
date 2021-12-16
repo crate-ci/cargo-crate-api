@@ -161,6 +161,12 @@ impl RustDocBuilder {
                 rustdoc_json_types_fork::ItemEnum::Import(_) => {
                     deferred_imports.push(raw_item_id);
                 }
+                rustdoc_json_types_fork::ItemEnum::Trait(trait_) => {
+                    unprocessed.extend(trait_.items.iter().map(move |i| (path_id, i)));
+                }
+                rustdoc_json_types_fork::ItemEnum::Impl(impl_) => {
+                    unprocessed.extend(impl_.items.iter().map(move |i| (path_id, i)));
+                }
                 _ => {
                     assert_ne!(api.root_id, None, "Module should be root");
                     let mut item = crate::Item::new();

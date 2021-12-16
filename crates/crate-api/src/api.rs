@@ -56,8 +56,8 @@ pub struct Path {
     pub crate_id: Option<CrateId>,
     pub path: String,
     pub span: Option<Span>,
-    pub paths: Vec<PathId>,
-    pub items: Vec<ItemId>,
+    pub item_id: Option<ItemId>,
+    pub children: Vec<PathId>,
 }
 
 impl Path {
@@ -66,8 +66,8 @@ impl Path {
             crate_id: None,
             path: path.into(),
             span: None,
-            paths: Vec::new(),
-            items: Vec::new(),
+            item_id: None,
+            children: Vec::new(),
         }
     }
 }

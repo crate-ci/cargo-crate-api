@@ -109,6 +109,8 @@ impl RustDocBuilder {
         let mut api = crate::Api::new();
 
         let mut crate_ids = HashMap::new();
+        let mut path_ids = HashMap::new();
+        let mut deferred_imports = Vec::new();
 
         let mut unprocessed = VecDeque::new();
         unprocessed.push_back((None, &raw.root));
@@ -129,31 +131,35 @@ impl RustDocBuilder {
                 })
             });
 
+            let path_id = raw.paths.get(raw_item_id).map(|raw_path| {
+                let mut path = crate::Path::new(raw_path.path.join("::"));
+                path.crate_id = crate_id;
+                path.span = raw_item.span.clone().map(|raw_span| crate::Span {
+                    filename: raw_span.filename,
+                    begin: raw_span.begin,
+                    end: raw_span.end,
+                });
+                let path_id = api.paths.push(path);
+
+                if let Some(parent_path_id) = parent_path_id {
+                    api.paths
+                        .get_mut(parent_path_id)
+                        .expect("parent_path_id to always be valid")
+                        .children
+                        .push(path_id);
+                }
+                api.root_id.get_or_insert(path_id);
+                path_ids.insert(raw_item_id, path_id);
+
+                path_id
+            });
+
             match &raw_item.inner {
                 rustdoc_json_types_fork::ItemEnum::Module(module) => {
-                    let path_id = raw.paths.get(raw_item_id).map(|raw_path| {
-                        let mut path = crate::Path::new(raw_path.path.join("::"));
-                        path.crate_id = crate_id;
-                        path.span = raw_item.span.clone().map(|raw_span| crate::Span {
-                            filename: raw_span.filename,
-                            begin: raw_span.begin,
-                            end: raw_span.end,
-                        });
-                        let path_id = api.paths.push(path);
-
-                        if let Some(parent_path_id) = parent_path_id {
-                            api.paths
-                                .get_mut(parent_path_id)
-                                .expect("parent_path_id to always be valid")
-                                .paths
-                                .push(path_id);
-                        }
-                        api.root_id.get_or_insert(path_id);
-
-                        path_id
-                    });
-
                     unprocessed.extend(module.items.iter().map(move |i| (path_id, i)));
+                }
+                rustdoc_json_types_fork::ItemEnum::Import(_) => {
+                    deferred_imports.push(raw_item_id);
                 }
                 _ => {
                     assert_ne!(api.root_id, None, "Module should be root");
@@ -166,15 +172,41 @@ impl RustDocBuilder {
                         end: raw_span.end,
                     });
                     let item_id = api.items.push(item);
-                    if let Some(parent_path_id) = parent_path_id {
+
+                    if let Some(path_id) = path_id {
                         api.paths
-                            .get_mut(parent_path_id)
-                            .expect("parent_path_id to always be valid")
-                            .items
-                            .push(item_id);
+                            .get_mut(path_id)
+                            .expect("path_id to always be valid")
+                            .item_id = Some(item_id);
                     }
                 }
             }
+        }
+
+        for raw_item_id in deferred_imports {
+            let raw_item = raw
+                .index
+                .get(raw_item_id)
+                .expect("all item ids are in `index`");
+            let import = match &raw_item.inner {
+                rustdoc_json_types_fork::ItemEnum::Import(import) => import,
+                _ => unreachable!("deferred_imports only contains imports"),
+            };
+            let raw_target_id = import.id.as_ref().unwrap();
+            let target_path_id = *path_ids.get(raw_target_id).unwrap();
+            let target_path = api
+                .paths
+                .get(target_path_id)
+                .expect("path_id to always be valid")
+                .clone();
+
+            let path_id = *path_ids.get(raw_item_id).unwrap();
+            let path = api
+                .paths
+                .get_mut(path_id)
+                .expect("path_id to always be valid");
+            path.item_id = target_path.item_id;
+            path.children = target_path.children.clone();
         }
 
         Ok(api)

@@ -1,11 +1,12 @@
 use std::collections::HashMap;
 
 #[derive(Clone, Debug, PartialEq, Eq)]
+#[non_exhaustive]
 pub struct Manifest {
-    name: String,
-    version: cargo_metadata::Version,
-    dependencies: Vec<Dependency>,
-    features: HashMap<String, AnyFeature>,
+    pub name: String,
+    pub version: cargo_metadata::Version,
+    pub dependencies: Vec<Dependency>,
+    pub features: HashMap<String, AnyFeature>,
 }
 
 impl<'p> From<&'p cargo_metadata::Package> for Manifest {
@@ -42,9 +43,10 @@ pub enum AnyFeature {
 }
 
 #[derive(Clone, Debug, PartialEq, Eq)]
+#[non_exhaustive]
 pub struct Feature {
-    name: String,
-    dependencies: Vec<String>,
+    pub name: String,
+    pub dependencies: Vec<String>,
 }
 
 impl Feature {
@@ -57,15 +59,16 @@ impl Feature {
 }
 
 #[derive(Clone, Debug, PartialEq, Eq)]
+#[non_exhaustive]
 pub struct Dependency {
-    name: String,
-    version: cargo_metadata::VersionReq,
+    pub name: String,
+    pub version: cargo_metadata::VersionReq,
 }
 
 impl Dependency {
     fn new(dep: &cargo_metadata::Dependency) -> Self {
         Self {
-            name: dep.name.clone(),
+            name: dep.rename.clone().unwrap_or_else(|| dep.name.clone()),
             version: dep.req.clone(),
         }
     }

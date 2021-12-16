@@ -1,5 +1,6 @@
+# See https://raw.githubusercontent.com/rust-lang/rust/1.57.0/src/rustdoc-json-types/Cargo.toml
 [package]
-name = "crate-api"
+name = "rustdoc-json-types-fork"
 description = "Interact with the crate's API"
 version = "0.1.0"
 license = "MIT OR Apache-2.0"
@@ -15,6 +16,4 @@ include = [
 ]
 
 [dependencies]
-cargo_metadata = "0.14"
-rustdoc-json-types-fork = { version = "0.1", path = "../rustdoc-json-types-fork" }
-serde_json = "1.0"
+serde = { version = "1.0", features = ["derive"] }

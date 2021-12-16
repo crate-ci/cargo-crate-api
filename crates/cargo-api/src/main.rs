@@ -30,6 +30,8 @@ fn run() -> proc_exit::ExitResult {
 
     log::init_logging(args.verbose.clone(), colored_stderr);
 
+    let mut success = true;
+
     let metadata = args
         .manifest
         .metadata()
@@ -37,9 +39,24 @@ fn run() -> proc_exit::ExitResult {
         .with_code(proc_exit::Code::CONFIG_ERR)?;
     let (selected, _) = args.workspace.partition_packages(&metadata);
     for selected in selected {
-        let manifest = crate_api::manifest::Manifest::from(selected);
-        dbg!(manifest);
+        if args.dump_raw {
+            let api = crate_api::RustDocBuilder::new()
+                .dump_raw(selected.manifest_path.as_path().as_std_path());
+            let api = match api {
+                Ok(api) => api,
+                Err(err) => {
+                    ::log::error!("{}", err);
+                    success = false;
+                    continue;
+                }
+            };
+            println!("{}", api);
+        }
     }
 
-    Ok(())
+    if success {
+        proc_exit::Code::SUCCESS.ok()
+    } else {
+        proc_exit::Code::FAILURE.ok()
+    }
 }

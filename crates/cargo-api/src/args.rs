@@ -14,7 +14,11 @@ pub enum Command {
 
 #[derive(structopt::StructOpt)]
 #[structopt(about)]
+#[structopt(group = structopt::clap::ArgGroup::with_name("mode").multiple(false))]
 pub struct Api {
+    #[structopt(long, group = "mode")]
+    pub dump_raw: bool,
+
     #[structopt(flatten)]
     pub manifest: clap_cargo::Manifest,
 

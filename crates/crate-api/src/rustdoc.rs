@@ -119,10 +119,34 @@ impl RustDocBuilder {
 
     pub fn into_api(self, manifest_path: &std::path::Path) -> Result<crate::Api, crate::Error> {
         let raw = self.dump_raw(manifest_path)?;
-        Self::parse_raw(&raw, manifest_path)
+        parse_raw(&raw, manifest_path)
+    }
+}
+
+impl Default for RustDocBuilder {
+    fn default() -> Self {
+        Self::new()
+    }
+}
+
+pub fn parse_raw(raw: &str, manifest_path: &std::path::Path) -> Result<crate::Api, crate::Error> {
+    RustDocParser::new().parse(raw, manifest_path)
+}
+
+#[derive(Default)]
+struct RustDocParser {
+    api: crate::Api,
+    crate_ids: HashMap<u32, crate::CrateId>,
+    path_ids: HashMap<rustdoc_json_types_fork::Id, crate::PathId>,
+}
+
+impl RustDocParser {
+    fn new() -> Self {
+        Self::default()
     }
 
-    pub fn parse_raw(
+    fn parse(
+        mut self,
         raw: &str,
         manifest_path: &std::path::Path,
     ) -> Result<crate::Api, crate::Error> {
@@ -137,11 +161,7 @@ impl RustDocBuilder {
             )
         })?;
 
-        let mut api = crate::Api::new();
-
-        let mut crate_ids = HashMap::new();
-        let mut path_ids = HashMap::new();
-        let mut deferred_imports = Vec::new();
+        let mut deferred_imports = VecDeque::new();
 
         let mut unprocessed = VecDeque::new();
         unprocessed.push_back((None, &raw.root));
@@ -152,13 +172,13 @@ impl RustDocBuilder {
                 .expect("all item ids are in `index`");
 
             let crate_id = (raw_item.crate_id != 0).then(|| {
-                *crate_ids.entry(raw_item.crate_id).or_insert_with(|| {
+                *self.crate_ids.entry(raw_item.crate_id).or_insert_with(|| {
                     let raw_crate = raw
                         .external_crates
                         .get(&raw_item.crate_id)
                         .expect("all crate ids are in `external_crates`");
                     let crate_ = crate::Crate::new(&raw_crate.name);
-                    api.crates.push(crate_)
+                    self.api.crates.push(crate_)
                 })
             });
 
@@ -170,17 +190,18 @@ impl RustDocBuilder {
                     begin: raw_span.begin,
                     end: raw_span.end,
                 });
-                let path_id = api.paths.push(path);
+                let path_id = self.api.paths.push(path);
 
                 if let Some(parent_path_id) = parent_path_id {
-                    api.paths
+                    self.api
+                        .paths
                         .get_mut(parent_path_id)
                         .expect("parent_path_id to always be valid")
                         .children
                         .push(path_id);
                 }
-                api.root_id.get_or_insert(path_id);
-                path_ids.insert(raw_item_id, path_id);
+                self.api.root_id.get_or_insert(path_id);
+                self.path_ids.insert(raw_item_id.clone(), path_id);
 
                 path_id
             });
@@ -190,7 +211,7 @@ impl RustDocBuilder {
                     unprocessed.extend(module.items.iter().map(move |i| (path_id, i)));
                 }
                 rustdoc_json_types_fork::ItemEnum::Import(_) => {
-                    deferred_imports.push(raw_item_id);
+                    deferred_imports.push_back(raw_item_id);
                 }
                 rustdoc_json_types_fork::ItemEnum::Trait(trait_) => {
                     unprocessed.extend(trait_.items.iter().map(move |i| (path_id, i)));
@@ -199,7 +220,7 @@ impl RustDocBuilder {
                     unprocessed.extend(impl_.items.iter().map(move |i| (path_id, i)));
                 }
                 _ => {
-                    assert_ne!(api.root_id, None, "Module should be root");
+                    assert_ne!(self.api.root_id, None, "Module should be root");
                     let mut item = crate::Item::new();
                     item.crate_id = crate_id;
                     item.name = raw_item.name.clone();
@@ -208,10 +229,11 @@ impl RustDocBuilder {
                         begin: raw_span.begin,
                         end: raw_span.end,
                     });
-                    let item_id = api.items.push(item);
+                    let item_id = self.api.items.push(item);
 
                     if let Some(path_id) = path_id {
-                        api.paths
+                        self.api
+                            .paths
                             .get_mut(path_id)
                             .expect("path_id to always be valid")
                             .item_id = Some(item_id);
@@ -230,15 +252,17 @@ impl RustDocBuilder {
                 _ => unreachable!("deferred_imports only contains imports"),
             };
             let raw_target_id = import.id.as_ref().unwrap();
-            let target_path_id = *path_ids.get(raw_target_id).unwrap();
-            let target_path = api
+            let target_path_id = *self.path_ids.get(raw_target_id).unwrap();
+            let target_path = self
+                .api
                 .paths
                 .get(target_path_id)
                 .expect("path_id to always be valid")
                 .clone();
 
-            let path_id = *path_ids.get(raw_item_id).unwrap();
-            let path = api
+            let path_id = *self.path_ids.get(raw_item_id).unwrap();
+            let path = self
+                .api
                 .paths
                 .get_mut(path_id)
                 .expect("path_id to always be valid");
@@ -246,12 +270,6 @@ impl RustDocBuilder {
             path.children = target_path.children.clone();
         }
 
-        Ok(api)
-    }
-}
-
-impl Default for RustDocBuilder {
-    fn default() -> Self {
-        Self::new()
+        Ok(self.api)
     }
 }

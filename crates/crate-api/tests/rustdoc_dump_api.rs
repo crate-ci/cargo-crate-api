@@ -35,8 +35,8 @@ fn main() {
         },
         move |input_path| {
             let input = std::fs::read_to_string(input_path).map_err(|e| e.to_string())?;
-            let actual = crate_api::RustDocBuilder::parse_raw(&input, input_path)
-                .map_err(|e| e.to_string())?;
+            let actual =
+                crate_api::rustdoc::parse_raw(&input, input_path).map_err(|e| e.to_string())?;
             let actual = serde_json::to_string_pretty(&actual).map_err(|e| e.to_string())?;
             Ok(actual)
         },

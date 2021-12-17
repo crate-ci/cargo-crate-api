@@ -4,11 +4,15 @@ use std::collections::VecDeque;
 #[derive(Clone, Debug, PartialEq, Eq)]
 pub struct RustDocBuilder {
     deps: bool,
+    target_directory: Option<std::path::PathBuf>,
 }
 
 impl RustDocBuilder {
     pub fn new() -> Self {
-        Self { deps: false }
+        Self {
+            deps: false,
+            target_directory: None,
+        }
     }
 
     /// Include dependencies
@@ -24,6 +28,11 @@ impl RustDocBuilder {
     /// - Detect breaking changes from dependencies in your API
     pub fn deps(mut self, yes: bool) -> Self {
         self.deps = yes;
+        self
+    }
+
+    pub fn target_directory(mut self, path: impl Into<std::path::PathBuf>) -> Self {
+        self.target_directory = Some(path.into());
         self
     }
 
@@ -46,16 +55,22 @@ impl RustDocBuilder {
         self,
         manifest_path: &std::path::Path,
     ) -> Result<std::path::PathBuf, crate::Error> {
-        let metadata = cargo_metadata::MetadataCommand::new()
-            .manifest_path(manifest_path)
-            .no_deps()
-            .exec()
-            .map_err(|e| crate::Error::new(crate::ErrorKind::ApiParse, e))?;
-        let target_dir = metadata
-            .target_directory
-            .as_path()
-            .as_std_path()
-            .join("crate-api");
+        let manifest_target_directory;
+        let target_dir = if let Some(target_dir) = self.target_directory.as_deref() {
+            target_dir
+        } else {
+            let metadata = cargo_metadata::MetadataCommand::new()
+                .manifest_path(manifest_path)
+                .no_deps()
+                .exec()
+                .map_err(|e| crate::Error::new(crate::ErrorKind::ApiParse, e))?;
+            manifest_target_directory = metadata
+                .target_directory
+                .as_path()
+                .as_std_path()
+                .join("crate-api");
+            manifest_target_directory.as_path()
+        };
 
         let mut cmd = std::process::Command::new("cargo");
         cmd.env(

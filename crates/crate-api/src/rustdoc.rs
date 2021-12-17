@@ -296,7 +296,9 @@ impl RustDocParser {
                     .extend(module.items.iter().map(move |i| (path_id, i.clone())));
                 None
             }
-            rustdoc_json_types_fork::ItemEnum::Import(_) => {
+            rustdoc_json_types_fork::ItemEnum::Import(import) => {
+                let raw_target_id = import.id.clone().unwrap();
+                self.unprocessed.push_back((path_id, raw_target_id));
                 self.deferred_imports.push_back(raw_item_id.clone());
                 None
             }

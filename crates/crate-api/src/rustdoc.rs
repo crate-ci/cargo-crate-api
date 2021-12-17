@@ -171,40 +171,9 @@ impl RustDocParser {
                 .get(raw_item_id)
                 .expect("all item ids are in `index`");
 
-            let crate_id = (raw_item.crate_id != 0).then(|| {
-                *self.crate_ids.entry(raw_item.crate_id).or_insert_with(|| {
-                    let raw_crate = raw
-                        .external_crates
-                        .get(&raw_item.crate_id)
-                        .expect("all crate ids are in `external_crates`");
-                    let crate_ = crate::Crate::new(&raw_crate.name);
-                    self.api.crates.push(crate_)
-                })
-            });
+            let crate_id = self._parse_crate(&raw, raw_item.crate_id);
 
-            let path_id = raw.paths.get(raw_item_id).map(|raw_path| {
-                let mut path = crate::Path::new(raw_path.path.join("::"));
-                path.crate_id = crate_id;
-                path.span = raw_item.span.clone().map(|raw_span| crate::Span {
-                    filename: raw_span.filename,
-                    begin: raw_span.begin,
-                    end: raw_span.end,
-                });
-                let path_id = self.api.paths.push(path);
-
-                if let Some(parent_path_id) = parent_path_id {
-                    self.api
-                        .paths
-                        .get_mut(parent_path_id)
-                        .expect("parent_path_id to always be valid")
-                        .children
-                        .push(path_id);
-                }
-                self.api.root_id.get_or_insert(path_id);
-                self.path_ids.insert(raw_item_id.clone(), path_id);
-
-                path_id
-            });
+            let path_id = self._parse_path(&raw, parent_path_id, &raw_item_id, crate_id);
 
             match &raw_item.inner {
                 rustdoc_json_types_fork::ItemEnum::Module(module) => {
@@ -271,5 +240,59 @@ impl RustDocParser {
         }
 
         Ok(self.api)
+    }
+
+    fn _parse_crate(
+        &mut self,
+        raw: &rustdoc_json_types_fork::Crate,
+        raw_crate_id: u32,
+    ) -> Option<crate::CrateId> {
+        (raw_crate_id != 0).then(|| {
+            *self.crate_ids.entry(raw_crate_id).or_insert_with(|| {
+                let raw_crate = raw
+                    .external_crates
+                    .get(&raw_crate_id)
+                    .expect("all crate ids are in `external_crates`");
+                let crate_ = crate::Crate::new(&raw_crate.name);
+                self.api.crates.push(crate_)
+            })
+        })
+    }
+
+    fn _parse_path(
+        &mut self,
+        raw: &rustdoc_json_types_fork::Crate,
+        parent_path_id: Option<crate::PathId>,
+        raw_item_id: &rustdoc_json_types_fork::Id,
+        crate_id: Option<crate::CrateId>,
+    ) -> Option<crate::PathId> {
+        raw.paths.get(raw_item_id).map(|raw_path| {
+            *self.path_ids.entry(raw_item_id.clone()).or_insert_with(|| {
+                let raw_item = raw
+                    .index
+                    .get(raw_item_id)
+                    .expect("all item ids are in `index`");
+
+                let mut path = crate::Path::new(raw_path.path.join("::"));
+                path.crate_id = crate_id;
+                path.span = raw_item.span.clone().map(|raw_span| crate::Span {
+                    filename: raw_span.filename,
+                    begin: raw_span.begin,
+                    end: raw_span.end,
+                });
+                let path_id = self.api.paths.push(path);
+
+                if let Some(parent_path_id) = parent_path_id {
+                    self.api
+                        .paths
+                        .get_mut(parent_path_id)
+                        .expect("parent_path_id to always be valid")
+                        .children
+                        .push(path_id);
+                }
+                self.api.root_id.get_or_insert(path_id);
+                path_id
+            })
+        })
     }
 }

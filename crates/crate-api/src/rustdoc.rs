@@ -173,7 +173,9 @@ impl RustDocParser {
 
             let crate_id = self._parse_crate(&raw, raw_item.crate_id);
 
-            let path_id = self._parse_path(&raw, parent_path_id, &raw_item_id, crate_id);
+            let path_id = self
+                ._parse_path(&raw, parent_path_id, &raw_item_id, crate_id)
+                .or(parent_path_id);
 
             match &raw_item.inner {
                 rustdoc_json_types_fork::ItemEnum::Module(module) => {

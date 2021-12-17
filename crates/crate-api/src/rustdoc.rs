@@ -37,24 +37,15 @@ impl RustDocBuilder {
     }
 
     pub fn dump_raw(self, manifest_path: &std::path::Path) -> Result<String, crate::Error> {
-        let json_path = self._dump_raw(manifest_path)?;
-        std::fs::read_to_string(&json_path).map_err(|e| {
-            crate::Error::new(
-                crate::ErrorKind::ApiParse,
-                format!("Failed when loading {}: {}", json_path.display(), e),
-            )
-        })
+        self._dump_raw(manifest_path)
     }
 
     pub fn into_api(self, manifest_path: &std::path::Path) -> Result<crate::Api, crate::Error> {
-        let json_path = self._dump_raw(manifest_path)?;
-        Self::_parse_api(&json_path)
+        let raw = self._dump_raw(manifest_path)?;
+        Self::_parse_raw(&raw, manifest_path)
     }
 
-    fn _dump_raw(
-        self,
-        manifest_path: &std::path::Path,
-    ) -> Result<std::path::PathBuf, crate::Error> {
+    fn _dump_raw(self, manifest_path: &std::path::Path) -> Result<String, crate::Error> {
         let manifest_target_directory;
         let target_dir = if let Some(target_dir) = self.target_directory.as_deref() {
             target_dir
@@ -103,21 +94,24 @@ impl RustDocBuilder {
             ));
         }
 
-        Ok(target_dir.join("doc/cargo_api.json"))
-    }
-
-    fn _parse_api(json_path: &std::path::Path) -> Result<crate::Api, crate::Error> {
-        let data = std::fs::read_to_string(&json_path).map_err(|e| {
+        let json_path = target_dir.join("doc/cargo_api.json");
+        std::fs::read_to_string(&json_path).map_err(|e| {
             crate::Error::new(
                 crate::ErrorKind::ApiParse,
                 format!("Failed when loading {}: {}", json_path.display(), e),
             )
-        })?;
+        })
+    }
 
-        let raw: rustdoc_json_types_fork::Crate = serde_json::from_str(&data).map_err(|e| {
+    fn _parse_raw(raw: &str, manifest_path: &std::path::Path) -> Result<crate::Api, crate::Error> {
+        let raw: rustdoc_json_types_fork::Crate = serde_json::from_str(raw).map_err(|e| {
             crate::Error::new(
                 crate::ErrorKind::ApiParse,
-                format!("Failed when parsing json at {}: {}", json_path.display(), e),
+                format!(
+                    "Failed when parsing json for {}: {}",
+                    manifest_path.display(),
+                    e
+                ),
             )
         })?;
 

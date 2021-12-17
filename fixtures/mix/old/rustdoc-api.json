@@ -1,0 +1,167 @@
+{
+  "root_id": 0,
+  "paths": {
+    "paths": [
+      [
+        0,
+        {
+          "crate_id": null,
+          "path": "mix_old",
+          "span": {
+            "filename": "fixtures/mix/old/src/lib.rs",
+            "begin": [
+              1,
+              0
+            ],
+            "end": [
+              10,
+              21
+            ]
+          },
+          "item_id": null,
+          "children": [
+            1,
+            2,
+            5
+          ]
+        }
+      ],
+      [
+        1,
+        {
+          "crate_id": null,
+          "path": "mix_old::a",
+          "span": {
+            "filename": "fixtures/mix/old/src/lib.rs",
+            "begin": [
+              1,
+              0
+            ],
+            "end": [
+              4,
+              1
+            ]
+          },
+          "item_id": null,
+          "children": [
+            3,
+            4
+          ]
+        }
+      ],
+      [
+        2,
+        {
+          "crate_id": null,
+          "path": "mix_old::b",
+          "span": {
+            "filename": "fixtures/mix/old/src/lib.rs",
+            "begin": [
+              6,
+              0
+            ],
+            "end": [
+              8,
+              1
+            ]
+          },
+          "item_id": null,
+          "children": []
+        }
+      ],
+      [
+        3,
+        {
+          "crate_id": null,
+          "path": "mix_old::a::Abc",
+          "span": {
+            "filename": "fixtures/mix/old/src/lib.rs",
+            "begin": [
+              2,
+              4
+            ],
+            "end": [
+              2,
+              19
+            ]
+          },
+          "item_id": 0,
+          "children": []
+        }
+      ],
+      [
+        4,
+        {
+          "crate_id": null,
+          "path": "mix_old::a::Def",
+          "span": {
+            "filename": "fixtures/mix/old/src/lib.rs",
+            "begin": [
+              3,
+              4
+            ],
+            "end": [
+              3,
+              19
+            ]
+          },
+          "item_id": 1,
+          "children": []
+        }
+      ],
+      [
+        5,
+        {
+          "crate_id": null,
+          "path": "mix_old::Abc",
+          "span": null,
+          "item_id": 0,
+          "children": []
+        }
+      ]
+    ]
+  },
+  "items": {
+    "items": [
+      [
+        0,
+        {
+          "crate_id": null,
+          "name": "Abc",
+          "span": {
+            "filename": "fixtures/mix/old/src/lib.rs",
+            "begin": [
+              2,
+              4
+            ],
+            "end": [
+              2,
+              19
+            ]
+          }
+        }
+      ],
+      [
+        1,
+        {
+          "crate_id": null,
+          "name": "Def",
+          "span": {
+            "filename": "fixtures/mix/old/src/lib.rs",
+            "begin": [
+              3,
+              4
+            ],
+            "end": [
+              3,
+              19
+            ]
+          }
+        }
+      ]
+    ]
+  },
+  "crates": {
+    "crates": []
+  }
+}

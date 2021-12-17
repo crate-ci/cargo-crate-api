@@ -1,0 +1,3742 @@
+{
+  "root_id": 0,
+  "paths": {
+    "paths": [
+      [
+        0,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              1,
+              0
+            ],
+            "end": [
+              17,
+              23
+            ]
+          },
+          "item_id": null,
+          "children": [
+            1,
+            2
+          ]
+        }
+      ],
+      [
+        1,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            3,
+            4
+          ]
+        }
+      ],
+      [
+        2,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::b",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            129
+          ]
+        }
+      ],
+      [
+        3,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            5,
+            6
+          ]
+        }
+      ],
+      [
+        4,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::b",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            130
+          ]
+        }
+      ],
+      [
+        5,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            7,
+            8
+          ]
+        }
+      ],
+      [
+        6,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::b",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            131
+          ]
+        }
+      ],
+      [
+        7,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            9,
+            10
+          ]
+        }
+      ],
+      [
+        8,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::b",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            132
+          ]
+        }
+      ],
+      [
+        9,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            11,
+            12
+          ]
+        }
+      ],
+      [
+        10,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::b",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            133
+          ]
+        }
+      ],
+      [
+        11,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            13,
+            14
+          ]
+        }
+      ],
+      [
+        12,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::b",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            134
+          ]
+        }
+      ],
+      [
+        13,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            15,
+            16
+          ]
+        }
+      ],
+      [
+        14,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::b",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            135
+          ]
+        }
+      ],
+      [
+        15,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            17,
+            18
+          ]
+        }
+      ],
+      [
+        16,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::b",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            136
+          ]
+        }
+      ],
+      [
+        17,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            19,
+            20
+          ]
+        }
+      ],
+      [
+        18,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::b",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            137
+          ]
+        }
+      ],
+      [
+        19,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            21,
+            22
+          ]
+        }
+      ],
+      [
+        20,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::b",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            138
+          ]
+        }
+      ],
+      [
+        21,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            23,
+            24
+          ]
+        }
+      ],
+      [
+        22,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::b",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            139
+          ]
+        }
+      ],
+      [
+        23,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            25,
+            26
+          ]
+        }
+      ],
+      [
+        24,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::b",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            140
+          ]
+        }
+      ],
+      [
+        25,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            27,
+            28
+          ]
+        }
+      ],
+      [
+        26,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            141
+          ]
+        }
+      ],
+      [
+        27,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            29,
+            30
+          ]
+        }
+      ],
+      [
+        28,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            142
+          ]
+        }
+      ],
+      [
+        29,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            31,
+            32
+          ]
+        }
+      ],
+      [
+        30,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            143
+          ]
+        }
+      ],
+      [
+        31,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            33,
+            34
+          ]
+        }
+      ],
+      [
+        32,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            144
+          ]
+        }
+      ],
+      [
+        33,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            35,
+            36
+          ]
+        }
+      ],
+      [
+        34,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            145
+          ]
+        }
+      ],
+      [
+        35,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            37,
+            38
+          ]
+        }
+      ],
+      [
+        36,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            146
+          ]
+        }
+      ],
+      [
+        37,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            39,
+            40
+          ]
+        }
+      ],
+      [
+        38,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            147
+          ]
+        }
+      ],
+      [
+        39,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            41,
+            42
+          ]
+        }
+      ],
+      [
+        40,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            148
+          ]
+        }
+      ],
+      [
+        41,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            43,
+            44
+          ]
+        }
+      ],
+      [
+        42,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            149
+          ]
+        }
+      ],
+      [
+        43,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            45,
+            46
+          ]
+        }
+      ],
+      [
+        44,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            150
+          ]
+        }
+      ],
+      [
+        45,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            47,
+            48
+          ]
+        }
+      ],
+      [
+        46,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            151
+          ]
+        }
+      ],
+      [
+        47,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            49,
+            50
+          ]
+        }
+      ],
+      [
+        48,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            152
+          ]
+        }
+      ],
+      [
+        49,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            51,
+            52
+          ]
+        }
+      ],
+      [
+        50,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            153
+          ]
+        }
+      ],
+      [
+        51,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            53,
+            54
+          ]
+        }
+      ],
+      [
+        52,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            154
+          ]
+        }
+      ],
+      [
+        53,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            55,
+            56
+          ]
+        }
+      ],
+      [
+        54,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            155
+          ]
+        }
+      ],
+      [
+        55,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            57,
+            58
+          ]
+        }
+      ],
+      [
+        56,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            156
+          ]
+        }
+      ],
+      [
+        57,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            59,
+            60
+          ]
+        }
+      ],
+      [
+        58,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            157
+          ]
+        }
+      ],
+      [
+        59,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            61,
+            62
+          ]
+        }
+      ],
+      [
+        60,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            158
+          ]
+        }
+      ],
+      [
+        61,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            63,
+            64
+          ]
+        }
+      ],
+      [
+        62,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            159
+          ]
+        }
+      ],
+      [
+        63,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            65,
+            66
+          ]
+        }
+      ],
+      [
+        64,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            160
+          ]
+        }
+      ],
+      [
+        65,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            67,
+            68
+          ]
+        }
+      ],
+      [
+        66,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            161
+          ]
+        }
+      ],
+      [
+        67,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            69,
+            70
+          ]
+        }
+      ],
+      [
+        68,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            162
+          ]
+        }
+      ],
+      [
+        69,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            71,
+            72
+          ]
+        }
+      ],
+      [
+        70,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            163
+          ]
+        }
+      ],
+      [
+        71,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            73,
+            74
+          ]
+        }
+      ],
+      [
+        72,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            164
+          ]
+        }
+      ],
+      [
+        73,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            75,
+            76
+          ]
+        }
+      ],
+      [
+        74,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            165
+          ]
+        }
+      ],
+      [
+        75,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            77,
+            78
+          ]
+        }
+      ],
+      [
+        76,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            166
+          ]
+        }
+      ],
+      [
+        77,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            79,
+            80
+          ]
+        }
+      ],
+      [
+        78,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            167
+          ]
+        }
+      ],
+      [
+        79,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            81,
+            82
+          ]
+        }
+      ],
+      [
+        80,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            168
+          ]
+        }
+      ],
+      [
+        81,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            83,
+            84
+          ]
+        }
+      ],
+      [
+        82,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            169
+          ]
+        }
+      ],
+      [
+        83,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            85,
+            86
+          ]
+        }
+      ],
+      [
+        84,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            170
+          ]
+        }
+      ],
+      [
+        85,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            87,
+            88
+          ]
+        }
+      ],
+      [
+        86,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            171
+          ]
+        }
+      ],
+      [
+        87,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            89,
+            90
+          ]
+        }
+      ],
+      [
+        88,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            172
+          ]
+        }
+      ],
+      [
+        89,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            91,
+            92
+          ]
+        }
+      ],
+      [
+        90,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            173
+          ]
+        }
+      ],
+      [
+        91,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            93,
+            94
+          ]
+        }
+      ],
+      [
+        92,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            174
+          ]
+        }
+      ],
+      [
+        93,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            95,
+            96
+          ]
+        }
+      ],
+      [
+        94,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            175
+          ]
+        }
+      ],
+      [
+        95,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            97,
+            98
+          ]
+        }
+      ],
+      [
+        96,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            176
+          ]
+        }
+      ],
+      [
+        97,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            99,
+            100
+          ]
+        }
+      ],
+      [
+        98,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            177
+          ]
+        }
+      ],
+      [
+        99,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            101,
+            102
+          ]
+        }
+      ],
+      [
+        100,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            178
+          ]
+        }
+      ],
+      [
+        101,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            103,
+            104
+          ]
+        }
+      ],
+      [
+        102,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            179
+          ]
+        }
+      ],
+      [
+        103,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            105,
+            106
+          ]
+        }
+      ],
+      [
+        104,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            180
+          ]
+        }
+      ],
+      [
+        105,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            107,
+            108
+          ]
+        }
+      ],
+      [
+        106,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            181
+          ]
+        }
+      ],
+      [
+        107,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            109,
+            110
+          ]
+        }
+      ],
+      [
+        108,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            182
+          ]
+        }
+      ],
+      [
+        109,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            111,
+            112
+          ]
+        }
+      ],
+      [
+        110,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            183
+          ]
+        }
+      ],
+      [
+        111,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            113,
+            114
+          ]
+        }
+      ],
+      [
+        112,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            184
+          ]
+        }
+      ],
+      [
+        113,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            115,
+            116
+          ]
+        }
+      ],
+      [
+        114,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            185
+          ]
+        }
+      ],
+      [
+        115,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            117,
+            118
+          ]
+        }
+      ],
+      [
+        116,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            186
+          ]
+        }
+      ],
+      [
+        117,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            119,
+            120
+          ]
+        }
+      ],
+      [
+        118,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            187
+          ]
+        }
+      ],
+      [
+        119,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            121,
+            122
+          ]
+        }
+      ],
+      [
+        120,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            188
+          ]
+        }
+      ],
+      [
+        121,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            123,
+            124
+          ]
+        }
+      ],
+      [
+        122,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            189
+          ]
+        }
+      ],
+      [
+        123,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            125,
+            126
+          ]
+        }
+      ],
+      [
+        124,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            190
+          ]
+        }
+      ],
+      [
+        125,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            127,
+            128
+          ]
+        }
+      ],
+      [
+        126,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            191
+          ]
+        }
+      ],
+      [
+        127,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": []
+        }
+      ],
+      [
+        128,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "span": {
+            "filename": "fixtures/pathologic_paths/new/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              17,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            192
+          ]
+        }
+      ],
+      [
+        129,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::b::a",
+          "span": null,
+          "item_id": null,
+          "children": [
+            3,
+            4
+          ]
+        }
+      ],
+      [
+        130,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::b::a",
+          "span": null,
+          "item_id": null,
+          "children": [
+            5,
+            6
+          ]
+        }
+      ],
+      [
+        131,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::b::a",
+          "span": null,
+          "item_id": null,
+          "children": [
+            7,
+            8
+          ]
+        }
+      ],
+      [
+        132,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::b::a",
+          "span": null,
+          "item_id": null,
+          "children": [
+            9,
+            10
+          ]
+        }
+      ],
+      [
+        133,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::b::a",
+          "span": null,
+          "item_id": null,
+          "children": [
+            11,
+            12
+          ]
+        }
+      ],
+      [
+        134,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::b::a",
+          "span": null,
+          "item_id": null,
+          "children": [
+            13,
+            14
+          ]
+        }
+      ],
+      [
+        135,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::b::a",
+          "span": null,
+          "item_id": null,
+          "children": [
+            15,
+            16
+          ]
+        }
+      ],
+      [
+        136,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::b::a",
+          "span": null,
+          "item_id": null,
+          "children": [
+            17,
+            18
+          ]
+        }
+      ],
+      [
+        137,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::b::a",
+          "span": null,
+          "item_id": null,
+          "children": [
+            19,
+            20
+          ]
+        }
+      ],
+      [
+        138,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::b::a",
+          "span": null,
+          "item_id": null,
+          "children": [
+            21,
+            22
+          ]
+        }
+      ],
+      [
+        139,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::b::a",
+          "span": null,
+          "item_id": null,
+          "children": [
+            23,
+            24
+          ]
+        }
+      ],
+      [
+        140,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "span": null,
+          "item_id": null,
+          "children": [
+            25,
+            26
+          ]
+        }
+      ],
+      [
+        141,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "span": null,
+          "item_id": null,
+          "children": [
+            27,
+            28
+          ]
+        }
+      ],
+      [
+        142,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "span": null,
+          "item_id": null,
+          "children": [
+            29,
+            30
+          ]
+        }
+      ],
+      [
+        143,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "span": null,
+          "item_id": null,
+          "children": [
+            31,
+            32
+          ]
+        }
+      ],
+      [
+        144,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "span": null,
+          "item_id": null,
+          "children": [
+            33,
+            34
+          ]
+        }
+      ],
+      [
+        145,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "span": null,
+          "item_id": null,
+          "children": [
+            35,
+            36
+          ]
+        }
+      ],
+      [
+        146,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "span": null,
+          "item_id": null,
+          "children": [
+            37,
+            38
+          ]
+        }
+      ],
+      [
+        147,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "span": null,
+          "item_id": null,
+          "children": [
+            39,
+            40
+          ]
+        }
+      ],
+      [
+        148,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "span": null,
+          "item_id": null,
+          "children": [
+            41,
+            42
+          ]
+        }
+      ],
+      [
+        149,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "span": null,
+          "item_id": null,
+          "children": [
+            43,
+            44
+          ]
+        }
+      ],
+      [
+        150,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "span": null,
+          "item_id": null,
+          "children": [
+            45,
+            46
+          ]
+        }
+      ],
+      [
+        151,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "span": null,
+          "item_id": null,
+          "children": [
+            47,
+            48
+          ]
+        }
+      ],
+      [
+        152,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "span": null,
+          "item_id": null,
+          "children": [
+            49,
+            50
+          ]
+        }
+      ],
+      [
+        153,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "span": null,
+          "item_id": null,
+          "children": [
+            51,
+            52
+          ]
+        }
+      ],
+      [
+        154,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "span": null,
+          "item_id": null,
+          "children": [
+            53,
+            54
+          ]
+        }
+      ],
+      [
+        155,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "span": null,
+          "item_id": null,
+          "children": [
+            55,
+            56
+          ]
+        }
+      ],
+      [
+        156,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "span": null,
+          "item_id": null,
+          "children": [
+            57,
+            58
+          ]
+        }
+      ],
+      [
+        157,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "span": null,
+          "item_id": null,
+          "children": [
+            59,
+            60
+          ]
+        }
+      ],
+      [
+        158,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "span": null,
+          "item_id": null,
+          "children": [
+            61,
+            62
+          ]
+        }
+      ],
+      [
+        159,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "span": null,
+          "item_id": null,
+          "children": [
+            63,
+            64
+          ]
+        }
+      ],
+      [
+        160,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "span": null,
+          "item_id": null,
+          "children": [
+            65,
+            66
+          ]
+        }
+      ],
+      [
+        161,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "span": null,
+          "item_id": null,
+          "children": [
+            67,
+            68
+          ]
+        }
+      ],
+      [
+        162,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "span": null,
+          "item_id": null,
+          "children": [
+            69,
+            70
+          ]
+        }
+      ],
+      [
+        163,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "span": null,
+          "item_id": null,
+          "children": [
+            71,
+            72
+          ]
+        }
+      ],
+      [
+        164,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "span": null,
+          "item_id": null,
+          "children": [
+            73,
+            74
+          ]
+        }
+      ],
+      [
+        165,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "span": null,
+          "item_id": null,
+          "children": [
+            75,
+            76
+          ]
+        }
+      ],
+      [
+        166,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "span": null,
+          "item_id": null,
+          "children": [
+            77,
+            78
+          ]
+        }
+      ],
+      [
+        167,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "span": null,
+          "item_id": null,
+          "children": [
+            79,
+            80
+          ]
+        }
+      ],
+      [
+        168,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "span": null,
+          "item_id": null,
+          "children": [
+            81,
+            82
+          ]
+        }
+      ],
+      [
+        169,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "span": null,
+          "item_id": null,
+          "children": [
+            83,
+            84
+          ]
+        }
+      ],
+      [
+        170,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "span": null,
+          "item_id": null,
+          "children": [
+            85,
+            86
+          ]
+        }
+      ],
+      [
+        171,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "span": null,
+          "item_id": null,
+          "children": [
+            87,
+            88
+          ]
+        }
+      ],
+      [
+        172,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "span": null,
+          "item_id": null,
+          "children": [
+            89,
+            90
+          ]
+        }
+      ],
+      [
+        173,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "span": null,
+          "item_id": null,
+          "children": [
+            91,
+            92
+          ]
+        }
+      ],
+      [
+        174,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "span": null,
+          "item_id": null,
+          "children": [
+            93,
+            94
+          ]
+        }
+      ],
+      [
+        175,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "span": null,
+          "item_id": null,
+          "children": [
+            95,
+            96
+          ]
+        }
+      ],
+      [
+        176,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "span": null,
+          "item_id": null,
+          "children": [
+            97,
+            98
+          ]
+        }
+      ],
+      [
+        177,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "span": null,
+          "item_id": null,
+          "children": [
+            99,
+            100
+          ]
+        }
+      ],
+      [
+        178,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "span": null,
+          "item_id": null,
+          "children": [
+            101,
+            102
+          ]
+        }
+      ],
+      [
+        179,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "span": null,
+          "item_id": null,
+          "children": [
+            103,
+            104
+          ]
+        }
+      ],
+      [
+        180,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "span": null,
+          "item_id": null,
+          "children": [
+            105,
+            106
+          ]
+        }
+      ],
+      [
+        181,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "span": null,
+          "item_id": null,
+          "children": [
+            107,
+            108
+          ]
+        }
+      ],
+      [
+        182,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "span": null,
+          "item_id": null,
+          "children": [
+            109,
+            110
+          ]
+        }
+      ],
+      [
+        183,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "span": null,
+          "item_id": null,
+          "children": [
+            111,
+            112
+          ]
+        }
+      ],
+      [
+        184,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "span": null,
+          "item_id": null,
+          "children": [
+            113,
+            114
+          ]
+        }
+      ],
+      [
+        185,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "span": null,
+          "item_id": null,
+          "children": [
+            115,
+            116
+          ]
+        }
+      ],
+      [
+        186,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "span": null,
+          "item_id": null,
+          "children": [
+            117,
+            118
+          ]
+        }
+      ],
+      [
+        187,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "span": null,
+          "item_id": null,
+          "children": [
+            119,
+            120
+          ]
+        }
+      ],
+      [
+        188,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "span": null,
+          "item_id": null,
+          "children": [
+            121,
+            122
+          ]
+        }
+      ],
+      [
+        189,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "span": null,
+          "item_id": null,
+          "children": [
+            123,
+            124
+          ]
+        }
+      ],
+      [
+        190,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "span": null,
+          "item_id": null,
+          "children": [
+            125,
+            126
+          ]
+        }
+      ],
+      [
+        191,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "span": null,
+          "item_id": null,
+          "children": [
+            127,
+            128
+          ]
+        }
+      ],
+      [
+        192,
+        {
+          "crate_id": null,
+          "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "span": null,
+          "item_id": null,
+          "children": []
+        }
+      ]
+    ]
+  },
+  "items": {
+    "items": []
+  },
+  "crates": {
+    "crates": []
+  }
+}

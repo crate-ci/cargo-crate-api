@@ -1,0 +1,129 @@
+{
+  "root_id": 0,
+  "paths": {
+    "paths": [
+      [
+        0,
+        {
+          "crate_id": null,
+          "path": "swap_old",
+          "span": {
+            "filename": "fixtures/swap/old/src/lib.rs",
+            "begin": [
+              1,
+              0
+            ],
+            "end": [
+              7,
+              1
+            ]
+          },
+          "item_id": null,
+          "children": [
+            1,
+            2
+          ]
+        }
+      ],
+      [
+        1,
+        {
+          "crate_id": null,
+          "path": "swap_old::a",
+          "span": {
+            "filename": "fixtures/swap/old/src/lib.rs",
+            "begin": [
+              1,
+              0
+            ],
+            "end": [
+              3,
+              1
+            ]
+          },
+          "item_id": null,
+          "children": [
+            3
+          ]
+        }
+      ],
+      [
+        2,
+        {
+          "crate_id": null,
+          "path": "swap_old::b",
+          "span": {
+            "filename": "fixtures/swap/old/src/lib.rs",
+            "begin": [
+              5,
+              0
+            ],
+            "end": [
+              7,
+              1
+            ]
+          },
+          "item_id": null,
+          "children": [
+            4
+          ]
+        }
+      ],
+      [
+        3,
+        {
+          "crate_id": null,
+          "path": "swap_old::a::Abc",
+          "span": {
+            "filename": "fixtures/swap/old/src/lib.rs",
+            "begin": [
+              2,
+              4
+            ],
+            "end": [
+              2,
+              19
+            ]
+          },
+          "item_id": 0,
+          "children": []
+        }
+      ],
+      [
+        4,
+        {
+          "crate_id": null,
+          "path": "swap_old::b::Abc",
+          "span": null,
+          "item_id": 0,
+          "children": []
+        }
+      ]
+    ]
+  },
+  "items": {
+    "items": [
+      [
+        0,
+        {
+          "crate_id": null,
+          "name": "Abc",
+          "span": {
+            "filename": "fixtures/swap/old/src/lib.rs",
+            "begin": [
+              2,
+              4
+            ],
+            "end": [
+              2,
+              19
+            ]
+          }
+        }
+      ]
+    ]
+  },
+  "crates": {
+    "crates": []
+  }
+}

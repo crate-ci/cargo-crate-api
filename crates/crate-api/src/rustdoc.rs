@@ -136,7 +136,7 @@ pub fn parse_raw(raw: &str, manifest_path: &std::path::Path) -> Result<crate::Ap
 #[derive(Default)]
 struct RustDocParser {
     unprocessed: VecDeque<(Option<crate::PathId>, rustdoc_json_types_fork::Id)>,
-    deferred_imports: VecDeque<rustdoc_json_types_fork::Id>,
+    deferred_imports: Vec<(crate::PathId, String, rustdoc_json_types_fork::Id)>,
 
     api: crate::Api,
     crate_ids: HashMap<u32, Option<crate::CrateId>>,
@@ -181,17 +181,8 @@ impl RustDocParser {
             self._parse_item(&raw, &raw_item_id, path_id, crate_id);
         }
 
-        for raw_item_id in &self.deferred_imports {
-            let raw_item = raw
-                .index
-                .get(raw_item_id)
-                .expect("all item ids are in `index`");
-            let import = match &raw_item.inner {
-                rustdoc_json_types_fork::ItemEnum::Import(import) => import,
-                _ => unreachable!("deferred_imports only contains imports"),
-            };
-            let raw_target_id = import.id.as_ref().unwrap();
-            let target_path_id = self.path_ids.get(raw_target_id).unwrap().unwrap();
+        for (parent_path_id, name, raw_target_id) in self.deferred_imports {
+            let target_path_id = self.path_ids.get(&raw_target_id).unwrap().unwrap();
             let target_path = self
                 .api
                 .paths
@@ -199,14 +190,25 @@ impl RustDocParser {
                 .expect("path_id to always be valid")
                 .clone();
 
-            let path_id = self.path_ids.get(raw_item_id).unwrap().unwrap();
-            let path = self
+            let parent_path = self
                 .api
                 .paths
-                .get_mut(path_id)
-                .expect("path_id to always be valid");
+                .get(parent_path_id)
+                .expect("all ids are valid");
+            let name = format!("{}::{}", parent_path.path, name);
+
+            let mut path = crate::Path::new(name);
+            path.crate_id = parent_path.crate_id;
             path.item_id = target_path.item_id;
             path.children = target_path.children.clone();
+            let path_id = self.api.paths.push(path);
+
+            self.api
+                .paths
+                .get_mut(parent_path_id)
+                .expect("parent_path_id to always be valid")
+                .children
+                .push(path_id);
         }
 
         Ok(self.api)
@@ -297,9 +299,13 @@ impl RustDocParser {
                 None
             }
             rustdoc_json_types_fork::ItemEnum::Import(import) => {
-                let raw_target_id = import.id.clone().unwrap();
-                self.unprocessed.push_back((path_id, raw_target_id));
-                self.deferred_imports.push_back(raw_item_id.clone());
+                let raw_target_id = import.id.as_ref().unwrap();
+                self.unprocessed.push_back((path_id, raw_target_id.clone()));
+                self.deferred_imports.push((
+                    path_id.unwrap(),
+                    import.name.clone(),
+                    raw_target_id.clone(),
+                ));
                 None
             }
             rustdoc_json_types_fork::ItemEnum::Trait(trait_) => {

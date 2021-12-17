@@ -46,6 +46,28 @@ impl RustDocBuilder {
     }
 
     fn _dump_raw(self, manifest_path: &std::path::Path) -> Result<String, crate::Error> {
+        let manifest = std::fs::read_to_string(manifest_path).map_err(|e| {
+            crate::Error::new(
+                crate::ErrorKind::ApiParse,
+                format!("Failed when reading {}: {}", manifest_path.display(), e),
+            )
+        })?;
+        let manifest: toml_edit::Document = manifest.parse().map_err(|e| {
+            crate::Error::new(
+                crate::ErrorKind::ApiParse,
+                format!("Failed to parse {}: {}", manifest_path.display(), e),
+            )
+        })?;
+        let crate_name = manifest["package"]["name"].as_str().ok_or_else(|| {
+            crate::Error::new(
+                crate::ErrorKind::ApiParse,
+                format!(
+                    "Failed to parse {}: invalid package.name",
+                    manifest_path.display()
+                ),
+            )
+        })?;
+
         let manifest_target_directory;
         let target_dir = if let Some(target_dir) = self.target_directory.as_deref() {
             target_dir
@@ -59,6 +81,7 @@ impl RustDocBuilder {
                 .target_directory
                 .as_path()
                 .as_std_path()
+                // HACK: Avoid potential errors when mixing toolchains
                 .join("crate-api");
             manifest_target_directory.as_path()
         };
@@ -68,11 +91,11 @@ impl RustDocBuilder {
             "RUSTDOCFLAGS",
             "-Z unstable-options --document-hidden-items --output-format=json",
         )
-        // HACK: Avoid compilation conflicts between nightly and regular toolchains
-        .env("CARGO_TARGET_DIR", &target_dir)
         .args(["+nightly", "doc", "--all-features"])
         .arg("--manifest-path")
-        .arg(manifest_path);
+        .arg(manifest_path)
+        .arg("--target-dir")
+        .arg(target_dir);
         if !self.deps {
             // HACK: Trying to reduce chance of hitting
             // - rust-lang/rust#89097
@@ -94,7 +117,7 @@ impl RustDocBuilder {
             ));
         }
 
-        let json_path = target_dir.join("doc/cargo_api.json");
+        let json_path = target_dir.join(format!("doc/{}.json", crate_name));
         std::fs::read_to_string(&json_path).map_err(|e| {
             crate::Error::new(
                 crate::ErrorKind::ApiParse,

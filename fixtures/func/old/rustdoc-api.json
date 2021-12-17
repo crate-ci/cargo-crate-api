@@ -1,0 +1,386 @@
+{
+  "root_id": 0,
+  "paths": {
+    "paths": [
+      [
+        0,
+        {
+          "crate_id": null,
+          "path": "func_old",
+          "span": {
+            "filename": "fixtures/func/old/src/lib.rs",
+            "begin": [
+              1,
+              0
+            ],
+            "end": [
+              27,
+              1
+            ]
+          },
+          "item_id": null,
+          "children": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        }
+      ],
+      [
+        1,
+        {
+          "crate_id": null,
+          "path": "func_old::abc",
+          "span": {
+            "filename": "fixtures/func/old/src/lib.rs",
+            "begin": [
+              1,
+              0
+            ],
+            "end": [
+              1,
+              15
+            ]
+          },
+          "item_id": 0,
+          "children": []
+        }
+      ],
+      [
+        2,
+        {
+          "crate_id": null,
+          "path": "func_old::bcd",
+          "span": {
+            "filename": "fixtures/func/old/src/lib.rs",
+            "begin": [
+              3,
+              0
+            ],
+            "end": [
+              3,
+              15
+            ]
+          },
+          "item_id": 1,
+          "children": []
+        }
+      ],
+      [
+        3,
+        {
+          "crate_id": null,
+          "path": "func_old::cde",
+          "span": {
+            "filename": "fixtures/func/old/src/lib.rs",
+            "begin": [
+              5,
+              0
+            ],
+            "end": [
+              5,
+              15
+            ]
+          },
+          "item_id": 2,
+          "children": []
+        }
+      ],
+      [
+        4,
+        {
+          "crate_id": null,
+          "path": "func_old::def",
+          "span": {
+            "filename": "fixtures/func/old/src/lib.rs",
+            "begin": [
+              7,
+              0
+            ],
+            "end": [
+              7,
+              20
+            ]
+          },
+          "item_id": 3,
+          "children": []
+        }
+      ],
+      [
+        5,
+        {
+          "crate_id": null,
+          "path": "func_old::efg",
+          "span": {
+            "filename": "fixtures/func/old/src/lib.rs",
+            "begin": [
+              9,
+              0
+            ],
+            "end": [
+              11,
+              1
+            ]
+          },
+          "item_id": 4,
+          "children": []
+        }
+      ],
+      [
+        6,
+        {
+          "crate_id": null,
+          "path": "func_old::fgh",
+          "span": {
+            "filename": "fixtures/func/old/src/lib.rs",
+            "begin": [
+              13,
+              0
+            ],
+            "end": [
+              15,
+              1
+            ]
+          },
+          "item_id": 5,
+          "children": []
+        }
+      ],
+      [
+        7,
+        {
+          "crate_id": null,
+          "path": "func_old::ghi",
+          "span": {
+            "filename": "fixtures/func/old/src/lib.rs",
+            "begin": [
+              17,
+              0
+            ],
+            "end": [
+              19,
+              1
+            ]
+          },
+          "item_id": 6,
+          "children": []
+        }
+      ],
+      [
+        8,
+        {
+          "crate_id": null,
+          "path": "func_old::hij",
+          "span": {
+            "filename": "fixtures/func/old/src/lib.rs",
+            "begin": [
+              21,
+              0
+            ],
+            "end": [
+              23,
+              1
+            ]
+          },
+          "item_id": 7,
+          "children": []
+        }
+      ],
+      [
+        9,
+        {
+          "crate_id": null,
+          "path": "func_old::ijk",
+          "span": {
+            "filename": "fixtures/func/old/src/lib.rs",
+            "begin": [
+              25,
+              0
+            ],
+            "end": [
+              27,
+              1
+            ]
+          },
+          "item_id": 8,
+          "children": []
+        }
+      ]
+    ]
+  },
+  "items": {
+    "items": [
+      [
+        0,
+        {
+          "crate_id": null,
+          "name": "abc",
+          "span": {
+            "filename": "fixtures/func/old/src/lib.rs",
+            "begin": [
+              1,
+              0
+            ],
+            "end": [
+              1,
+              15
+            ]
+          }
+        }
+      ],
+      [
+        1,
+        {
+          "crate_id": null,
+          "name": "bcd",
+          "span": {
+            "filename": "fixtures/func/old/src/lib.rs",
+            "begin": [
+              3,
+              0
+            ],
+            "end": [
+              3,
+              15
+            ]
+          }
+        }
+      ],
+      [
+        2,
+        {
+          "crate_id": null,
+          "name": "cde",
+          "span": {
+            "filename": "fixtures/func/old/src/lib.rs",
+            "begin": [
+              5,
+              0
+            ],
+            "end": [
+              5,
+              15
+            ]
+          }
+        }
+      ],
+      [
+        3,
+        {
+          "crate_id": null,
+          "name": "def",
+          "span": {
+            "filename": "fixtures/func/old/src/lib.rs",
+            "begin": [
+              7,
+              0
+            ],
+            "end": [
+              7,
+              20
+            ]
+          }
+        }
+      ],
+      [
+        4,
+        {
+          "crate_id": null,
+          "name": "efg",
+          "span": {
+            "filename": "fixtures/func/old/src/lib.rs",
+            "begin": [
+              9,
+              0
+            ],
+            "end": [
+              11,
+              1
+            ]
+          }
+        }
+      ],
+      [
+        5,
+        {
+          "crate_id": null,
+          "name": "fgh",
+          "span": {
+            "filename": "fixtures/func/old/src/lib.rs",
+            "begin": [
+              13,
+              0
+            ],
+            "end": [
+              15,
+              1
+            ]
+          }
+        }
+      ],
+      [
+        6,
+        {
+          "crate_id": null,
+          "name": "ghi",
+          "span": {
+            "filename": "fixtures/func/old/src/lib.rs",
+            "begin": [
+              17,
+              0
+            ],
+            "end": [
+              19,
+              1
+            ]
+          }
+        }
+      ],
+      [
+        7,
+        {
+          "crate_id": null,
+          "name": "hij",
+          "span": {
+            "filename": "fixtures/func/old/src/lib.rs",
+            "begin": [
+              21,
+              0
+            ],
+            "end": [
+              23,
+              1
+            ]
+          }
+        }
+      ],
+      [
+        8,
+        {
+          "crate_id": null,
+          "name": "ijk",
+          "span": {
+            "filename": "fixtures/func/old/src/lib.rs",
+            "begin": [
+              25,
+              0
+            ],
+            "end": [
+              27,
+              1
+            ]
+          }
+        }
+      ]
+    ]
+  },
+  "crates": {
+    "crates": []
+  }
+}

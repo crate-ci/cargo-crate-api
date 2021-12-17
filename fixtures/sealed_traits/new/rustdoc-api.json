@@ -1,0 +1,74 @@
+{
+  "root_id": 0,
+  "paths": {
+    "paths": [
+      [
+        0,
+        {
+          "crate_id": null,
+          "path": "sealed_traits_new",
+          "span": {
+            "filename": "fixtures/sealed_traits/new/src/lib.rs",
+            "begin": [
+              1,
+              0
+            ],
+            "end": [
+              7,
+              1
+            ]
+          },
+          "item_id": null,
+          "children": [
+            1
+          ]
+        }
+      ],
+      [
+        1,
+        {
+          "crate_id": null,
+          "path": "sealed_traits_new::PublicTrait",
+          "span": {
+            "filename": "fixtures/sealed_traits/new/src/lib.rs",
+            "begin": [
+              1,
+              0
+            ],
+            "end": [
+              3,
+              1
+            ]
+          },
+          "item_id": null,
+          "children": []
+        }
+      ]
+    ]
+  },
+  "items": {
+    "items": [
+      [
+        0,
+        {
+          "crate_id": null,
+          "name": "abc",
+          "span": {
+            "filename": "fixtures/sealed_traits/new/src/lib.rs",
+            "begin": [
+              2,
+              4
+            ],
+            "end": [
+              2,
+              26
+            ]
+          }
+        }
+      ]
+    ]
+  },
+  "crates": {
+    "crates": []
+  }
+}

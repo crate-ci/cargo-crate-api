@@ -1,0 +1,113 @@
+{
+  "root_id": 0,
+  "paths": {
+    "paths": [
+      [
+        0,
+        {
+          "crate_id": null,
+          "path": "infer_regress_new",
+          "span": {
+            "filename": "fixtures/infer_regress/new/src/lib.rs",
+            "begin": [
+              1,
+              0
+            ],
+            "end": [
+              3,
+              33
+            ]
+          },
+          "item_id": null,
+          "children": [
+            1,
+            2
+          ]
+        }
+      ],
+      [
+        1,
+        {
+          "crate_id": null,
+          "path": "infer_regress_new::abc",
+          "span": {
+            "filename": "fixtures/infer_regress/new/src/lib.rs",
+            "begin": [
+              1,
+              0
+            ],
+            "end": [
+              1,
+              23
+            ]
+          },
+          "item_id": 0,
+          "children": []
+        }
+      ],
+      [
+        2,
+        {
+          "crate_id": null,
+          "path": "infer_regress_new::Abc",
+          "span": {
+            "filename": "fixtures/infer_regress/new/src/lib.rs",
+            "begin": [
+              3,
+              0
+            ],
+            "end": [
+              3,
+              33
+            ]
+          },
+          "item_id": 1,
+          "children": []
+        }
+      ]
+    ]
+  },
+  "items": {
+    "items": [
+      [
+        0,
+        {
+          "crate_id": null,
+          "name": "abc",
+          "span": {
+            "filename": "fixtures/infer_regress/new/src/lib.rs",
+            "begin": [
+              1,
+              0
+            ],
+            "end": [
+              1,
+              23
+            ]
+          }
+        }
+      ],
+      [
+        1,
+        {
+          "crate_id": null,
+          "name": "Abc",
+          "span": {
+            "filename": "fixtures/infer_regress/new/src/lib.rs",
+            "begin": [
+              3,
+              0
+            ],
+            "end": [
+              3,
+              33
+            ]
+          }
+        }
+      ]
+    ]
+  },
+  "crates": {
+    "crates": []
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "root_id": 0,
+  "paths": {
+    "paths": [
+      [
+        0,
+        {
+          "crate_id": null,
+          "path": "circular_new",
+          "span": {
+            "filename": "fixtures/circular/new/src/lib.rs",
+            "begin": [
+              1,
+              0
+            ],
+            "end": [
+              6,
+              1
+            ]
+          },
+          "item_id": null,
+          "children": []
+        }
+      ]
+    ]
+  },
+  "items": {
+    "items": []
+  },
+  "crates": {
+    "crates": []
+  }
+}

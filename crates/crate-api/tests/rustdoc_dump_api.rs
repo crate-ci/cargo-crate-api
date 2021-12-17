@@ -1,5 +1,5 @@
 fn main() {
-    let action = std::env::var("RUSTDOC_DUMP_RAW");
+    let action = std::env::var("RUSTDOC_DUMP_API");
     let action = action.as_deref().unwrap_or("ignore");
     let action = match action {
         "overwrite" => Action::Overwrite,
@@ -21,7 +21,7 @@ fn main() {
                 case_dir.file_name().unwrap().to_str().unwrap(),
                 age_dir.file_name().unwrap().to_str().unwrap()
             );
-            let expected = age_dir.join("rustdoc-raw.json");
+            let expected = age_dir.join("rustdoc-api.json");
             fs_snapshot::Test {
                 name,
                 kind: "".into(),
@@ -34,19 +34,14 @@ fn main() {
             }
         },
         move |input_path| {
-            let target_dir = tempfile::tempdir().map_err(|e| e.to_string())?;
-            let actual = crate_api::RustDocBuilder::new()
-                .target_directory(target_dir.path())
-                .dump_raw(input_path)
+            let input = std::fs::read_to_string(input_path).map_err(|e| e.to_string())?;
+            let actual = crate_api::RustDocBuilder::parse_raw(&input, input_path)
                 .map_err(|e| e.to_string())?;
-            target_dir.close().map_err(|e| e.to_string())?;
-            let actual: serde_json::Value =
-                serde_json::from_str(&actual).map_err(|e| e.to_string())?;
             let actual = serde_json::to_string_pretty(&actual).map_err(|e| e.to_string())?;
             Ok(actual)
         },
     )
-    .select(["Cargo.toml"])
+    .select(["rustdoc-raw.json"])
     .overwrite(action == Action::Overwrite)
     .test()
 }

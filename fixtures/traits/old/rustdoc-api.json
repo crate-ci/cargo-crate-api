@@ -1,0 +1,464 @@
+{
+  "root_id": 0,
+  "paths": {
+    "paths": [
+      [
+        0,
+        {
+          "crate_id": null,
+          "path": "traits_old",
+          "span": {
+            "filename": "fixtures/traits/old/src/lib.rs",
+            "begin": [
+              1,
+              0
+            ],
+            "end": [
+              46,
+              27
+            ]
+          },
+          "item_id": null,
+          "children": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        }
+      ],
+      [
+        1,
+        {
+          "crate_id": null,
+          "path": "traits_old::Abc",
+          "span": {
+            "filename": "fixtures/traits/old/src/lib.rs",
+            "begin": [
+              1,
+              0
+            ],
+            "end": [
+              14,
+              1
+            ]
+          },
+          "item_id": null,
+          "children": []
+        }
+      ],
+      [
+        2,
+        {
+          "crate_id": null,
+          "path": "traits_old::Bcd",
+          "span": {
+            "filename": "fixtures/traits/old/src/lib.rs",
+            "begin": [
+              16,
+              0
+            ],
+            "end": [
+              16,
+              16
+            ]
+          },
+          "item_id": null,
+          "children": []
+        }
+      ],
+      [
+        3,
+        {
+          "crate_id": null,
+          "path": "traits_old::Cde",
+          "span": {
+            "filename": "fixtures/traits/old/src/lib.rs",
+            "begin": [
+              18,
+              0
+            ],
+            "end": [
+              18,
+              19
+            ]
+          },
+          "item_id": null,
+          "children": []
+        }
+      ],
+      [
+        4,
+        {
+          "crate_id": null,
+          "path": "traits_old::Def",
+          "span": {
+            "filename": "fixtures/traits/old/src/lib.rs",
+            "begin": [
+              20,
+              0
+            ],
+            "end": [
+              22,
+              1
+            ]
+          },
+          "item_id": null,
+          "children": []
+        }
+      ],
+      [
+        5,
+        {
+          "crate_id": null,
+          "path": "traits_old::Efg",
+          "span": {
+            "filename": "fixtures/traits/old/src/lib.rs",
+            "begin": [
+              24,
+              0
+            ],
+            "end": [
+              26,
+              1
+            ]
+          },
+          "item_id": null,
+          "children": []
+        }
+      ],
+      [
+        6,
+        {
+          "crate_id": null,
+          "path": "traits_old::Ghi",
+          "span": {
+            "filename": "fixtures/traits/old/src/lib.rs",
+            "begin": [
+              34,
+              0
+            ],
+            "end": [
+              36,
+              1
+            ]
+          },
+          "item_id": null,
+          "children": []
+        }
+      ],
+      [
+        7,
+        {
+          "crate_id": null,
+          "path": "traits_old::Hij",
+          "span": {
+            "filename": "fixtures/traits/old/src/lib.rs",
+            "begin": [
+              38,
+              0
+            ],
+            "end": [
+              38,
+              17
+            ]
+          },
+          "item_id": null,
+          "children": []
+        }
+      ],
+      [
+        8,
+        {
+          "crate_id": null,
+          "path": "traits_old::Klm",
+          "span": {
+            "filename": "fixtures/traits/old/src/lib.rs",
+            "begin": [
+              40,
+              0
+            ],
+            "end": [
+              40,
+              17
+            ]
+          },
+          "item_id": null,
+          "children": []
+        }
+      ],
+      [
+        9,
+        {
+          "crate_id": null,
+          "path": "traits_old::Nop",
+          "span": {
+            "filename": "fixtures/traits/old/src/lib.rs",
+            "begin": [
+              42,
+              0
+            ],
+            "end": [
+              42,
+              25
+            ]
+          },
+          "item_id": null,
+          "children": []
+        }
+      ],
+      [
+        10,
+        {
+          "crate_id": null,
+          "path": "traits_old::Qrs",
+          "span": {
+            "filename": "fixtures/traits/old/src/lib.rs",
+            "begin": [
+              44,
+              0
+            ],
+            "end": [
+              44,
+              20
+            ]
+          },
+          "item_id": null,
+          "children": []
+        }
+      ],
+      [
+        11,
+        {
+          "crate_id": null,
+          "path": "traits_old::Tuv",
+          "span": {
+            "filename": "fixtures/traits/old/src/lib.rs",
+            "begin": [
+              46,
+              0
+            ],
+            "end": [
+              46,
+              27
+            ]
+          },
+          "item_id": null,
+          "children": []
+        }
+      ]
+    ]
+  },
+  "items": {
+    "items": [
+      [
+        0,
+        {
+          "crate_id": null,
+          "name": "A",
+          "span": {
+            "filename": "fixtures/traits/old/src/lib.rs",
+            "begin": [
+              2,
+              4
+            ],
+            "end": [
+              2,
+              11
+            ]
+          }
+        }
+      ],
+      [
+        1,
+        {
+          "crate_id": null,
+          "name": "test",
+          "span": {
+            "filename": "fixtures/traits/old/src/lib.rs",
+            "begin": [
+              3,
+              4
+            ],
+            "end": [
+              3,
+              25
+            ]
+          }
+        }
+      ],
+      [
+        2,
+        {
+          "crate_id": null,
+          "name": "test2",
+          "span": {
+            "filename": "fixtures/traits/old/src/lib.rs",
+            "begin": [
+              4,
+              4
+            ],
+            "end": [
+              4,
+              26
+            ]
+          }
+        }
+      ],
+      [
+        3,
+        {
+          "crate_id": null,
+          "name": "test4",
+          "span": {
+            "filename": "fixtures/traits/old/src/lib.rs",
+            "begin": [
+              5,
+              4
+            ],
+            "end": [
+              7,
+              5
+            ]
+          }
+        }
+      ],
+      [
+        4,
+        {
+          "crate_id": null,
+          "name": "test5",
+          "span": {
+            "filename": "fixtures/traits/old/src/lib.rs",
+            "begin": [
+              8,
+              4
+            ],
+            "end": [
+              10,
+              5
+            ]
+          }
+        }
+      ],
+      [
+        5,
+        {
+          "crate_id": null,
+          "name": "test7",
+          "span": {
+            "filename": "fixtures/traits/old/src/lib.rs",
+            "begin": [
+              11,
+              4
+            ],
+            "end": [
+              11,
+              21
+            ]
+          }
+        }
+      ],
+      [
+        6,
+        {
+          "crate_id": null,
+          "name": "test8",
+          "span": {
+            "filename": "fixtures/traits/old/src/lib.rs",
+            "begin": [
+              12,
+              4
+            ],
+            "end": [
+              12,
+              26
+            ]
+          }
+        }
+      ],
+      [
+        7,
+        {
+          "crate_id": null,
+          "name": "test9",
+          "span": {
+            "filename": "fixtures/traits/old/src/lib.rs",
+            "begin": [
+              13,
+              4
+            ],
+            "end": [
+              13,
+              29
+            ]
+          }
+        }
+      ],
+      [
+        8,
+        {
+          "crate_id": null,
+          "name": "def",
+          "span": {
+            "filename": "fixtures/traits/old/src/lib.rs",
+            "begin": [
+              21,
+              4
+            ],
+            "end": [
+              21,
+              32
+            ]
+          }
+        }
+      ],
+      [
+        9,
+        {
+          "crate_id": null,
+          "name": "efg",
+          "span": {
+            "filename": "fixtures/traits/old/src/lib.rs",
+            "begin": [
+              25,
+              4
+            ],
+            "end": [
+              25,
+              32
+            ]
+          }
+        }
+      ],
+      [
+        10,
+        {
+          "crate_id": null,
+          "name": "A",
+          "span": {
+            "filename": "fixtures/traits/old/src/lib.rs",
+            "begin": [
+              35,
+              4
+            ],
+            "end": [
+              35,
+              11
+            ]
+          }
+        }
+      ]
+    ]
+  },
+  "crates": {
+    "crates": []
+  }
+}

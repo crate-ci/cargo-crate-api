@@ -1,0 +1,152 @@
+{
+  "root_id": 0,
+  "paths": {
+    "paths": [
+      [
+        0,
+        {
+          "crate_id": null,
+          "path": "infer_new",
+          "span": {
+            "filename": "fixtures/infer/new/src/lib.rs",
+            "begin": [
+              1,
+              0
+            ],
+            "end": [
+              20,
+              1
+            ]
+          },
+          "item_id": null,
+          "children": [
+            1,
+            2,
+            3
+          ]
+        }
+      ],
+      [
+        1,
+        {
+          "crate_id": null,
+          "path": "infer_new::a",
+          "span": {
+            "filename": "fixtures/infer/new/src/lib.rs",
+            "begin": [
+              9,
+              0
+            ],
+            "end": [
+              11,
+              1
+            ]
+          },
+          "item_id": 0,
+          "children": []
+        }
+      ],
+      [
+        2,
+        {
+          "crate_id": null,
+          "path": "infer_new::b",
+          "span": {
+            "filename": "fixtures/infer/new/src/lib.rs",
+            "begin": [
+              13,
+              0
+            ],
+            "end": [
+              15,
+              1
+            ]
+          },
+          "item_id": 1,
+          "children": []
+        }
+      ],
+      [
+        3,
+        {
+          "crate_id": null,
+          "path": "infer_new::Hij",
+          "span": {
+            "filename": "fixtures/infer/new/src/lib.rs",
+            "begin": [
+              17,
+              0
+            ],
+            "end": [
+              20,
+              1
+            ]
+          },
+          "item_id": 2,
+          "children": []
+        }
+      ]
+    ]
+  },
+  "items": {
+    "items": [
+      [
+        0,
+        {
+          "crate_id": null,
+          "name": "a",
+          "span": {
+            "filename": "fixtures/infer/new/src/lib.rs",
+            "begin": [
+              9,
+              0
+            ],
+            "end": [
+              11,
+              1
+            ]
+          }
+        }
+      ],
+      [
+        1,
+        {
+          "crate_id": null,
+          "name": "b",
+          "span": {
+            "filename": "fixtures/infer/new/src/lib.rs",
+            "begin": [
+              13,
+              0
+            ],
+            "end": [
+              15,
+              1
+            ]
+          }
+        }
+      ],
+      [
+        2,
+        {
+          "crate_id": null,
+          "name": "Hij",
+          "span": {
+            "filename": "fixtures/infer/new/src/lib.rs",
+            "begin": [
+              17,
+              0
+            ],
+            "end": [
+              20,
+              1
+            ]
+          }
+        }
+      ]
+    ]
+  },
+  "crates": {
+    "crates": []
+  }
+}

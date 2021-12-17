@@ -37,15 +37,6 @@ impl RustDocBuilder {
     }
 
     pub fn dump_raw(self, manifest_path: &std::path::Path) -> Result<String, crate::Error> {
-        self._dump_raw(manifest_path)
-    }
-
-    pub fn into_api(self, manifest_path: &std::path::Path) -> Result<crate::Api, crate::Error> {
-        let raw = self._dump_raw(manifest_path)?;
-        Self::_parse_raw(&raw, manifest_path)
-    }
-
-    fn _dump_raw(self, manifest_path: &std::path::Path) -> Result<String, crate::Error> {
         let manifest = std::fs::read_to_string(manifest_path).map_err(|e| {
             crate::Error::new(
                 crate::ErrorKind::ApiParse,
@@ -126,7 +117,15 @@ impl RustDocBuilder {
         })
     }
 
-    fn _parse_raw(raw: &str, manifest_path: &std::path::Path) -> Result<crate::Api, crate::Error> {
+    pub fn into_api(self, manifest_path: &std::path::Path) -> Result<crate::Api, crate::Error> {
+        let raw = self.dump_raw(manifest_path)?;
+        Self::parse_raw(&raw, manifest_path)
+    }
+
+    pub fn parse_raw(
+        raw: &str,
+        manifest_path: &std::path::Path,
+    ) -> Result<crate::Api, crate::Error> {
         let raw: rustdoc_json_types_fork::Crate = serde_json::from_str(raw).map_err(|e| {
             crate::Error::new(
                 crate::ErrorKind::ApiParse,

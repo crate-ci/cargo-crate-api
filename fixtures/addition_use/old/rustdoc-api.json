@@ -1,0 +1,74 @@
+{
+  "root_id": 0,
+  "paths": {
+    "paths": [
+      [
+        0,
+        {
+          "crate_id": null,
+          "path": "addition_use_old",
+          "span": {
+            "filename": "fixtures/addition_use/old/src/lib.rs",
+            "begin": [
+              1,
+              0
+            ],
+            "end": [
+              4,
+              1
+            ]
+          },
+          "item_id": null,
+          "children": [
+            1
+          ]
+        }
+      ],
+      [
+        1,
+        {
+          "crate_id": null,
+          "path": "addition_use_old::Def",
+          "span": {
+            "filename": "fixtures/addition_use/old/src/lib.rs",
+            "begin": [
+              1,
+              0
+            ],
+            "end": [
+              4,
+              1
+            ]
+          },
+          "item_id": 0,
+          "children": []
+        }
+      ]
+    ]
+  },
+  "items": {
+    "items": [
+      [
+        0,
+        {
+          "crate_id": null,
+          "name": "Def",
+          "span": {
+            "filename": "fixtures/addition_use/old/src/lib.rs",
+            "begin": [
+              1,
+              0
+            ],
+            "end": [
+              4,
+              1
+            ]
+          }
+        }
+      ]
+    ]
+  },
+  "crates": {
+    "crates": []
+  }
+}

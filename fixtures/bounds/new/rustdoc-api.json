@@ -1,0 +1,191 @@
+{
+  "root_id": 0,
+  "paths": {
+    "paths": [
+      [
+        0,
+        {
+          "crate_id": null,
+          "path": "bounds_new",
+          "span": {
+            "filename": "fixtures/bounds/new/src/lib.rs",
+            "begin": [
+              1,
+              0
+            ],
+            "end": [
+              11,
+              22
+            ]
+          },
+          "item_id": null,
+          "children": [
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      ],
+      [
+        1,
+        {
+          "crate_id": null,
+          "path": "bounds_new::Abc",
+          "span": {
+            "filename": "fixtures/bounds/new/src/lib.rs",
+            "begin": [
+              1,
+              0
+            ],
+            "end": [
+              3,
+              1
+            ]
+          },
+          "item_id": 0,
+          "children": []
+        }
+      ],
+      [
+        2,
+        {
+          "crate_id": null,
+          "path": "bounds_new::Def",
+          "span": {
+            "filename": "fixtures/bounds/new/src/lib.rs",
+            "begin": [
+              5,
+              0
+            ],
+            "end": [
+              7,
+              1
+            ]
+          },
+          "item_id": 1,
+          "children": []
+        }
+      ],
+      [
+        3,
+        {
+          "crate_id": null,
+          "path": "bounds_new::abc",
+          "span": {
+            "filename": "fixtures/bounds/new/src/lib.rs",
+            "begin": [
+              9,
+              0
+            ],
+            "end": [
+              9,
+              29
+            ]
+          },
+          "item_id": 2,
+          "children": []
+        }
+      ],
+      [
+        4,
+        {
+          "crate_id": null,
+          "path": "bounds_new::def",
+          "span": {
+            "filename": "fixtures/bounds/new/src/lib.rs",
+            "begin": [
+              11,
+              0
+            ],
+            "end": [
+              11,
+              22
+            ]
+          },
+          "item_id": 3,
+          "children": []
+        }
+      ]
+    ]
+  },
+  "items": {
+    "items": [
+      [
+        0,
+        {
+          "crate_id": null,
+          "name": "Abc",
+          "span": {
+            "filename": "fixtures/bounds/new/src/lib.rs",
+            "begin": [
+              1,
+              0
+            ],
+            "end": [
+              3,
+              1
+            ]
+          }
+        }
+      ],
+      [
+        1,
+        {
+          "crate_id": null,
+          "name": "Def",
+          "span": {
+            "filename": "fixtures/bounds/new/src/lib.rs",
+            "begin": [
+              5,
+              0
+            ],
+            "end": [
+              7,
+              1
+            ]
+          }
+        }
+      ],
+      [
+        2,
+        {
+          "crate_id": null,
+          "name": "abc",
+          "span": {
+            "filename": "fixtures/bounds/new/src/lib.rs",
+            "begin": [
+              9,
+              0
+            ],
+            "end": [
+              9,
+              29
+            ]
+          }
+        }
+      ],
+      [
+        3,
+        {
+          "crate_id": null,
+          "name": "def",
+          "span": {
+            "filename": "fixtures/bounds/new/src/lib.rs",
+            "begin": [
+              11,
+              0
+            ],
+            "end": [
+              11,
+              22
+            ]
+          }
+        }
+      ]
+    ]
+  },
+  "crates": {
+    "crates": []
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "root_id": 0,
+  "paths": {
+    "paths": [
+      [
+        0,
+        {
+          "crate_id": null,
+          "path": "inherent_impls_new",
+          "span": {
+            "filename": "fixtures/inherent_impls/new/src/lib.rs",
+            "begin": [
+              1,
+              0
+            ],
+            "end": [
+              40,
+              1
+            ]
+          },
+          "item_id": null,
+          "children": [
+            1,
+            2
+          ]
+        }
+      ],
+      [
+        1,
+        {
+          "crate_id": null,
+          "path": "inherent_impls_new::Abc",
+          "span": {
+            "filename": "fixtures/inherent_impls/new/src/lib.rs",
+            "begin": [
+              2,
+              0
+            ],
+            "end": [
+              2,
+              18
+            ]
+          },
+          "item_id": 0,
+          "children": []
+        }
+      ],
+      [
+        2,
+        {
+          "crate_id": null,
+          "path": "inherent_impls_new::Def",
+          "span": {
+            "filename": "fixtures/inherent_impls/new/src/lib.rs",
+            "begin": [
+              20,
+              0
+            ],
+            "end": [
+              22,
+              1
+            ]
+          },
+          "item_id": 1,
+          "children": []
+        }
+      ]
+    ]
+  },
+  "items": {
+    "items": [
+      [
+        0,
+        {
+          "crate_id": null,
+          "name": "Abc",
+          "span": {
+            "filename": "fixtures/inherent_impls/new/src/lib.rs",
+            "begin": [
+              2,
+              0
+            ],
+            "end": [
+              2,
+              18
+            ]
+          }
+        }
+      ],
+      [
+        1,
+        {
+          "crate_id": null,
+          "name": "Def",
+          "span": {
+            "filename": "fixtures/inherent_impls/new/src/lib.rs",
+            "begin": [
+              20,
+              0
+            ],
+            "end": [
+              22,
+              1
+            ]
+          }
+        }
+      ]
+    ]
+  },
+  "crates": {
+    "crates": []
+  }
+}

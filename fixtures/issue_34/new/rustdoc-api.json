@@ -1,0 +1,95 @@
+{
+  "root_id": 0,
+  "paths": {
+    "paths": [
+      [
+        0,
+        {
+          "crate_id": null,
+          "path": "issue_34_new",
+          "span": {
+            "filename": "fixtures/issue_34/new/src/lib.rs",
+            "begin": [
+              1,
+              0
+            ],
+            "end": [
+              11,
+              25
+            ]
+          },
+          "item_id": null,
+          "children": [
+            1,
+            2
+          ]
+        }
+      ],
+      [
+        1,
+        {
+          "crate_id": null,
+          "path": "issue_34_new::missing_field",
+          "span": {
+            "filename": "fixtures/issue_34/new/src/lib.rs",
+            "begin": [
+              3,
+              0
+            ],
+            "end": [
+              9,
+              1
+            ]
+          },
+          "item_id": 0,
+          "children": []
+        }
+      ],
+      [
+        2,
+        {
+          "crate_id": null,
+          "path": "issue_34_new::Deserializer",
+          "span": {
+            "filename": "fixtures/issue_34/new/src/lib.rs",
+            "begin": [
+              11,
+              0
+            ],
+            "end": [
+              11,
+              25
+            ]
+          },
+          "item_id": null,
+          "children": []
+        }
+      ]
+    ]
+  },
+  "items": {
+    "items": [
+      [
+        0,
+        {
+          "crate_id": null,
+          "name": "missing_field",
+          "span": {
+            "filename": "fixtures/issue_34/new/src/lib.rs",
+            "begin": [
+              3,
+              0
+            ],
+            "end": [
+              9,
+              1
+            ]
+          }
+        }
+      ]
+    ]
+  },
+  "crates": {
+    "crates": []
+  }
+}

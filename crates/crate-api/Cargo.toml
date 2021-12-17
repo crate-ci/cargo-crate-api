@@ -28,3 +28,7 @@ tempfile = "3.0"
 [[test]]
 name = "rustdoc_dump_raw"
 harness = false
+
+[[test]]
+name = "rustdoc_dump_api"
+harness = false

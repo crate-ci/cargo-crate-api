@@ -1,0 +1,152 @@
+{
+  "root_id": 0,
+  "paths": {
+    "paths": [
+      [
+        0,
+        {
+          "crate_id": null,
+          "path": "issue_50_old",
+          "span": {
+            "filename": "fixtures/issue_50/old/src/lib.rs",
+            "begin": [
+              1,
+              0
+            ],
+            "end": [
+              7,
+              66
+            ]
+          },
+          "item_id": null,
+          "children": [
+            1,
+            2,
+            3
+          ]
+        }
+      ],
+      [
+        1,
+        {
+          "crate_id": null,
+          "path": "issue_50_old::TypedArrayElement",
+          "span": {
+            "filename": "fixtures/issue_50/old/src/lib.rs",
+            "begin": [
+              1,
+              0
+            ],
+            "end": [
+              3,
+              1
+            ]
+          },
+          "item_id": null,
+          "children": []
+        }
+      ],
+      [
+        2,
+        {
+          "crate_id": null,
+          "path": "issue_50_old::CreateWith",
+          "span": {
+            "filename": "fixtures/issue_50/old/src/lib.rs",
+            "begin": [
+              5,
+              0
+            ],
+            "end": [
+              5,
+              40
+            ]
+          },
+          "item_id": 0,
+          "children": []
+        }
+      ],
+      [
+        3,
+        {
+          "crate_id": null,
+          "path": "issue_50_old::create",
+          "span": {
+            "filename": "fixtures/issue_50/old/src/lib.rs",
+            "begin": [
+              7,
+              0
+            ],
+            "end": [
+              7,
+              66
+            ]
+          },
+          "item_id": 1,
+          "children": []
+        }
+      ]
+    ]
+  },
+  "items": {
+    "items": [
+      [
+        0,
+        {
+          "crate_id": null,
+          "name": "CreateWith",
+          "span": {
+            "filename": "fixtures/issue_50/old/src/lib.rs",
+            "begin": [
+              5,
+              0
+            ],
+            "end": [
+              5,
+              40
+            ]
+          }
+        }
+      ],
+      [
+        1,
+        {
+          "crate_id": null,
+          "name": "create",
+          "span": {
+            "filename": "fixtures/issue_50/old/src/lib.rs",
+            "begin": [
+              7,
+              0
+            ],
+            "end": [
+              7,
+              66
+            ]
+          }
+        }
+      ],
+      [
+        2,
+        {
+          "crate_id": null,
+          "name": "Element",
+          "span": {
+            "filename": "fixtures/issue_50/old/src/lib.rs",
+            "begin": [
+              2,
+              4
+            ],
+            "end": [
+              2,
+              17
+            ]
+          }
+        }
+      ]
+    ]
+  },
+  "crates": {
+    "crates": []
+  }
+}

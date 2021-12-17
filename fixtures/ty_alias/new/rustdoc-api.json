@@ -1,0 +1,308 @@
+{
+  "root_id": 0,
+  "paths": {
+    "paths": [
+      [
+        0,
+        {
+          "crate_id": null,
+          "path": "ty_alias_new",
+          "span": {
+            "filename": "fixtures/ty_alias/new/src/lib.rs",
+            "begin": [
+              1,
+              0
+            ],
+            "end": [
+              9,
+              24
+            ]
+          },
+          "item_id": null,
+          "children": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        }
+      ],
+      [
+        1,
+        {
+          "crate_id": null,
+          "path": "ty_alias_new::A",
+          "span": {
+            "filename": "fixtures/ty_alias/new/src/lib.rs",
+            "begin": [
+              3,
+              0
+            ],
+            "end": [
+              3,
+              17
+            ]
+          },
+          "item_id": 0,
+          "children": []
+        }
+      ],
+      [
+        2,
+        {
+          "crate_id": null,
+          "path": "ty_alias_new::B",
+          "span": {
+            "filename": "fixtures/ty_alias/new/src/lib.rs",
+            "begin": [
+              4,
+              0
+            ],
+            "end": [
+              4,
+              44
+            ]
+          },
+          "item_id": 1,
+          "children": []
+        }
+      ],
+      [
+        3,
+        {
+          "crate_id": null,
+          "path": "ty_alias_new::C",
+          "span": {
+            "filename": "fixtures/ty_alias/new/src/lib.rs",
+            "begin": [
+              5,
+              0
+            ],
+            "end": [
+              5,
+              18
+            ]
+          },
+          "item_id": 2,
+          "children": []
+        }
+      ],
+      [
+        4,
+        {
+          "crate_id": null,
+          "path": "ty_alias_new::D",
+          "span": {
+            "filename": "fixtures/ty_alias/new/src/lib.rs",
+            "begin": [
+              6,
+              0
+            ],
+            "end": [
+              6,
+              41
+            ]
+          },
+          "item_id": 3,
+          "children": []
+        }
+      ],
+      [
+        5,
+        {
+          "crate_id": null,
+          "path": "ty_alias_new::E",
+          "span": {
+            "filename": "fixtures/ty_alias/new/src/lib.rs",
+            "begin": [
+              7,
+              0
+            ],
+            "end": [
+              7,
+              34
+            ]
+          },
+          "item_id": 4,
+          "children": []
+        }
+      ],
+      [
+        6,
+        {
+          "crate_id": null,
+          "path": "ty_alias_new::F",
+          "span": {
+            "filename": "fixtures/ty_alias/new/src/lib.rs",
+            "begin": [
+              8,
+              0
+            ],
+            "end": [
+              8,
+              24
+            ]
+          },
+          "item_id": 5,
+          "children": []
+        }
+      ],
+      [
+        7,
+        {
+          "crate_id": null,
+          "path": "ty_alias_new::G",
+          "span": {
+            "filename": "fixtures/ty_alias/new/src/lib.rs",
+            "begin": [
+              9,
+              0
+            ],
+            "end": [
+              9,
+              24
+            ]
+          },
+          "item_id": 6,
+          "children": []
+        }
+      ]
+    ]
+  },
+  "items": {
+    "items": [
+      [
+        0,
+        {
+          "crate_id": null,
+          "name": "A",
+          "span": {
+            "filename": "fixtures/ty_alias/new/src/lib.rs",
+            "begin": [
+              3,
+              0
+            ],
+            "end": [
+              3,
+              17
+            ]
+          }
+        }
+      ],
+      [
+        1,
+        {
+          "crate_id": null,
+          "name": "B",
+          "span": {
+            "filename": "fixtures/ty_alias/new/src/lib.rs",
+            "begin": [
+              4,
+              0
+            ],
+            "end": [
+              4,
+              44
+            ]
+          }
+        }
+      ],
+      [
+        2,
+        {
+          "crate_id": null,
+          "name": "C",
+          "span": {
+            "filename": "fixtures/ty_alias/new/src/lib.rs",
+            "begin": [
+              5,
+              0
+            ],
+            "end": [
+              5,
+              18
+            ]
+          }
+        }
+      ],
+      [
+        3,
+        {
+          "crate_id": null,
+          "name": "D",
+          "span": {
+            "filename": "fixtures/ty_alias/new/src/lib.rs",
+            "begin": [
+              6,
+              0
+            ],
+            "end": [
+              6,
+              41
+            ]
+          }
+        }
+      ],
+      [
+        4,
+        {
+          "crate_id": null,
+          "name": "E",
+          "span": {
+            "filename": "fixtures/ty_alias/new/src/lib.rs",
+            "begin": [
+              7,
+              0
+            ],
+            "end": [
+              7,
+              34
+            ]
+          }
+        }
+      ],
+      [
+        5,
+        {
+          "crate_id": null,
+          "name": "F",
+          "span": {
+            "filename": "fixtures/ty_alias/new/src/lib.rs",
+            "begin": [
+              8,
+              0
+            ],
+            "end": [
+              8,
+              24
+            ]
+          }
+        }
+      ],
+      [
+        6,
+        {
+          "crate_id": null,
+          "name": "G",
+          "span": {
+            "filename": "fixtures/ty_alias/new/src/lib.rs",
+            "begin": [
+              9,
+              0
+            ],
+            "end": [
+              9,
+              24
+            ]
+          }
+        }
+      ]
+    ]
+  },
+  "crates": {
+    "crates": []
+  }
+}

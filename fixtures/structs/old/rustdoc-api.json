@@ -1,0 +1,347 @@
+{
+  "root_id": 0,
+  "paths": {
+    "paths": [
+      [
+        0,
+        {
+          "crate_id": null,
+          "path": "structs_old",
+          "span": {
+            "filename": "fixtures/structs/old/src/lib.rs",
+            "begin": [
+              1,
+              0
+            ],
+            "end": [
+              30,
+              1
+            ]
+          },
+          "item_id": null,
+          "children": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        }
+      ],
+      [
+        1,
+        {
+          "crate_id": null,
+          "path": "structs_old::Abc",
+          "span": {
+            "filename": "fixtures/structs/old/src/lib.rs",
+            "begin": [
+              2,
+              0
+            ],
+            "end": [
+              4,
+              1
+            ]
+          },
+          "item_id": 0,
+          "children": []
+        }
+      ],
+      [
+        2,
+        {
+          "crate_id": null,
+          "path": "structs_old::Def",
+          "span": {
+            "filename": "fixtures/structs/old/src/lib.rs",
+            "begin": [
+              6,
+              0
+            ],
+            "end": [
+              8,
+              1
+            ]
+          },
+          "item_id": 1,
+          "children": []
+        }
+      ],
+      [
+        3,
+        {
+          "crate_id": null,
+          "path": "structs_old::Def2",
+          "span": {
+            "filename": "fixtures/structs/old/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              12,
+              1
+            ]
+          },
+          "item_id": 2,
+          "children": []
+        }
+      ],
+      [
+        4,
+        {
+          "crate_id": null,
+          "path": "structs_old::Efg",
+          "span": {
+            "filename": "fixtures/structs/old/src/lib.rs",
+            "begin": [
+              14,
+              0
+            ],
+            "end": [
+              16,
+              1
+            ]
+          },
+          "item_id": 3,
+          "children": []
+        }
+      ],
+      [
+        5,
+        {
+          "crate_id": null,
+          "path": "structs_old::Fgh",
+          "span": {
+            "filename": "fixtures/structs/old/src/lib.rs",
+            "begin": [
+              18,
+              0
+            ],
+            "end": [
+              20,
+              1
+            ]
+          },
+          "item_id": 4,
+          "children": []
+        }
+      ],
+      [
+        6,
+        {
+          "crate_id": null,
+          "path": "structs_old::Ghi",
+          "span": {
+            "filename": "fixtures/structs/old/src/lib.rs",
+            "begin": [
+              22,
+              0
+            ],
+            "end": [
+              24,
+              1
+            ]
+          },
+          "item_id": 5,
+          "children": []
+        }
+      ],
+      [
+        7,
+        {
+          "crate_id": null,
+          "path": "structs_old::Hij",
+          "span": {
+            "filename": "fixtures/structs/old/src/lib.rs",
+            "begin": [
+              26,
+              0
+            ],
+            "end": [
+              26,
+              19
+            ]
+          },
+          "item_id": 6,
+          "children": []
+        }
+      ],
+      [
+        8,
+        {
+          "crate_id": null,
+          "path": "structs_old::Iij",
+          "span": {
+            "filename": "fixtures/structs/old/src/lib.rs",
+            "begin": [
+              28,
+              0
+            ],
+            "end": [
+              30,
+              1
+            ]
+          },
+          "item_id": 7,
+          "children": []
+        }
+      ]
+    ]
+  },
+  "items": {
+    "items": [
+      [
+        0,
+        {
+          "crate_id": null,
+          "name": "Abc",
+          "span": {
+            "filename": "fixtures/structs/old/src/lib.rs",
+            "begin": [
+              2,
+              0
+            ],
+            "end": [
+              4,
+              1
+            ]
+          }
+        }
+      ],
+      [
+        1,
+        {
+          "crate_id": null,
+          "name": "Def",
+          "span": {
+            "filename": "fixtures/structs/old/src/lib.rs",
+            "begin": [
+              6,
+              0
+            ],
+            "end": [
+              8,
+              1
+            ]
+          }
+        }
+      ],
+      [
+        2,
+        {
+          "crate_id": null,
+          "name": "Def2",
+          "span": {
+            "filename": "fixtures/structs/old/src/lib.rs",
+            "begin": [
+              10,
+              0
+            ],
+            "end": [
+              12,
+              1
+            ]
+          }
+        }
+      ],
+      [
+        3,
+        {
+          "crate_id": null,
+          "name": "Efg",
+          "span": {
+            "filename": "fixtures/structs/old/src/lib.rs",
+            "begin": [
+              14,
+              0
+            ],
+            "end": [
+              16,
+              1
+            ]
+          }
+        }
+      ],
+      [
+        4,
+        {
+          "crate_id": null,
+          "name": "Fgh",
+          "span": {
+            "filename": "fixtures/structs/old/src/lib.rs",
+            "begin": [
+              18,
+              0
+            ],
+            "end": [
+              20,
+              1
+            ]
+          }
+        }
+      ],
+      [
+        5,
+        {
+          "crate_id": null,
+          "name": "Ghi",
+          "span": {
+            "filename": "fixtures/structs/old/src/lib.rs",
+            "begin": [
+              22,
+              0
+            ],
+            "end": [
+              24,
+              1
+            ]
+          }
+        }
+      ],
+      [
+        6,
+        {
+          "crate_id": null,
+          "name": "Hij",
+          "span": {
+            "filename": "fixtures/structs/old/src/lib.rs",
+            "begin": [
+              26,
+              0
+            ],
+            "end": [
+              26,
+              19
+            ]
+          }
+        }
+      ],
+      [
+        7,
+        {
+          "crate_id": null,
+          "name": "Iij",
+          "span": {
+            "filename": "fixtures/structs/old/src/lib.rs",
+            "begin": [
+              28,
+              0
+            ],
+            "end": [
+              30,
+              1
+            ]
+          }
+        }
+      ]
+    ]
+  },
+  "crates": {
+    "crates": []
+  }
+}

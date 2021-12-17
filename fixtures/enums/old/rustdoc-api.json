@@ -1,0 +1,230 @@
+{
+  "root_id": 0,
+  "paths": {
+    "paths": [
+      [
+        0,
+        {
+          "crate_id": null,
+          "path": "enums_old",
+          "span": {
+            "filename": "fixtures/enums/old/src/lib.rs",
+            "begin": [
+              1,
+              0
+            ],
+            "end": [
+              26,
+              1
+            ]
+          },
+          "item_id": null,
+          "children": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ],
+      [
+        1,
+        {
+          "crate_id": null,
+          "path": "enums_old::Abc",
+          "span": {
+            "filename": "fixtures/enums/old/src/lib.rs",
+            "begin": [
+              1,
+              0
+            ],
+            "end": [
+              3,
+              1
+            ]
+          },
+          "item_id": 0,
+          "children": []
+        }
+      ],
+      [
+        2,
+        {
+          "crate_id": null,
+          "path": "enums_old::Bcd",
+          "span": {
+            "filename": "fixtures/enums/old/src/lib.rs",
+            "begin": [
+              5,
+              0
+            ],
+            "end": [
+              7,
+              1
+            ]
+          },
+          "item_id": 1,
+          "children": []
+        }
+      ],
+      [
+        3,
+        {
+          "crate_id": null,
+          "path": "enums_old::Cde",
+          "span": {
+            "filename": "fixtures/enums/old/src/lib.rs",
+            "begin": [
+              9,
+              0
+            ],
+            "end": [
+              11,
+              1
+            ]
+          },
+          "item_id": 2,
+          "children": []
+        }
+      ],
+      [
+        4,
+        {
+          "crate_id": null,
+          "path": "enums_old::Def",
+          "span": {
+            "filename": "fixtures/enums/old/src/lib.rs",
+            "begin": [
+              13,
+              0
+            ],
+            "end": [
+              16,
+              1
+            ]
+          },
+          "item_id": 3,
+          "children": []
+        }
+      ],
+      [
+        5,
+        {
+          "crate_id": null,
+          "path": "enums_old::Efg",
+          "span": {
+            "filename": "fixtures/enums/old/src/lib.rs",
+            "begin": [
+              18,
+              0
+            ],
+            "end": [
+              26,
+              1
+            ]
+          },
+          "item_id": 4,
+          "children": []
+        }
+      ]
+    ]
+  },
+  "items": {
+    "items": [
+      [
+        0,
+        {
+          "crate_id": null,
+          "name": "Abc",
+          "span": {
+            "filename": "fixtures/enums/old/src/lib.rs",
+            "begin": [
+              1,
+              0
+            ],
+            "end": [
+              3,
+              1
+            ]
+          }
+        }
+      ],
+      [
+        1,
+        {
+          "crate_id": null,
+          "name": "Bcd",
+          "span": {
+            "filename": "fixtures/enums/old/src/lib.rs",
+            "begin": [
+              5,
+              0
+            ],
+            "end": [
+              7,
+              1
+            ]
+          }
+        }
+      ],
+      [
+        2,
+        {
+          "crate_id": null,
+          "name": "Cde",
+          "span": {
+            "filename": "fixtures/enums/old/src/lib.rs",
+            "begin": [
+              9,
+              0
+            ],
+            "end": [
+              11,
+              1
+            ]
+          }
+        }
+      ],
+      [
+        3,
+        {
+          "crate_id": null,
+          "name": "Def",
+          "span": {
+            "filename": "fixtures/enums/old/src/lib.rs",
+            "begin": [
+              13,
+              0
+            ],
+            "end": [
+              16,
+              1
+            ]
+          }
+        }
+      ],
+      [
+        4,
+        {
+          "crate_id": null,
+          "name": "Efg",
+          "span": {
+            "filename": "fixtures/enums/old/src/lib.rs",
+            "begin": [
+              18,
+              0
+            ],
+            "end": [
+              26,
+              1
+            ]
+          }
+        }
+      ]
+    ]
+  },
+  "crates": {
+    "crates": []
+  }
+}

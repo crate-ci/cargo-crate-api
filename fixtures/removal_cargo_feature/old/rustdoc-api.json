@@ -32,7 +32,7 @@
   },
   "features": {
     "foo": {
-      "kind": "Feature",
+      "kind": "feature",
       "name": "foo",
       "dependencies": []
     }

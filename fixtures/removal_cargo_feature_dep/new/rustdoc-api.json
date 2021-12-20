@@ -32,12 +32,12 @@
   },
   "features": {
     "bar": {
-      "kind": "Feature",
+      "kind": "feature",
       "name": "bar",
       "dependencies": []
     },
     "foo": {
-      "kind": "Feature",
+      "kind": "feature",
       "name": "foo",
       "dependencies": []
     }

@@ -1,4 +1,5 @@
 #[derive(Clone, Default, Debug, serde::Serialize, serde::Deserialize)]
+#[serde(rename_all = "snake_case")]
 #[non_exhaustive]
 pub struct Api {
     pub root_id: Option<PathId>,
@@ -15,6 +16,7 @@ impl Api {
 }
 
 #[derive(Clone, Default, Debug, serde::Serialize, serde::Deserialize)]
+#[serde(rename_all = "snake_case")]
 pub struct Paths {
     paths: Vec<(PathId, Path)>,
 }
@@ -48,10 +50,12 @@ impl Paths {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq, Eq, Hash, serde::Serialize, serde::Deserialize)]
+#[serde(rename_all = "snake_case")]
 #[repr(transparent)]
 pub struct PathId(usize);
 
 #[derive(Clone, Debug, serde::Serialize, serde::Deserialize)]
+#[serde(rename_all = "snake_case")]
 #[non_exhaustive]
 pub struct Path {
     pub crate_id: Option<CrateId>,
@@ -74,6 +78,7 @@ impl Path {
 }
 
 #[derive(Clone, Default, Debug, serde::Serialize, serde::Deserialize)]
+#[serde(rename_all = "snake_case")]
 pub struct Items {
     items: Vec<(ItemId, Item)>,
 }
@@ -107,10 +112,12 @@ impl Items {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq, Eq, Hash, serde::Serialize, serde::Deserialize)]
+#[serde(rename_all = "snake_case")]
 #[repr(transparent)]
 pub struct ItemId(usize);
 
 #[derive(Clone, Debug, serde::Serialize, serde::Deserialize)]
+#[serde(rename_all = "snake_case")]
 #[non_exhaustive]
 pub struct Item {
     pub crate_id: Option<CrateId>,
@@ -129,6 +136,7 @@ impl Item {
 }
 
 #[derive(Clone, Default, Debug, serde::Serialize, serde::Deserialize)]
+#[serde(rename_all = "snake_case")]
 pub struct Crates {
     crates: Vec<(CrateId, Crate)>,
 }
@@ -162,10 +170,12 @@ impl Crates {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq, Eq, Hash, serde::Serialize, serde::Deserialize)]
+#[serde(rename_all = "snake_case")]
 #[repr(transparent)]
 pub struct CrateId(usize);
 
 #[derive(Clone, Debug, serde::Serialize, serde::Deserialize)]
+#[serde(rename_all = "snake_case")]
 #[non_exhaustive]
 pub struct Crate {
     pub name: String,
@@ -182,6 +192,7 @@ impl Crate {
 }
 
 #[derive(Clone, Debug, PartialEq, Eq, serde::Serialize, serde::Deserialize)]
+#[serde(rename_all = "snake_case")]
 pub struct Span {
     /// The relative path to the source file for this span
     pub filename: std::path::PathBuf,
@@ -192,6 +203,7 @@ pub struct Span {
 }
 
 #[derive(Clone, Debug, PartialEq, Eq, serde::Serialize, serde::Deserialize)]
+#[serde(rename_all = "snake_case")]
 #[serde(tag = "kind")]
 pub enum AnyFeature {
     Feature(Feature),
@@ -199,6 +211,7 @@ pub enum AnyFeature {
 }
 
 #[derive(Clone, Debug, PartialEq, Eq, serde::Serialize, serde::Deserialize)]
+#[serde(rename_all = "snake_case")]
 #[non_exhaustive]
 pub struct Feature {
     pub name: String,
@@ -215,6 +228,7 @@ impl Feature {
 }
 
 #[derive(Clone, Debug, PartialEq, Eq, serde::Serialize, serde::Deserialize)]
+#[serde(rename_all = "snake_case")]
 #[non_exhaustive]
 pub struct OptionalDependency {
     /// The name used to activate this dependency

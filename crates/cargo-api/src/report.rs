@@ -13,6 +13,22 @@ pub struct Api {
     pub api: crate_api::Api,
 }
 
+#[derive(serde::Serialize)]
+#[serde(rename_all = "snake_case")]
+pub struct Diff {
+    pub manifest_path: std::path::PathBuf,
+    pub against: Source,
+    pub after: crate_api::Api,
+}
+
+#[derive(Clone, Debug, PartialEq, Eq, serde::Serialize)]
+#[serde(rename_all = "snake_case")]
+pub enum Source {
+    Git(String),
+    Path(std::path::PathBuf),
+    Registry(String),
+}
+
 pub fn render_api_markdown(
     writer: &mut dyn std::io::Write,
     api: &crate_api::Api,

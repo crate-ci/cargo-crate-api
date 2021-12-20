@@ -46,7 +46,8 @@ fn run() -> proc_exit::ExitResult {
             args::Mode::DumpRaw => dump_raw(selected, args.format),
             args::Mode::Api => api(selected, args.format),
             args::Mode::Diff => {
-                todo!()
+                let source = args.source().unwrap();
+                diff(selected, source, args.format)
             }
         };
         match res {
@@ -121,6 +122,50 @@ fn api(pkg: &cargo_metadata::Package, format: args::Format) -> Result<(), eyre::
         }
         args::Format::Json => {
             let _ = writeln!(std::io::stdout(), "{}", serde_json::to_string(&api)?);
+        }
+    }
+
+    Ok(())
+}
+
+fn diff(
+    pkg: &cargo_metadata::Package,
+    source: report::Source,
+    format: args::Format,
+) -> Result<(), eyre::Report> {
+    let mut api =
+        crate_api::RustDocBuilder::new().into_api(pkg.manifest_path.as_path().as_std_path())?;
+
+    let manifest = crate_api::manifest::Manifest::from(pkg);
+    manifest.into_api(&mut api);
+
+    match format {
+        args::Format::Silent => {}
+        args::Format::Pretty => {
+            // HACK: Real version (using `termtree`) isn't implemented yet
+            let raw = report::Diff {
+                manifest_path: pkg.manifest_path.clone().into_std_path_buf(),
+                against: source,
+                after: api,
+            };
+            let _ = writeln!(std::io::stdout(), "{}", serde_json::to_string_pretty(&raw)?);
+        }
+        args::Format::Md => {
+            // HACK: Real version isn't implemented yet
+            let raw = report::Diff {
+                manifest_path: pkg.manifest_path.clone().into_std_path_buf(),
+                against: source,
+                after: api,
+            };
+            let _ = writeln!(std::io::stdout(), "{}", serde_json::to_string_pretty(&raw)?);
+        }
+        args::Format::Json => {
+            let raw = report::Diff {
+                manifest_path: pkg.manifest_path.clone().into_std_path_buf(),
+                against: source,
+                after: api,
+            };
+            let _ = writeln!(std::io::stdout(), "{}", serde_json::to_string(&raw)?);
         }
     }
 

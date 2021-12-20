@@ -1,3 +1,5 @@
+use crate::report::Source;
+
 #[derive(structopt::StructOpt)]
 #[structopt(name = "cargo")]
 #[structopt(bin_name = "cargo")]
@@ -15,6 +17,7 @@ pub enum Command {
 #[derive(structopt::StructOpt)]
 #[structopt(about)]
 #[structopt(group = structopt::clap::ArgGroup::with_name("mode").multiple(false))]
+#[structopt(group = structopt::clap::ArgGroup::with_name("source").multiple(false).requires("diff"))]
 pub struct Api {
     #[structopt(long, group = "mode")]
     pub dump_raw: bool,
@@ -24,6 +27,15 @@ pub struct Api {
 
     #[structopt(short, long, group = "mode")]
     pub diff: bool,
+
+    #[structopt(long, value_name = "REF", group = "source")]
+    pub git: Option<String>,
+
+    #[structopt(long, value_name = "TOML", group = "source")]
+    pub path: Option<std::path::PathBuf>,
+
+    #[structopt(long, value_name = "PKG", group = "source")]
+    pub registry: Option<String>,
 
     #[structopt(short, long, possible_values(&Format::variants()), default_value = "pretty")]
     pub format: Format,
@@ -51,6 +63,18 @@ impl Api {
             Mode::Diff
         } else {
             Mode::Api
+        }
+    }
+
+    pub fn source(&self) -> Option<Source> {
+        if let Some(git) = self.git.as_ref() {
+            Some(Source::Git(git.clone()))
+        } else if let Some(path) = self.path.as_ref() {
+            Some(Source::Path(path.clone()))
+        } else if let Some(registry) = self.registry.as_ref() {
+            Some(Source::Registry(registry.clone()))
+        } else {
+            None
         }
     }
 }

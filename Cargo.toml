@@ -3,3 +3,7 @@ members = [
     "crates/*",
     "fixtures/*/*",
 ]
+exclude = [
+    "fixtures/dep_upgrade/dep_old",
+    "fixtures/dep_upgrade/dep_new",
+]

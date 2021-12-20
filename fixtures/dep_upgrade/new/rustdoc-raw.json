@@ -49,6 +49,10 @@
       "html_root_url": "https://doc.rust-lang.org/nightly/",
       "name": "core"
     },
+    "20": {
+      "html_root_url": null,
+      "name": "dep_upgrade_dep"
+    },
     "3": {
       "html_root_url": "https://doc.rust-lang.org/nightly/",
       "name": "compiler_builtins"
@@ -90,26 +94,93 @@
       "inner": {
         "is_crate": true,
         "items": [
-          "0:3",
-          "0:5",
+          "20:3",
+          "0:6",
           "0:7"
         ]
       },
       "kind": "module",
       "links": {},
-      "name": "dep_upgrade_dep",
+      "name": "dep_upgrade_new",
       "span": {
         "begin": [
           1,
           0
         ],
         "end": [
-          5,
-          23
+          11,
+          1
         ],
-        "filename": "src/lib.rs"
+        "filename": "fixtures/dep_upgrade/new/src/lib.rs"
       },
       "visibility": "public"
+    },
+    "0:10": {
+      "attrs": [],
+      "crate_id": 0,
+      "deprecation": null,
+      "docs": null,
+      "id": "0:10",
+      "inner": {
+        "abi": "\"Rust\"",
+        "decl": {
+          "c_variadic": false,
+          "inputs": [
+            [
+              "_other",
+              {
+                "inner": {
+                  "args": {
+                    "angle_bracketed": {
+                      "args": [],
+                      "bindings": []
+                    }
+                  },
+                  "id": "20:7",
+                  "name": "dep::ConvertFrom",
+                  "param_names": []
+                },
+                "kind": "resolved_path"
+              }
+            ]
+          ],
+          "output": {
+            "inner": {
+              "args": {
+                "angle_bracketed": {
+                  "args": [],
+                  "bindings": []
+                }
+              },
+              "id": "0:7",
+              "name": "ConvertTo",
+              "param_names": []
+            },
+            "kind": "resolved_path"
+          }
+        },
+        "generics": {
+          "params": [],
+          "where_predicates": []
+        },
+        "has_body": true,
+        "header": []
+      },
+      "kind": "method",
+      "links": {},
+      "name": "from",
+      "span": {
+        "begin": [
+          8,
+          4
+        ],
+        "end": [
+          10,
+          5
+        ],
+        "filename": "fixtures/dep_upgrade/new/src/lib.rs"
+      },
+      "visibility": "default"
     },
     "0:3": {
       "attrs": [],
@@ -118,31 +189,14 @@
       "docs": null,
       "id": "0:3",
       "inner": {
-        "fields": [],
-        "fields_stripped": false,
-        "generics": {
-          "params": [],
-          "where_predicates": []
-        },
-        "impls": [
-          "a:2:3016-0:3",
-          "a:2:3028-0:3",
-          "a:2:3057-0:3",
-          "a:2:8471-0:3",
-          "a:2:8472-0:3",
-          "b:2:2949-0:3",
-          "b:2:2945-0:3",
-          "b:2:2960-0:3",
-          "b:2:2955-0:3",
-          "b:2:2621-0:3",
-          "b:2:2624-0:3",
-          "b:2:3727-0:3"
-        ],
-        "struct_type": "unit"
+        "glob": false,
+        "id": "20:3",
+        "name": "Used",
+        "source": "dep::Used"
       },
-      "kind": "struct",
+      "kind": "import",
       "links": {},
-      "name": "Used",
+      "name": null,
       "span": {
         "begin": [
           1,
@@ -150,44 +204,52 @@
         ],
         "end": [
           1,
-          16
+          18
         ],
-        "filename": "src/lib.rs"
+        "filename": "fixtures/dep_upgrade/new/src/lib.rs"
       },
       "visibility": "public"
     },
-    "0:5": {
+    "0:6": {
       "attrs": [],
       "crate_id": 0,
       "deprecation": null,
       "docs": null,
-      "id": "0:5",
+      "id": "0:6",
       "inner": {
-        "fields": [],
-        "fields_stripped": false,
+        "abi": "\"Rust\"",
+        "decl": {
+          "c_variadic": false,
+          "inputs": [
+            [
+              "_var",
+              {
+                "inner": {
+                  "args": {
+                    "angle_bracketed": {
+                      "args": [],
+                      "bindings": []
+                    }
+                  },
+                  "id": "20:5",
+                  "name": "dep::InFunc",
+                  "param_names": []
+                },
+                "kind": "resolved_path"
+              }
+            ]
+          ],
+          "output": null
+        },
         "generics": {
           "params": [],
           "where_predicates": []
         },
-        "impls": [
-          "a:2:3016-0:5",
-          "a:2:3028-0:5",
-          "a:2:3057-0:5",
-          "a:2:8471-0:5",
-          "a:2:8472-0:5",
-          "b:2:2949-0:5",
-          "b:2:2945-0:5",
-          "b:2:2960-0:5",
-          "b:2:2955-0:5",
-          "b:2:2621-0:5",
-          "b:2:2624-0:5",
-          "b:2:3727-0:5"
-        ],
-        "struct_type": "unit"
+        "header": []
       },
-      "kind": "struct",
+      "kind": "function",
       "links": {},
-      "name": "InFunc",
+      "name": "in_func",
       "span": {
         "begin": [
           3,
@@ -195,9 +257,9 @@
         ],
         "end": [
           3,
-          18
+          36
         ],
-        "filename": "src/lib.rs"
+        "filename": "fixtures/dep_upgrade/new/src/lib.rs"
       },
       "visibility": "public"
     },
@@ -226,13 +288,14 @@
           "b:2:2955-0:7",
           "b:2:2621-0:7",
           "b:2:2624-0:7",
-          "b:2:3727-0:7"
+          "b:2:3727-0:7",
+          "0:9"
         ],
         "struct_type": "unit"
       },
       "kind": "struct",
       "links": {},
-      "name": "ConvertFrom",
+      "name": "ConvertTo",
       "span": {
         "begin": [
           5,
@@ -240,11 +303,92 @@
         ],
         "end": [
           5,
-          23
+          21
         ],
-        "filename": "src/lib.rs"
+        "filename": "fixtures/dep_upgrade/new/src/lib.rs"
       },
       "visibility": "public"
+    },
+    "0:9": {
+      "attrs": [],
+      "crate_id": 0,
+      "deprecation": null,
+      "docs": null,
+      "id": "0:9",
+      "inner": {
+        "blanket_impl": null,
+        "for": {
+          "inner": {
+            "args": {
+              "angle_bracketed": {
+                "args": [],
+                "bindings": []
+              }
+            },
+            "id": "0:7",
+            "name": "ConvertTo",
+            "param_names": []
+          },
+          "kind": "resolved_path"
+        },
+        "generics": {
+          "params": [],
+          "where_predicates": []
+        },
+        "is_unsafe": false,
+        "items": [
+          "0:10"
+        ],
+        "negative": false,
+        "provided_trait_methods": [],
+        "synthetic": false,
+        "trait": {
+          "inner": {
+            "args": {
+              "angle_bracketed": {
+                "args": [
+                  {
+                    "type": {
+                      "inner": {
+                        "args": {
+                          "angle_bracketed": {
+                            "args": [],
+                            "bindings": []
+                          }
+                        },
+                        "id": "20:7",
+                        "name": "ConvertFrom",
+                        "param_names": []
+                      },
+                      "kind": "resolved_path"
+                    }
+                  }
+                ],
+                "bindings": []
+              }
+            },
+            "id": "2:2922",
+            "name": "From",
+            "param_names": []
+          },
+          "kind": "resolved_path"
+        }
+      },
+      "kind": "impl",
+      "links": {},
+      "name": null,
+      "span": {
+        "begin": [
+          7,
+          0
+        ],
+        "end": [
+          11,
+          1
+        ],
+        "filename": "fixtures/dep_upgrade/new/src/lib.rs"
+      },
+      "visibility": "crate"
     },
     "1:2340": {
       "attrs": [],
@@ -1245,6 +1389,38 @@
       "links": {},
       "name": "AsciiExt",
       "span": null,
+      "visibility": "public"
+    },
+    "20:3": {
+      "attrs": [],
+      "crate_id": 20,
+      "deprecation": null,
+      "docs": null,
+      "id": "20:3",
+      "inner": {
+        "fields": [],
+        "fields_stripped": false,
+        "generics": {
+          "params": [],
+          "where_predicates": []
+        },
+        "impls": [],
+        "struct_type": "unit"
+      },
+      "kind": "struct",
+      "links": {},
+      "name": "Used",
+      "span": {
+        "begin": [
+          1,
+          0
+        ],
+        "end": [
+          1,
+          16
+        ],
+        "filename": "/home/epage/src/personal/cargo-api/fixtures/dep_upgrade/dep_new/src/lib.rs"
+      },
       "visibility": "public"
     },
     "2:10091": {
@@ -13821,130 +13997,6 @@
       "span": null,
       "visibility": "public"
     },
-    "a:2:3016-0:3": {
-      "attrs": [],
-      "crate_id": 0,
-      "deprecation": null,
-      "docs": null,
-      "id": "a:2:3016-0:3",
-      "inner": {
-        "blanket_impl": null,
-        "for": {
-          "inner": {
-            "args": {
-              "angle_bracketed": {
-                "args": [],
-                "bindings": []
-              }
-            },
-            "id": "0:3",
-            "name": "Used",
-            "param_names": []
-          },
-          "kind": "resolved_path"
-        },
-        "generics": {
-          "params": [],
-          "where_predicates": []
-        },
-        "is_unsafe": false,
-        "items": [],
-        "negative": false,
-        "provided_trait_methods": [],
-        "synthetic": true,
-        "trait": {
-          "inner": {
-            "args": {
-              "angle_bracketed": {
-                "args": [],
-                "bindings": []
-              }
-            },
-            "id": "2:3016",
-            "name": "Send",
-            "param_names": []
-          },
-          "kind": "resolved_path"
-        }
-      },
-      "kind": "impl",
-      "links": {},
-      "name": null,
-      "span": {
-        "begin": [
-          1,
-          0
-        ],
-        "end": [
-          1,
-          0
-        ],
-        "filename": "src/lib.rs"
-      },
-      "visibility": "default"
-    },
-    "a:2:3016-0:5": {
-      "attrs": [],
-      "crate_id": 0,
-      "deprecation": null,
-      "docs": null,
-      "id": "a:2:3016-0:5",
-      "inner": {
-        "blanket_impl": null,
-        "for": {
-          "inner": {
-            "args": {
-              "angle_bracketed": {
-                "args": [],
-                "bindings": []
-              }
-            },
-            "id": "0:5",
-            "name": "InFunc",
-            "param_names": []
-          },
-          "kind": "resolved_path"
-        },
-        "generics": {
-          "params": [],
-          "where_predicates": []
-        },
-        "is_unsafe": false,
-        "items": [],
-        "negative": false,
-        "provided_trait_methods": [],
-        "synthetic": true,
-        "trait": {
-          "inner": {
-            "args": {
-              "angle_bracketed": {
-                "args": [],
-                "bindings": []
-              }
-            },
-            "id": "2:3016",
-            "name": "Send",
-            "param_names": []
-          },
-          "kind": "resolved_path"
-        }
-      },
-      "kind": "impl",
-      "links": {},
-      "name": null,
-      "span": {
-        "begin": [
-          1,
-          0
-        ],
-        "end": [
-          1,
-          0
-        ],
-        "filename": "src/lib.rs"
-      },
-      "visibility": "default"
-    },
     "a:2:3016-0:7": {
       "attrs": [],
       "crate_id": 0,
@@ -13962,7 +14014,7 @@
               }
             },
             "id": "0:7",
-            "name": "ConvertFrom",
+            "name": "ConvertTo",
             "param_names": []
           },
           "kind": "resolved_path"
@@ -14003,131 +14055,7 @@
           1,
           0
         ],
-        "filename": "src/lib.rs"
-      },
-      "visibility": "default"
-    },
-    "a:2:3028-0:3": {
-      "attrs": [],
-      "crate_id": 0,
-      "deprecation": null,
-      "docs": null,
-      "id": "a:2:3028-0:3",
-      "inner": {
-        "blanket_impl": null,
-        "for": {
-          "inner": {
-            "args": {
-              "angle_bracketed": {
-                "args": [],
-                "bindings": []
-              }
-            },
-            "id": "0:3",
-            "name": "Used",
-            "param_names": []
-          },
-          "kind": "resolved_path"
-        },
-        "generics": {
-          "params": [],
-          "where_predicates": []
-        },
-        "is_unsafe": false,
-        "items": [],
-        "negative": false,
-        "provided_trait_methods": [],
-        "synthetic": true,
-        "trait": {
-          "inner": {
-            "args": {
-              "angle_bracketed": {
-                "args": [],
-                "bindings": []
-              }
-            },
-            "id": "2:3028",
-            "name": "Sync",
-            "param_names": []
-          },
-          "kind": "resolved_path"
-        }
-      },
-      "kind": "impl",
-      "links": {},
-      "name": null,
-      "span": {
-        "begin": [
-          1,
-          0
-        ],
-        "end": [
-          1,
-          0
-        ],
-        "filename": "src/lib.rs"
-      },
-      "visibility": "default"
-    },
-    "a:2:3028-0:5": {
-      "attrs": [],
-      "crate_id": 0,
-      "deprecation": null,
-      "docs": null,
-      "id": "a:2:3028-0:5",
-      "inner": {
-        "blanket_impl": null,
-        "for": {
-          "inner": {
-            "args": {
-              "angle_bracketed": {
-                "args": [],
-                "bindings": []
-              }
-            },
-            "id": "0:5",
-            "name": "InFunc",
-            "param_names": []
-          },
-          "kind": "resolved_path"
-        },
-        "generics": {
-          "params": [],
-          "where_predicates": []
-        },
-        "is_unsafe": false,
-        "items": [],
-        "negative": false,
-        "provided_trait_methods": [],
-        "synthetic": true,
-        "trait": {
-          "inner": {
-            "args": {
-              "angle_bracketed": {
-                "args": [],
-                "bindings": []
-              }
-            },
-            "id": "2:3028",
-            "name": "Sync",
-            "param_names": []
-          },
-          "kind": "resolved_path"
-        }
-      },
-      "kind": "impl",
-      "links": {},
-      "name": null,
-      "span": {
-        "begin": [
-          1,
-          0
-        ],
-        "end": [
-          1,
-          0
-        ],
-        "filename": "src/lib.rs"
+        "filename": "fixtures/dep_upgrade/new/src/lib.rs"
       },
       "visibility": "default"
     },
@@ -14148,7 +14076,7 @@
               }
             },
             "id": "0:7",
-            "name": "ConvertFrom",
+            "name": "ConvertTo",
             "param_names": []
           },
           "kind": "resolved_path"
@@ -14189,131 +14117,7 @@
           1,
           0
         ],
-        "filename": "src/lib.rs"
-      },
-      "visibility": "default"
-    },
-    "a:2:3057-0:3": {
-      "attrs": [],
-      "crate_id": 0,
-      "deprecation": null,
-      "docs": null,
-      "id": "a:2:3057-0:3",
-      "inner": {
-        "blanket_impl": null,
-        "for": {
-          "inner": {
-            "args": {
-              "angle_bracketed": {
-                "args": [],
-                "bindings": []
-              }
-            },
-            "id": "0:3",
-            "name": "Used",
-            "param_names": []
-          },
-          "kind": "resolved_path"
-        },
-        "generics": {
-          "params": [],
-          "where_predicates": []
-        },
-        "is_unsafe": false,
-        "items": [],
-        "negative": false,
-        "provided_trait_methods": [],
-        "synthetic": true,
-        "trait": {
-          "inner": {
-            "args": {
-              "angle_bracketed": {
-                "args": [],
-                "bindings": []
-              }
-            },
-            "id": "2:3057",
-            "name": "Unpin",
-            "param_names": []
-          },
-          "kind": "resolved_path"
-        }
-      },
-      "kind": "impl",
-      "links": {},
-      "name": null,
-      "span": {
-        "begin": [
-          1,
-          0
-        ],
-        "end": [
-          1,
-          0
-        ],
-        "filename": "src/lib.rs"
-      },
-      "visibility": "default"
-    },
-    "a:2:3057-0:5": {
-      "attrs": [],
-      "crate_id": 0,
-      "deprecation": null,
-      "docs": null,
-      "id": "a:2:3057-0:5",
-      "inner": {
-        "blanket_impl": null,
-        "for": {
-          "inner": {
-            "args": {
-              "angle_bracketed": {
-                "args": [],
-                "bindings": []
-              }
-            },
-            "id": "0:5",
-            "name": "InFunc",
-            "param_names": []
-          },
-          "kind": "resolved_path"
-        },
-        "generics": {
-          "params": [],
-          "where_predicates": []
-        },
-        "is_unsafe": false,
-        "items": [],
-        "negative": false,
-        "provided_trait_methods": [],
-        "synthetic": true,
-        "trait": {
-          "inner": {
-            "args": {
-              "angle_bracketed": {
-                "args": [],
-                "bindings": []
-              }
-            },
-            "id": "2:3057",
-            "name": "Unpin",
-            "param_names": []
-          },
-          "kind": "resolved_path"
-        }
-      },
-      "kind": "impl",
-      "links": {},
-      "name": null,
-      "span": {
-        "begin": [
-          1,
-          0
-        ],
-        "end": [
-          1,
-          0
-        ],
-        "filename": "src/lib.rs"
+        "filename": "fixtures/dep_upgrade/new/src/lib.rs"
       },
       "visibility": "default"
     },
@@ -14334,7 +14138,7 @@
               }
             },
             "id": "0:7",
-            "name": "ConvertFrom",
+            "name": "ConvertTo",
             "param_names": []
           },
           "kind": "resolved_path"
@@ -14375,131 +14179,7 @@
           1,
           0
         ],
-        "filename": "src/lib.rs"
-      },
-      "visibility": "default"
-    },
-    "a:2:8471-0:3": {
-      "attrs": [],
-      "crate_id": 0,
-      "deprecation": null,
-      "docs": null,
-      "id": "a:2:8471-0:3",
-      "inner": {
-        "blanket_impl": null,
-        "for": {
-          "inner": {
-            "args": {
-              "angle_bracketed": {
-                "args": [],
-                "bindings": []
-              }
-            },
-            "id": "0:3",
-            "name": "Used",
-            "param_names": []
-          },
-          "kind": "resolved_path"
-        },
-        "generics": {
-          "params": [],
-          "where_predicates": []
-        },
-        "is_unsafe": false,
-        "items": [],
-        "negative": false,
-        "provided_trait_methods": [],
-        "synthetic": true,
-        "trait": {
-          "inner": {
-            "args": {
-              "angle_bracketed": {
-                "args": [],
-                "bindings": []
-              }
-            },
-            "id": "2:8471",
-            "name": "UnwindSafe",
-            "param_names": []
-          },
-          "kind": "resolved_path"
-        }
-      },
-      "kind": "impl",
-      "links": {},
-      "name": null,
-      "span": {
-        "begin": [
-          1,
-          0
-        ],
-        "end": [
-          1,
-          0
-        ],
-        "filename": "src/lib.rs"
-      },
-      "visibility": "default"
-    },
-    "a:2:8471-0:5": {
-      "attrs": [],
-      "crate_id": 0,
-      "deprecation": null,
-      "docs": null,
-      "id": "a:2:8471-0:5",
-      "inner": {
-        "blanket_impl": null,
-        "for": {
-          "inner": {
-            "args": {
-              "angle_bracketed": {
-                "args": [],
-                "bindings": []
-              }
-            },
-            "id": "0:5",
-            "name": "InFunc",
-            "param_names": []
-          },
-          "kind": "resolved_path"
-        },
-        "generics": {
-          "params": [],
-          "where_predicates": []
-        },
-        "is_unsafe": false,
-        "items": [],
-        "negative": false,
-        "provided_trait_methods": [],
-        "synthetic": true,
-        "trait": {
-          "inner": {
-            "args": {
-              "angle_bracketed": {
-                "args": [],
-                "bindings": []
-              }
-            },
-            "id": "2:8471",
-            "name": "UnwindSafe",
-            "param_names": []
-          },
-          "kind": "resolved_path"
-        }
-      },
-      "kind": "impl",
-      "links": {},
-      "name": null,
-      "span": {
-        "begin": [
-          1,
-          0
-        ],
-        "end": [
-          1,
-          0
-        ],
-        "filename": "src/lib.rs"
+        "filename": "fixtures/dep_upgrade/new/src/lib.rs"
       },
       "visibility": "default"
     },
@@ -14520,7 +14200,7 @@
               }
             },
             "id": "0:7",
-            "name": "ConvertFrom",
+            "name": "ConvertTo",
             "param_names": []
           },
           "kind": "resolved_path"
@@ -14561,131 +14241,7 @@
           1,
           0
         ],
-        "filename": "src/lib.rs"
-      },
-      "visibility": "default"
-    },
-    "a:2:8472-0:3": {
-      "attrs": [],
-      "crate_id": 0,
-      "deprecation": null,
-      "docs": null,
-      "id": "a:2:8472-0:3",
-      "inner": {
-        "blanket_impl": null,
-        "for": {
-          "inner": {
-            "args": {
-              "angle_bracketed": {
-                "args": [],
-                "bindings": []
-              }
-            },
-            "id": "0:3",
-            "name": "Used",
-            "param_names": []
-          },
-          "kind": "resolved_path"
-        },
-        "generics": {
-          "params": [],
-          "where_predicates": []
-        },
-        "is_unsafe": false,
-        "items": [],
-        "negative": false,
-        "provided_trait_methods": [],
-        "synthetic": true,
-        "trait": {
-          "inner": {
-            "args": {
-              "angle_bracketed": {
-                "args": [],
-                "bindings": []
-              }
-            },
-            "id": "2:8472",
-            "name": "RefUnwindSafe",
-            "param_names": []
-          },
-          "kind": "resolved_path"
-        }
-      },
-      "kind": "impl",
-      "links": {},
-      "name": null,
-      "span": {
-        "begin": [
-          1,
-          0
-        ],
-        "end": [
-          1,
-          0
-        ],
-        "filename": "src/lib.rs"
-      },
-      "visibility": "default"
-    },
-    "a:2:8472-0:5": {
-      "attrs": [],
-      "crate_id": 0,
-      "deprecation": null,
-      "docs": null,
-      "id": "a:2:8472-0:5",
-      "inner": {
-        "blanket_impl": null,
-        "for": {
-          "inner": {
-            "args": {
-              "angle_bracketed": {
-                "args": [],
-                "bindings": []
-              }
-            },
-            "id": "0:5",
-            "name": "InFunc",
-            "param_names": []
-          },
-          "kind": "resolved_path"
-        },
-        "generics": {
-          "params": [],
-          "where_predicates": []
-        },
-        "is_unsafe": false,
-        "items": [],
-        "negative": false,
-        "provided_trait_methods": [],
-        "synthetic": true,
-        "trait": {
-          "inner": {
-            "args": {
-              "angle_bracketed": {
-                "args": [],
-                "bindings": []
-              }
-            },
-            "id": "2:8472",
-            "name": "RefUnwindSafe",
-            "param_names": []
-          },
-          "kind": "resolved_path"
-        }
-      },
-      "kind": "impl",
-      "links": {},
-      "name": null,
-      "span": {
-        "begin": [
-          1,
-          0
-        ],
-        "end": [
-          1,
-          0
-        ],
-        "filename": "src/lib.rs"
+        "filename": "fixtures/dep_upgrade/new/src/lib.rs"
       },
       "visibility": "default"
     },
@@ -14706,7 +14262,7 @@
               }
             },
             "id": "0:7",
-            "name": "ConvertFrom",
+            "name": "ConvertTo",
             "param_names": []
           },
           "kind": "resolved_path"
@@ -14747,218 +14303,8 @@
           1,
           0
         ],
-        "filename": "src/lib.rs"
+        "filename": "fixtures/dep_upgrade/new/src/lib.rs"
       },
-      "visibility": "default"
-    },
-    "b:2:2621-0:3": {
-      "attrs": [],
-      "crate_id": 0,
-      "deprecation": null,
-      "docs": null,
-      "id": "b:2:2621-0:3",
-      "inner": {
-        "blanket_impl": {
-          "inner": "T",
-          "kind": "generic"
-        },
-        "for": {
-          "inner": {
-            "args": {
-              "angle_bracketed": {
-                "args": [],
-                "bindings": []
-              }
-            },
-            "id": "0:3",
-            "name": "Used",
-            "param_names": []
-          },
-          "kind": "resolved_path"
-        },
-        "generics": {
-          "params": [
-            {
-              "kind": {
-                "type": {
-                  "bounds": [],
-                  "default": null
-                }
-              },
-              "name": "T"
-            }
-          ],
-          "where_predicates": [
-            {
-              "bound_predicate": {
-                "bounds": [
-                  {
-                    "trait_bound": {
-                      "generic_params": [],
-                      "modifier": "maybe",
-                      "trait": {
-                        "inner": {
-                          "args": {
-                            "angle_bracketed": {
-                              "args": [],
-                              "bindings": []
-                            }
-                          },
-                          "id": "2:3021",
-                          "name": "Sized",
-                          "param_names": []
-                        },
-                        "kind": "resolved_path"
-                      }
-                    }
-                  }
-                ],
-                "ty": {
-                  "inner": "T",
-                  "kind": "generic"
-                }
-              }
-            }
-          ]
-        },
-        "is_unsafe": false,
-        "items": [
-          "2:2623"
-        ],
-        "negative": false,
-        "provided_trait_methods": [],
-        "synthetic": false,
-        "trait": {
-          "inner": {
-            "args": {
-              "angle_bracketed": {
-                "args": [
-                  {
-                    "type": {
-                      "inner": "T",
-                      "kind": "generic"
-                    }
-                  }
-                ],
-                "bindings": []
-              }
-            },
-            "id": "2:2615",
-            "name": "Borrow",
-            "param_names": []
-          },
-          "kind": "resolved_path"
-        }
-      },
-      "kind": "impl",
-      "links": {},
-      "name": null,
-      "span": null,
-      "visibility": "default"
-    },
-    "b:2:2621-0:5": {
-      "attrs": [],
-      "crate_id": 0,
-      "deprecation": null,
-      "docs": null,
-      "id": "b:2:2621-0:5",
-      "inner": {
-        "blanket_impl": {
-          "inner": "T",
-          "kind": "generic"
-        },
-        "for": {
-          "inner": {
-            "args": {
-              "angle_bracketed": {
-                "args": [],
-                "bindings": []
-              }
-            },
-            "id": "0:5",
-            "name": "InFunc",
-            "param_names": []
-          },
-          "kind": "resolved_path"
-        },
-        "generics": {
-          "params": [
-            {
-              "kind": {
-                "type": {
-                  "bounds": [],
-                  "default": null
-                }
-              },
-              "name": "T"
-            }
-          ],
-          "where_predicates": [
-            {
-              "bound_predicate": {
-                "bounds": [
-                  {
-                    "trait_bound": {
-                      "generic_params": [],
-                      "modifier": "maybe",
-                      "trait": {
-                        "inner": {
-                          "args": {
-                            "angle_bracketed": {
-                              "args": [],
-                              "bindings": []
-                            }
-                          },
-                          "id": "2:3021",
-                          "name": "Sized",
-                          "param_names": []
-                        },
-                        "kind": "resolved_path"
-                      }
-                    }
-                  }
-                ],
-                "ty": {
-                  "inner": "T",
-                  "kind": "generic"
-                }
-              }
-            }
-          ]
-        },
-        "is_unsafe": false,
-        "items": [
-          "2:2623"
-        ],
-        "negative": false,
-        "provided_trait_methods": [],
-        "synthetic": false,
-        "trait": {
-          "inner": {
-            "args": {
-              "angle_bracketed": {
-                "args": [
-                  {
-                    "type": {
-                      "inner": "T",
-                      "kind": "generic"
-                    }
-                  }
-                ],
-                "bindings": []
-              }
-            },
-            "id": "2:2615",
-            "name": "Borrow",
-            "param_names": []
-          },
-          "kind": "resolved_path"
-        }
-      },
-      "kind": "impl",
-      "links": {},
-      "name": null,
-      "span": null,
       "visibility": "default"
     },
     "b:2:2621-0:7": {
@@ -14981,7 +14327,7 @@
               }
             },
             "id": "0:7",
-            "name": "ConvertFrom",
+            "name": "ConvertTo",
             "param_names": []
           },
           "kind": "resolved_path"
@@ -15055,216 +14401,6 @@
             },
             "id": "2:2615",
             "name": "Borrow",
-            "param_names": []
-          },
-          "kind": "resolved_path"
-        }
-      },
-      "kind": "impl",
-      "links": {},
-      "name": null,
-      "span": null,
-      "visibility": "default"
-    },
-    "b:2:2624-0:3": {
-      "attrs": [],
-      "crate_id": 0,
-      "deprecation": null,
-      "docs": null,
-      "id": "b:2:2624-0:3",
-      "inner": {
-        "blanket_impl": {
-          "inner": "T",
-          "kind": "generic"
-        },
-        "for": {
-          "inner": {
-            "args": {
-              "angle_bracketed": {
-                "args": [],
-                "bindings": []
-              }
-            },
-            "id": "0:3",
-            "name": "Used",
-            "param_names": []
-          },
-          "kind": "resolved_path"
-        },
-        "generics": {
-          "params": [
-            {
-              "kind": {
-                "type": {
-                  "bounds": [],
-                  "default": null
-                }
-              },
-              "name": "T"
-            }
-          ],
-          "where_predicates": [
-            {
-              "bound_predicate": {
-                "bounds": [
-                  {
-                    "trait_bound": {
-                      "generic_params": [],
-                      "modifier": "maybe",
-                      "trait": {
-                        "inner": {
-                          "args": {
-                            "angle_bracketed": {
-                              "args": [],
-                              "bindings": []
-                            }
-                          },
-                          "id": "2:3021",
-                          "name": "Sized",
-                          "param_names": []
-                        },
-                        "kind": "resolved_path"
-                      }
-                    }
-                  }
-                ],
-                "ty": {
-                  "inner": "T",
-                  "kind": "generic"
-                }
-              }
-            }
-          ]
-        },
-        "is_unsafe": false,
-        "items": [
-          "2:2626"
-        ],
-        "negative": false,
-        "provided_trait_methods": [],
-        "synthetic": false,
-        "trait": {
-          "inner": {
-            "args": {
-              "angle_bracketed": {
-                "args": [
-                  {
-                    "type": {
-                      "inner": "T",
-                      "kind": "generic"
-                    }
-                  }
-                ],
-                "bindings": []
-              }
-            },
-            "id": "2:2618",
-            "name": "BorrowMut",
-            "param_names": []
-          },
-          "kind": "resolved_path"
-        }
-      },
-      "kind": "impl",
-      "links": {},
-      "name": null,
-      "span": null,
-      "visibility": "default"
-    },
-    "b:2:2624-0:5": {
-      "attrs": [],
-      "crate_id": 0,
-      "deprecation": null,
-      "docs": null,
-      "id": "b:2:2624-0:5",
-      "inner": {
-        "blanket_impl": {
-          "inner": "T",
-          "kind": "generic"
-        },
-        "for": {
-          "inner": {
-            "args": {
-              "angle_bracketed": {
-                "args": [],
-                "bindings": []
-              }
-            },
-            "id": "0:5",
-            "name": "InFunc",
-            "param_names": []
-          },
-          "kind": "resolved_path"
-        },
-        "generics": {
-          "params": [
-            {
-              "kind": {
-                "type": {
-                  "bounds": [],
-                  "default": null
-                }
-              },
-              "name": "T"
-            }
-          ],
-          "where_predicates": [
-            {
-              "bound_predicate": {
-                "bounds": [
-                  {
-                    "trait_bound": {
-                      "generic_params": [],
-                      "modifier": "maybe",
-                      "trait": {
-                        "inner": {
-                          "args": {
-                            "angle_bracketed": {
-                              "args": [],
-                              "bindings": []
-                            }
-                          },
-                          "id": "2:3021",
-                          "name": "Sized",
-                          "param_names": []
-                        },
-                        "kind": "resolved_path"
-                      }
-                    }
-                  }
-                ],
-                "ty": {
-                  "inner": "T",
-                  "kind": "generic"
-                }
-              }
-            }
-          ]
-        },
-        "is_unsafe": false,
-        "items": [
-          "2:2626"
-        ],
-        "negative": false,
-        "provided_trait_methods": [],
-        "synthetic": false,
-        "trait": {
-          "inner": {
-            "args": {
-              "angle_bracketed": {
-                "args": [
-                  {
-                    "type": {
-                      "inner": "T",
-                      "kind": "generic"
-                    }
-                  }
-                ],
-                "bindings": []
-              }
-            },
-            "id": "2:2618",
-            "name": "BorrowMut",
             "param_names": []
           },
           "kind": "resolved_path"
@@ -15296,7 +14432,7 @@
               }
             },
             "id": "0:7",
-            "name": "ConvertFrom",
+            "name": "ConvertTo",
             "param_names": []
           },
           "kind": "resolved_path"
@@ -15381,248 +14517,6 @@
       "span": null,
       "visibility": "default"
     },
-    "b:2:2945-0:3": {
-      "attrs": [],
-      "crate_id": 0,
-      "deprecation": null,
-      "docs": null,
-      "id": "b:2:2945-0:3",
-      "inner": {
-        "blanket_impl": {
-          "inner": "T",
-          "kind": "generic"
-        },
-        "for": {
-          "inner": {
-            "args": {
-              "angle_bracketed": {
-                "args": [],
-                "bindings": []
-              }
-            },
-            "id": "0:3",
-            "name": "Used",
-            "param_names": []
-          },
-          "kind": "resolved_path"
-        },
-        "generics": {
-          "params": [
-            {
-              "kind": {
-                "type": {
-                  "bounds": [],
-                  "default": null
-                }
-              },
-              "name": "T"
-            },
-            {
-              "kind": {
-                "type": {
-                  "bounds": [],
-                  "default": null
-                }
-              },
-              "name": "U"
-            }
-          ],
-          "where_predicates": [
-            {
-              "bound_predicate": {
-                "bounds": [
-                  {
-                    "trait_bound": {
-                      "generic_params": [],
-                      "modifier": "none",
-                      "trait": {
-                        "inner": {
-                          "args": {
-                            "angle_bracketed": {
-                              "args": [
-                                {
-                                  "type": {
-                                    "inner": "T",
-                                    "kind": "generic"
-                                  }
-                                }
-                              ],
-                              "bindings": []
-                            }
-                          },
-                          "id": "2:2922",
-                          "name": "From",
-                          "param_names": []
-                        },
-                        "kind": "resolved_path"
-                      }
-                    }
-                  }
-                ],
-                "ty": {
-                  "inner": "U",
-                  "kind": "generic"
-                }
-              }
-            }
-          ]
-        },
-        "is_unsafe": false,
-        "items": [
-          "2:2948"
-        ],
-        "negative": false,
-        "provided_trait_methods": [],
-        "synthetic": false,
-        "trait": {
-          "inner": {
-            "args": {
-              "angle_bracketed": {
-                "args": [
-                  {
-                    "type": {
-                      "inner": "U",
-                      "kind": "generic"
-                    }
-                  }
-                ],
-                "bindings": []
-              }
-            },
-            "id": "2:2919",
-            "name": "Into",
-            "param_names": []
-          },
-          "kind": "resolved_path"
-        }
-      },
-      "kind": "impl",
-      "links": {},
-      "name": null,
-      "span": null,
-      "visibility": "default"
-    },
-    "b:2:2945-0:5": {
-      "attrs": [],
-      "crate_id": 0,
-      "deprecation": null,
-      "docs": null,
-      "id": "b:2:2945-0:5",
-      "inner": {
-        "blanket_impl": {
-          "inner": "T",
-          "kind": "generic"
-        },
-        "for": {
-          "inner": {
-            "args": {
-              "angle_bracketed": {
-                "args": [],
-                "bindings": []
-              }
-            },
-            "id": "0:5",
-            "name": "InFunc",
-            "param_names": []
-          },
-          "kind": "resolved_path"
-        },
-        "generics": {
-          "params": [
-            {
-              "kind": {
-                "type": {
-                  "bounds": [],
-                  "default": null
-                }
-              },
-              "name": "T"
-            },
-            {
-              "kind": {
-                "type": {
-                  "bounds": [],
-                  "default": null
-                }
-              },
-              "name": "U"
-            }
-          ],
-          "where_predicates": [
-            {
-              "bound_predicate": {
-                "bounds": [
-                  {
-                    "trait_bound": {
-                      "generic_params": [],
-                      "modifier": "none",
-                      "trait": {
-                        "inner": {
-                          "args": {
-                            "angle_bracketed": {
-                              "args": [
-                                {
-                                  "type": {
-                                    "inner": "T",
-                                    "kind": "generic"
-                                  }
-                                }
-                              ],
-                              "bindings": []
-                            }
-                          },
-                          "id": "2:2922",
-                          "name": "From",
-                          "param_names": []
-                        },
-                        "kind": "resolved_path"
-                      }
-                    }
-                  }
-                ],
-                "ty": {
-                  "inner": "U",
-                  "kind": "generic"
-                }
-              }
-            }
-          ]
-        },
-        "is_unsafe": false,
-        "items": [
-          "2:2948"
-        ],
-        "negative": false,
-        "provided_trait_methods": [],
-        "synthetic": false,
-        "trait": {
-          "inner": {
-            "args": {
-              "angle_bracketed": {
-                "args": [
-                  {
-                    "type": {
-                      "inner": "U",
-                      "kind": "generic"
-                    }
-                  }
-                ],
-                "bindings": []
-              }
-            },
-            "id": "2:2919",
-            "name": "Into",
-            "param_names": []
-          },
-          "kind": "resolved_path"
-        }
-      },
-      "kind": "impl",
-      "links": {},
-      "name": null,
-      "span": null,
-      "visibility": "default"
-    },
     "b:2:2945-0:7": {
       "attrs": [],
       "crate_id": 0,
@@ -15643,7 +14537,7 @@
               }
             },
             "id": "0:7",
-            "name": "ConvertFrom",
+            "name": "ConvertTo",
             "param_names": []
           },
           "kind": "resolved_path"
@@ -15733,154 +14627,6 @@
             },
             "id": "2:2919",
             "name": "Into",
-            "param_names": []
-          },
-          "kind": "resolved_path"
-        }
-      },
-      "kind": "impl",
-      "links": {},
-      "name": null,
-      "span": null,
-      "visibility": "default"
-    },
-    "b:2:2949-0:3": {
-      "attrs": [],
-      "crate_id": 0,
-      "deprecation": null,
-      "docs": null,
-      "id": "b:2:2949-0:3",
-      "inner": {
-        "blanket_impl": {
-          "inner": "T",
-          "kind": "generic"
-        },
-        "for": {
-          "inner": {
-            "args": {
-              "angle_bracketed": {
-                "args": [],
-                "bindings": []
-              }
-            },
-            "id": "0:3",
-            "name": "Used",
-            "param_names": []
-          },
-          "kind": "resolved_path"
-        },
-        "generics": {
-          "params": [
-            {
-              "kind": {
-                "type": {
-                  "bounds": [],
-                  "default": null
-                }
-              },
-              "name": "T"
-            }
-          ],
-          "where_predicates": []
-        },
-        "is_unsafe": false,
-        "items": [
-          "2:2951"
-        ],
-        "negative": false,
-        "provided_trait_methods": [],
-        "synthetic": false,
-        "trait": {
-          "inner": {
-            "args": {
-              "angle_bracketed": {
-                "args": [
-                  {
-                    "type": {
-                      "inner": "T",
-                      "kind": "generic"
-                    }
-                  }
-                ],
-                "bindings": []
-              }
-            },
-            "id": "2:2922",
-            "name": "From",
-            "param_names": []
-          },
-          "kind": "resolved_path"
-        }
-      },
-      "kind": "impl",
-      "links": {},
-      "name": null,
-      "span": null,
-      "visibility": "default"
-    },
-    "b:2:2949-0:5": {
-      "attrs": [],
-      "crate_id": 0,
-      "deprecation": null,
-      "docs": null,
-      "id": "b:2:2949-0:5",
-      "inner": {
-        "blanket_impl": {
-          "inner": "T",
-          "kind": "generic"
-        },
-        "for": {
-          "inner": {
-            "args": {
-              "angle_bracketed": {
-                "args": [],
-                "bindings": []
-              }
-            },
-            "id": "0:5",
-            "name": "InFunc",
-            "param_names": []
-          },
-          "kind": "resolved_path"
-        },
-        "generics": {
-          "params": [
-            {
-              "kind": {
-                "type": {
-                  "bounds": [],
-                  "default": null
-                }
-              },
-              "name": "T"
-            }
-          ],
-          "where_predicates": []
-        },
-        "is_unsafe": false,
-        "items": [
-          "2:2951"
-        ],
-        "negative": false,
-        "provided_trait_methods": [],
-        "synthetic": false,
-        "trait": {
-          "inner": {
-            "args": {
-              "angle_bracketed": {
-                "args": [
-                  {
-                    "type": {
-                      "inner": "T",
-                      "kind": "generic"
-                    }
-                  }
-                ],
-                "bindings": []
-              }
-            },
-            "id": "2:2922",
-            "name": "From",
             "param_names": []
           },
           "kind": "resolved_path"
@@ -15912,7 +14658,7 @@
               }
             },
             "id": "0:7",
-            "name": "ConvertFrom",
+            "name": "ConvertTo",
             "param_names": []
           },
           "kind": "resolved_path"
@@ -15966,250 +14712,6 @@
       "span": null,
       "visibility": "default"
     },
-    "b:2:2955-0:3": {
-      "attrs": [],
-      "crate_id": 0,
-      "deprecation": null,
-      "docs": null,
-      "id": "b:2:2955-0:3",
-      "inner": {
-        "blanket_impl": {
-          "inner": "T",
-          "kind": "generic"
-        },
-        "for": {
-          "inner": {
-            "args": {
-              "angle_bracketed": {
-                "args": [],
-                "bindings": []
-              }
-            },
-            "id": "0:3",
-            "name": "Used",
-            "param_names": []
-          },
-          "kind": "resolved_path"
-        },
-        "generics": {
-          "params": [
-            {
-              "kind": {
-                "type": {
-                  "bounds": [],
-                  "default": null
-                }
-              },
-              "name": "T"
-            },
-            {
-              "kind": {
-                "type": {
-                  "bounds": [],
-                  "default": null
-                }
-              },
-              "name": "U"
-            }
-          ],
-          "where_predicates": [
-            {
-              "bound_predicate": {
-                "bounds": [
-                  {
-                    "trait_bound": {
-                      "generic_params": [],
-                      "modifier": "none",
-                      "trait": {
-                        "inner": {
-                          "args": {
-                            "angle_bracketed": {
-                              "args": [
-                                {
-                                  "type": {
-                                    "inner": "T",
-                                    "kind": "generic"
-                                  }
-                                }
-                              ],
-                              "bindings": []
-                            }
-                          },
-                          "id": "2:2929",
-                          "name": "TryFrom",
-                          "param_names": []
-                        },
-                        "kind": "resolved_path"
-                      }
-                    }
-                  }
-                ],
-                "ty": {
-                  "inner": "U",
-                  "kind": "generic"
-                }
-              }
-            }
-          ]
-        },
-        "is_unsafe": false,
-        "items": [
-          "2:2958",
-          "2:2959"
-        ],
-        "negative": false,
-        "provided_trait_methods": [],
-        "synthetic": false,
-        "trait": {
-          "inner": {
-            "args": {
-              "angle_bracketed": {
-                "args": [
-                  {
-                    "type": {
-                      "inner": "U",
-                      "kind": "generic"
-                    }
-                  }
-                ],
-                "bindings": []
-              }
-            },
-            "id": "2:2925",
-            "name": "TryInto",
-            "param_names": []
-          },
-          "kind": "resolved_path"
-        }
-      },
-      "kind": "impl",
-      "links": {},
-      "name": null,
-      "span": null,
-      "visibility": "default"
-    },
-    "b:2:2955-0:5": {
-      "attrs": [],
-      "crate_id": 0,
-      "deprecation": null,
-      "docs": null,
-      "id": "b:2:2955-0:5",
-      "inner": {
-        "blanket_impl": {
-          "inner": "T",
-          "kind": "generic"
-        },
-        "for": {
-          "inner": {
-            "args": {
-              "angle_bracketed": {
-                "args": [],
-                "bindings": []
-              }
-            },
-            "id": "0:5",
-            "name": "InFunc",
-            "param_names": []
-          },
-          "kind": "resolved_path"
-        },
-        "generics": {
-          "params": [
-            {
-              "kind": {
-                "type": {
-                  "bounds": [],
-                  "default": null
-                }
-              },
-              "name": "T"
-            },
-            {
-              "kind": {
-                "type": {
-                  "bounds": [],
-                  "default": null
-                }
-              },
-              "name": "U"
-            }
-          ],
-          "where_predicates": [
-            {
-              "bound_predicate": {
-                "bounds": [
-                  {
-                    "trait_bound": {
-                      "generic_params": [],
-                      "modifier": "none",
-                      "trait": {
-                        "inner": {
-                          "args": {
-                            "angle_bracketed": {
-                              "args": [
-                                {
-                                  "type": {
-                                    "inner": "T",
-                                    "kind": "generic"
-                                  }
-                                }
-                              ],
-                              "bindings": []
-                            }
-                          },
-                          "id": "2:2929",
-                          "name": "TryFrom",
-                          "param_names": []
-                        },
-                        "kind": "resolved_path"
-                      }
-                    }
-                  }
-                ],
-                "ty": {
-                  "inner": "U",
-                  "kind": "generic"
-                }
-              }
-            }
-          ]
-        },
-        "is_unsafe": false,
-        "items": [
-          "2:2958",
-          "2:2959"
-        ],
-        "negative": false,
-        "provided_trait_methods": [],
-        "synthetic": false,
-        "trait": {
-          "inner": {
-            "args": {
-              "angle_bracketed": {
-                "args": [
-                  {
-                    "type": {
-                      "inner": "U",
-                      "kind": "generic"
-                    }
-                  }
-                ],
-                "bindings": []
-              }
-            },
-            "id": "2:2925",
-            "name": "TryInto",
-            "param_names": []
-          },
-          "kind": "resolved_path"
-        }
-      },
-      "kind": "impl",
-      "links": {},
-      "name": null,
-      "span": null,
-      "visibility": "default"
-    },
     "b:2:2955-0:7": {
       "attrs": [],
       "crate_id": 0,
@@ -16230,7 +14732,7 @@
               }
             },
             "id": "0:7",
-            "name": "ConvertFrom",
+            "name": "ConvertTo",
             "param_names": []
           },
           "kind": "resolved_path"
@@ -16321,250 +14823,6 @@
             },
             "id": "2:2925",
             "name": "TryInto",
-            "param_names": []
-          },
-          "kind": "resolved_path"
-        }
-      },
-      "kind": "impl",
-      "links": {},
-      "name": null,
-      "span": null,
-      "visibility": "default"
-    },
-    "b:2:2960-0:3": {
-      "attrs": [],
-      "crate_id": 0,
-      "deprecation": null,
-      "docs": null,
-      "id": "b:2:2960-0:3",
-      "inner": {
-        "blanket_impl": {
-          "inner": "T",
-          "kind": "generic"
-        },
-        "for": {
-          "inner": {
-            "args": {
-              "angle_bracketed": {
-                "args": [],
-                "bindings": []
-              }
-            },
-            "id": "0:3",
-            "name": "Used",
-            "param_names": []
-          },
-          "kind": "resolved_path"
-        },
-        "generics": {
-          "params": [
-            {
-              "kind": {
-                "type": {
-                  "bounds": [],
-                  "default": null
-                }
-              },
-              "name": "T"
-            },
-            {
-              "kind": {
-                "type": {
-                  "bounds": [],
-                  "default": null
-                }
-              },
-              "name": "U"
-            }
-          ],
-          "where_predicates": [
-            {
-              "bound_predicate": {
-                "bounds": [
-                  {
-                    "trait_bound": {
-                      "generic_params": [],
-                      "modifier": "none",
-                      "trait": {
-                        "inner": {
-                          "args": {
-                            "angle_bracketed": {
-                              "args": [
-                                {
-                                  "type": {
-                                    "inner": "T",
-                                    "kind": "generic"
-                                  }
-                                }
-                              ],
-                              "bindings": []
-                            }
-                          },
-                          "id": "2:2919",
-                          "name": "Into",
-                          "param_names": []
-                        },
-                        "kind": "resolved_path"
-                      }
-                    }
-                  }
-                ],
-                "ty": {
-                  "inner": "U",
-                  "kind": "generic"
-                }
-              }
-            }
-          ]
-        },
-        "is_unsafe": false,
-        "items": [
-          "2:2963",
-          "2:2964"
-        ],
-        "negative": false,
-        "provided_trait_methods": [],
-        "synthetic": false,
-        "trait": {
-          "inner": {
-            "args": {
-              "angle_bracketed": {
-                "args": [
-                  {
-                    "type": {
-                      "inner": "U",
-                      "kind": "generic"
-                    }
-                  }
-                ],
-                "bindings": []
-              }
-            },
-            "id": "2:2929",
-            "name": "TryFrom",
-            "param_names": []
-          },
-          "kind": "resolved_path"
-        }
-      },
-      "kind": "impl",
-      "links": {},
-      "name": null,
-      "span": null,
-      "visibility": "default"
-    },
-    "b:2:2960-0:5": {
-      "attrs": [],
-      "crate_id": 0,
-      "deprecation": null,
-      "docs": null,
-      "id": "b:2:2960-0:5",
-      "inner": {
-        "blanket_impl": {
-          "inner": "T",
-          "kind": "generic"
-        },
-        "for": {
-          "inner": {
-            "args": {
-              "angle_bracketed": {
-                "args": [],
-                "bindings": []
-              }
-            },
-            "id": "0:5",
-            "name": "InFunc",
-            "param_names": []
-          },
-          "kind": "resolved_path"
-        },
-        "generics": {
-          "params": [
-            {
-              "kind": {
-                "type": {
-                  "bounds": [],
-                  "default": null
-                }
-              },
-              "name": "T"
-            },
-            {
-              "kind": {
-                "type": {
-                  "bounds": [],
-                  "default": null
-                }
-              },
-              "name": "U"
-            }
-          ],
-          "where_predicates": [
-            {
-              "bound_predicate": {
-                "bounds": [
-                  {
-                    "trait_bound": {
-                      "generic_params": [],
-                      "modifier": "none",
-                      "trait": {
-                        "inner": {
-                          "args": {
-                            "angle_bracketed": {
-                              "args": [
-                                {
-                                  "type": {
-                                    "inner": "T",
-                                    "kind": "generic"
-                                  }
-                                }
-                              ],
-                              "bindings": []
-                            }
-                          },
-                          "id": "2:2919",
-                          "name": "Into",
-                          "param_names": []
-                        },
-                        "kind": "resolved_path"
-                      }
-                    }
-                  }
-                ],
-                "ty": {
-                  "inner": "U",
-                  "kind": "generic"
-                }
-              }
-            }
-          ]
-        },
-        "is_unsafe": false,
-        "items": [
-          "2:2963",
-          "2:2964"
-        ],
-        "negative": false,
-        "provided_trait_methods": [],
-        "synthetic": false,
-        "trait": {
-          "inner": {
-            "args": {
-              "angle_bracketed": {
-                "args": [
-                  {
-                    "type": {
-                      "inner": "U",
-                      "kind": "generic"
-                    }
-                  }
-                ],
-                "bindings": []
-              }
-            },
-            "id": "2:2929",
-            "name": "TryFrom",
             "param_names": []
           },
           "kind": "resolved_path"
@@ -16596,7 +14854,7 @@
               }
             },
             "id": "0:7",
-            "name": "ConvertFrom",
+            "name": "ConvertTo",
             "param_names": []
           },
           "kind": "resolved_path"
@@ -16698,208 +14956,6 @@
       "span": null,
       "visibility": "default"
     },
-    "b:2:3727-0:3": {
-      "attrs": [],
-      "crate_id": 0,
-      "deprecation": null,
-      "docs": null,
-      "id": "b:2:3727-0:3",
-      "inner": {
-        "blanket_impl": {
-          "inner": "T",
-          "kind": "generic"
-        },
-        "for": {
-          "inner": {
-            "args": {
-              "angle_bracketed": {
-                "args": [],
-                "bindings": []
-              }
-            },
-            "id": "0:3",
-            "name": "Used",
-            "param_names": []
-          },
-          "kind": "resolved_path"
-        },
-        "generics": {
-          "params": [
-            {
-              "kind": {
-                "type": {
-                  "bounds": [],
-                  "default": null
-                }
-              },
-              "name": "T"
-            }
-          ],
-          "where_predicates": [
-            {
-              "bound_predicate": {
-                "bounds": [
-                  {
-                    "outlives": "'static"
-                  },
-                  {
-                    "trait_bound": {
-                      "generic_params": [],
-                      "modifier": "maybe",
-                      "trait": {
-                        "inner": {
-                          "args": {
-                            "angle_bracketed": {
-                              "args": [],
-                              "bindings": []
-                            }
-                          },
-                          "id": "2:3021",
-                          "name": "Sized",
-                          "param_names": []
-                        },
-                        "kind": "resolved_path"
-                      }
-                    }
-                  }
-                ],
-                "ty": {
-                  "inner": "T",
-                  "kind": "generic"
-                }
-              }
-            }
-          ]
-        },
-        "is_unsafe": false,
-        "items": [
-          "2:3729"
-        ],
-        "negative": false,
-        "provided_trait_methods": [],
-        "synthetic": false,
-        "trait": {
-          "inner": {
-            "args": {
-              "angle_bracketed": {
-                "args": [],
-                "bindings": []
-              }
-            },
-            "id": "2:3725",
-            "name": "Any",
-            "param_names": []
-          },
-          "kind": "resolved_path"
-        }
-      },
-      "kind": "impl",
-      "links": {},
-      "name": null,
-      "span": null,
-      "visibility": "default"
-    },
-    "b:2:3727-0:5": {
-      "attrs": [],
-      "crate_id": 0,
-      "deprecation": null,
-      "docs": null,
-      "id": "b:2:3727-0:5",
-      "inner": {
-        "blanket_impl": {
-          "inner": "T",
-          "kind": "generic"
-        },
-        "for": {
-          "inner": {
-            "args": {
-              "angle_bracketed": {
-                "args": [],
-                "bindings": []
-              }
-            },
-            "id": "0:5",
-            "name": "InFunc",
-            "param_names": []
-          },
-          "kind": "resolved_path"
-        },
-        "generics": {
-          "params": [
-            {
-              "kind": {
-                "type": {
-                  "bounds": [],
-                  "default": null
-                }
-              },
-              "name": "T"
-            }
-          ],
-          "where_predicates": [
-            {
-              "bound_predicate": {
-                "bounds": [
-                  {
-                    "outlives": "'static"
-                  },
-                  {
-                    "trait_bound": {
-                      "generic_params": [],
-                      "modifier": "maybe",
-                      "trait": {
-                        "inner": {
-                          "args": {
-                            "angle_bracketed": {
-                              "args": [],
-                              "bindings": []
-                            }
-                          },
-                          "id": "2:3021",
-                          "name": "Sized",
-                          "param_names": []
-                        },
-                        "kind": "resolved_path"
-                      }
-                    }
-                  }
-                ],
-                "ty": {
-                  "inner": "T",
-                  "kind": "generic"
-                }
-              }
-            }
-          ]
-        },
-        "is_unsafe": false,
-        "items": [
-          "2:3729"
-        ],
-        "negative": false,
-        "provided_trait_methods": [],
-        "synthetic": false,
-        "trait": {
-          "inner": {
-            "args": {
-              "angle_bracketed": {
-                "args": [],
-                "bindings": []
-              }
-            },
-            "id": "2:3725",
-            "name": "Any",
-            "param_names": []
-          },
-          "kind": "resolved_path"
-        }
-      },
-      "kind": "impl",
-      "links": {},
-      "name": null,
-      "span": null,
-      "visibility": "default"
-    },
     "b:2:3727-0:7": {
       "attrs": [],
       "crate_id": 0,
@@ -16920,7 +14976,7 @@
               }
             },
             "id": "0:7",
-            "name": "ConvertFrom",
+            "name": "ConvertTo",
             "param_names": []
           },
           "kind": "resolved_path"
@@ -17007,31 +15063,23 @@
       "crate_id": 0,
       "kind": "module",
       "path": [
-        "dep_upgrade_dep"
+        "dep_upgrade_new"
       ]
     },
-    "0:3": {
+    "0:6": {
       "crate_id": 0,
-      "kind": "struct",
+      "kind": "function",
       "path": [
-        "dep_upgrade_dep",
-        "Used"
-      ]
-    },
-    "0:5": {
-      "crate_id": 0,
-      "kind": "struct",
-      "path": [
-        "dep_upgrade_dep",
-        "InFunc"
+        "dep_upgrade_new",
+        "in_func"
       ]
     },
     "0:7": {
       "crate_id": 0,
       "kind": "struct",
       "path": [
-        "dep_upgrade_dep",
-        "ConvertFrom"
+        "dep_upgrade_new",
+        "ConvertTo"
       ]
     },
     "10:0": {
@@ -24632,7 +22680,7 @@
       "crate_id": 1,
       "kind": "typedef",
       "path": [
-        "dep_upgrade_dep",
+        "dep_upgrade_new",
         "Target"
       ]
     },
@@ -24640,7 +22688,7 @@
       "crate_id": 1,
       "kind": "typedef",
       "path": [
-        "dep_upgrade_dep",
+        "dep_upgrade_new",
         "Owned"
       ]
     },
@@ -24648,7 +22696,7 @@
       "crate_id": 1,
       "kind": "typedef",
       "path": [
-        "dep_upgrade_dep",
+        "dep_upgrade_new",
         "Output"
       ]
     },
@@ -24676,7 +22724,7 @@
       "crate_id": 1,
       "kind": "typedef",
       "path": [
-        "dep_upgrade_dep",
+        "dep_upgrade_new",
         "Target"
       ]
     },
@@ -24684,7 +22732,7 @@
       "crate_id": 1,
       "kind": "typedef",
       "path": [
-        "dep_upgrade_dep",
+        "dep_upgrade_new",
         "Owned"
       ]
     },
@@ -25017,7 +23065,7 @@
       "crate_id": 1,
       "kind": "typedef",
       "path": [
-        "dep_upgrade_dep",
+        "dep_upgrade_new",
         "Target"
       ]
     },
@@ -25025,7 +23073,7 @@
       "crate_id": 1,
       "kind": "typedef",
       "path": [
-        "dep_upgrade_dep",
+        "dep_upgrade_new",
         "Target"
       ]
     },
@@ -25151,7 +23199,7 @@
       "crate_id": 1,
       "kind": "typedef",
       "path": [
-        "dep_upgrade_dep",
+        "dep_upgrade_new",
         "Iter"
       ]
     },
@@ -25159,7 +23207,7 @@
       "crate_id": 1,
       "kind": "typedef",
       "path": [
-        "dep_upgrade_dep",
+        "dep_upgrade_new",
         "Iter"
       ]
     },
@@ -25743,7 +23791,7 @@
       "crate_id": 1,
       "kind": "typedef",
       "path": [
-        "dep_upgrade_dep",
+        "dep_upgrade_new",
         "Target"
       ]
     },
@@ -25751,7 +23799,7 @@
       "crate_id": 1,
       "kind": "typedef",
       "path": [
-        "dep_upgrade_dep",
+        "dep_upgrade_new",
         "Owned"
       ]
     },
@@ -25777,7 +23825,7 @@
       "crate_id": 1,
       "kind": "typedef",
       "path": [
-        "dep_upgrade_dep",
+        "dep_upgrade_new",
         "Item"
       ]
     },
@@ -25785,7 +23833,7 @@
       "crate_id": 1,
       "kind": "typedef",
       "path": [
-        "dep_upgrade_dep",
+        "dep_upgrade_new",
         "IntoIter"
       ]
     },
@@ -26096,7 +24144,7 @@
       "crate_id": 1,
       "kind": "typedef",
       "path": [
-        "dep_upgrade_dep",
+        "dep_upgrade_new",
         "Target"
       ]
     },
@@ -26235,7 +24283,7 @@
       "crate_id": 1,
       "kind": "typedef",
       "path": [
-        "dep_upgrade_dep",
+        "dep_upgrade_new",
         "Target"
       ]
     },
@@ -26243,7 +24291,7 @@
       "crate_id": 1,
       "kind": "typedef",
       "path": [
-        "dep_upgrade_dep",
+        "dep_upgrade_new",
         "Owned"
       ]
     },
@@ -26251,7 +24299,7 @@
       "crate_id": 1,
       "kind": "typedef",
       "path": [
-        "dep_upgrade_dep",
+        "dep_upgrade_new",
         "Target"
       ]
     },
@@ -26259,7 +24307,7 @@
       "crate_id": 1,
       "kind": "typedef",
       "path": [
-        "dep_upgrade_dep",
+        "dep_upgrade_new",
         "Owned"
       ]
     },
@@ -26285,7 +24333,7 @@
       "crate_id": 1,
       "kind": "typedef",
       "path": [
-        "dep_upgrade_dep",
+        "dep_upgrade_new",
         "Target"
       ]
     },
@@ -26465,6 +24513,37 @@
         "SymbolName"
       ]
     },
+    "20:0": {
+      "crate_id": 20,
+      "kind": "module",
+      "path": [
+        "dep_upgrade_dep"
+      ]
+    },
+    "20:3": {
+      "crate_id": 20,
+      "kind": "struct",
+      "path": [
+        "dep_upgrade_dep",
+        "Used"
+      ]
+    },
+    "20:5": {
+      "crate_id": 20,
+      "kind": "struct",
+      "path": [
+        "dep_upgrade_dep",
+        "InFunc"
+      ]
+    },
+    "20:7": {
+      "crate_id": 20,
+      "kind": "struct",
+      "path": [
+        "dep_upgrade_dep",
+        "ConvertFrom"
+      ]
+    },
     "2:0": {
       "crate_id": 2,
       "kind": "module",
@@ -26476,7 +24555,7 @@
       "crate_id": 2,
       "kind": "typedef",
       "path": [
-        "dep_upgrade_dep",
+        "dep_upgrade_new",
         "Output"
       ]
     },
@@ -26505,7 +24584,7 @@
       "crate_id": 2,
       "kind": "typedef",
       "path": [
-        "dep_upgrade_dep",
+        "dep_upgrade_new",
         "Item"
       ]
     },
@@ -26513,7 +24592,7 @@
       "crate_id": 2,
       "kind": "typedef",
       "path": [
-        "dep_upgrade_dep",
+        "dep_upgrade_new",
         "IntoIter"
       ]
     },
@@ -26521,7 +24600,7 @@
       "crate_id": 2,
       "kind": "typedef",
       "path": [
-        "dep_upgrade_dep",
+        "dep_upgrade_new",
         "Item"
       ]
     },
@@ -26529,7 +24608,7 @@
       "crate_id": 2,
       "kind": "typedef",
       "path": [
-        "dep_upgrade_dep",
+        "dep_upgrade_new",
         "IntoIter"
       ]
     },
@@ -26696,7 +24775,7 @@
       "crate_id": 2,
       "kind": "typedef",
       "path": [
-        "dep_upgrade_dep",
+        "dep_upgrade_new",
         "Item"
       ]
     },
@@ -26764,7 +24843,7 @@
       "crate_id": 2,
       "kind": "typedef",
       "path": [
-        "dep_upgrade_dep",
+        "dep_upgrade_new",
         "Output"
       ]
     },
@@ -26896,7 +24975,7 @@
       "crate_id": 2,
       "kind": "typedef",
       "path": [
-        "dep_upgrade_dep",
+        "dep_upgrade_new",
         "Searcher"
       ]
     },
@@ -26944,7 +25023,7 @@
       "crate_id": 2,
       "kind": "typedef",
       "path": [
-        "dep_upgrade_dep",
+        "dep_upgrade_new",
         "Output"
       ]
     },
@@ -26952,7 +25031,7 @@
       "crate_id": 2,
       "kind": "typedef",
       "path": [
-        "dep_upgrade_dep",
+        "dep_upgrade_new",
         "Future"
       ]
     },
@@ -27047,7 +25126,7 @@
       "crate_id": 2,
       "kind": "typedef",
       "path": [
-        "dep_upgrade_dep",
+        "dep_upgrade_new",
         "Target"
       ]
     },
@@ -27826,7 +25905,7 @@
       "crate_id": 2,
       "kind": "typedef",
       "path": [
-        "dep_upgrade_dep",
+        "dep_upgrade_new",
         "Error"
       ]
     },
@@ -27834,7 +25913,7 @@
       "crate_id": 2,
       "kind": "typedef",
       "path": [
-        "dep_upgrade_dep",
+        "dep_upgrade_new",
         "Error"
       ]
     },
@@ -29083,7 +27162,7 @@
       "crate_id": 2,
       "kind": "typedef",
       "path": [
-        "dep_upgrade_dep",
+        "dep_upgrade_new",
         "Target"
       ]
     },
@@ -29318,7 +27397,7 @@
       "crate_id": 2,
       "kind": "typedef",
       "path": [
-        "dep_upgrade_dep",
+        "dep_upgrade_new",
         "Target"
       ]
     },
@@ -30004,7 +28083,7 @@
       "crate_id": 2,
       "kind": "typedef",
       "path": [
-        "dep_upgrade_dep",
+        "dep_upgrade_new",
         "Searcher"
       ]
     },
@@ -30022,7 +28101,7 @@
       "crate_id": 2,
       "kind": "typedef",
       "path": [
-        "dep_upgrade_dep",
+        "dep_upgrade_new",
         "Searcher"
       ]
     },
@@ -30344,7 +28423,7 @@
       "crate_id": 2,
       "kind": "typedef",
       "path": [
-        "dep_upgrade_dep",
+        "dep_upgrade_new",
         "Target"
       ]
     },
@@ -31209,7 +29288,7 @@
       "crate_id": 2,
       "kind": "typedef",
       "path": [
-        "dep_upgrade_dep",
+        "dep_upgrade_new",
         "Item"
       ]
     },
@@ -31217,7 +29296,7 @@
       "crate_id": 2,
       "kind": "typedef",
       "path": [
-        "dep_upgrade_dep",
+        "dep_upgrade_new",
         "IntoIter"
       ]
     },
@@ -31644,7 +29723,7 @@
       "crate_id": 2,
       "kind": "typedef",
       "path": [
-        "dep_upgrade_dep",
+        "dep_upgrade_new",
         "Target"
       ]
     },
@@ -31682,7 +29761,7 @@
       "crate_id": 2,
       "kind": "typedef",
       "path": [
-        "dep_upgrade_dep",
+        "dep_upgrade_new",
         "Target"
       ]
     },
@@ -31700,7 +29779,7 @@
       "crate_id": 2,
       "kind": "typedef",
       "path": [
-        "dep_upgrade_dep",
+        "dep_upgrade_new",
         "Target"
       ]
     },
@@ -32609,7 +30688,7 @@
       "crate_id": 5,
       "kind": "typedef",
       "path": [
-        "dep_upgrade_dep",
+        "dep_upgrade_new",
         "Target"
       ]
     },
@@ -32626,7 +30705,7 @@
       "crate_id": 5,
       "kind": "typedef",
       "path": [
-        "dep_upgrade_dep",
+        "dep_upgrade_new",
         "Target"
       ]
     },
@@ -32664,7 +30743,7 @@
       "crate_id": 5,
       "kind": "typedef",
       "path": [
-        "dep_upgrade_dep",
+        "dep_upgrade_new",
         "Output"
       ]
     },
@@ -32672,7 +30751,7 @@
       "crate_id": 5,
       "kind": "typedef",
       "path": [
-        "dep_upgrade_dep",
+        "dep_upgrade_new",
         "Output"
       ]
     },
@@ -32680,7 +30759,7 @@
       "crate_id": 5,
       "kind": "typedef",
       "path": [
-        "dep_upgrade_dep",
+        "dep_upgrade_new",
         "Output"
       ]
     },
@@ -32688,7 +30767,7 @@
       "crate_id": 5,
       "kind": "typedef",
       "path": [
-        "dep_upgrade_dep",
+        "dep_upgrade_new",
         "Owned"
       ]
     },
@@ -32716,7 +30795,7 @@
       "crate_id": 5,
       "kind": "typedef",
       "path": [
-        "dep_upgrade_dep",
+        "dep_upgrade_new",
         "Output"
       ]
     },
@@ -32724,7 +30803,7 @@
       "crate_id": 5,
       "kind": "typedef",
       "path": [
-        "dep_upgrade_dep",
+        "dep_upgrade_new",
         "Output"
       ]
     },
@@ -32732,7 +30811,7 @@
       "crate_id": 5,
       "kind": "typedef",
       "path": [
-        "dep_upgrade_dep",
+        "dep_upgrade_new",
         "Owned"
       ]
     },
@@ -32751,7 +30830,7 @@
       "crate_id": 5,
       "kind": "typedef",
       "path": [
-        "dep_upgrade_dep",
+        "dep_upgrade_new",
         "Target"
       ]
     },
@@ -32815,7 +30894,7 @@
       "crate_id": 5,
       "kind": "typedef",
       "path": [
-        "dep_upgrade_dep",
+        "dep_upgrade_new",
         "Target"
       ]
     },
@@ -32875,7 +30954,7 @@
       "crate_id": 5,
       "kind": "typedef",
       "path": [
-        "dep_upgrade_dep",
+        "dep_upgrade_new",
         "Owned"
       ]
     },
@@ -32933,7 +31012,7 @@
       "crate_id": 5,
       "kind": "typedef",
       "path": [
-        "dep_upgrade_dep",
+        "dep_upgrade_new",
         "Target"
       ]
     },
@@ -32982,7 +31061,7 @@
       "crate_id": 5,
       "kind": "typedef",
       "path": [
-        "dep_upgrade_dep",
+        "dep_upgrade_new",
         "Target"
       ]
     },
@@ -33221,7 +31300,7 @@
       "crate_id": 5,
       "kind": "typedef",
       "path": [
-        "dep_upgrade_dep",
+        "dep_upgrade_new",
         "Target"
       ]
     },

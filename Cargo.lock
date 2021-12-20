@@ -361,10 +361,21 @@ name = "dep_upgrade_dep"
 version = "1.0.0"
 
 [[package]]
+name = "dep_upgrade_dep"
+version = "2.0.0"
+
+[[package]]
+name = "dep_upgrade_new"
+version = "1.0.0"
+dependencies = [
+ "dep_upgrade_dep 2.0.0",
+]
+
+[[package]]
 name = "dep_upgrade_old"
 version = "1.0.0"
 dependencies = [
- "dep_upgrade_dep",
+ "dep_upgrade_dep 1.0.0",
 ]
 
 [[package]]

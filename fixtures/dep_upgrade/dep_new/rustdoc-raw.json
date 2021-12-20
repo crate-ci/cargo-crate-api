@@ -1,5 +1,5 @@
 {
-  "crate_version": "1.0.0",
+  "crate_version": "2.0.0",
   "external_crates": {
     "1": {
       "html_root_url": "https://doc.rust-lang.org/nightly/",

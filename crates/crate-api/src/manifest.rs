@@ -33,6 +33,12 @@ impl Manifest {
                 None => {}
             }
         }
+
+        api.features.extend(
+            self.features
+                .into_iter()
+                .map(|(name, feature)| (name, crate::AnyFeature::from(feature))),
+        );
     }
 }
 
@@ -69,6 +75,15 @@ pub enum AnyFeature {
     Dependency(Dependency),
 }
 
+impl From<AnyFeature> for crate::AnyFeature {
+    fn from(other: AnyFeature) -> Self {
+        match other {
+            AnyFeature::Feature(f) => crate::AnyFeature::Feature(f.into()),
+            AnyFeature::Dependency(f) => crate::AnyFeature::OptionalDependency(f.into()),
+        }
+    }
+}
+
 #[derive(Clone, Debug, PartialEq, Eq)]
 #[non_exhaustive]
 pub struct Feature {
@@ -81,6 +96,15 @@ impl Feature {
         Self {
             name: name.to_owned(),
             dependencies: deps.to_vec(),
+        }
+    }
+}
+
+impl From<Feature> for crate::Feature {
+    fn from(other: Feature) -> Self {
+        Self {
+            name: other.name,
+            dependencies: other.dependencies,
         }
     }
 }
@@ -99,6 +123,24 @@ impl Dependency {
             name: dep.name.clone(),
             version: dep.req.clone(),
             rename: dep.rename.clone(),
+        }
+    }
+}
+
+impl From<Dependency> for crate::OptionalDependency {
+    fn from(other: Dependency) -> Self {
+        let name = other.name;
+        let rename = other.rename;
+        if let Some(rename) = rename {
+            crate::OptionalDependency {
+                name: rename,
+                package: Some(name),
+            }
+        } else {
+            crate::OptionalDependency {
+                name,
+                package: None,
+            }
         }
     }
 }

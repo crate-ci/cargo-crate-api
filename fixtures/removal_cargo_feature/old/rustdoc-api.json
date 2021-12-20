@@ -30,5 +30,11 @@
   "crates": {
     "crates": []
   },
-  "features": {}
+  "features": {
+    "foo": {
+      "kind": "Feature",
+      "name": "foo",
+      "dependencies": []
+    }
+  }
 }

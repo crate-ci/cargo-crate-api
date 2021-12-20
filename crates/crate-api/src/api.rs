@@ -168,11 +168,15 @@ pub struct CrateId(usize);
 #[non_exhaustive]
 pub struct Crate {
     pub name: String,
+    pub version: Option<cargo_metadata::VersionReq>,
 }
 
 impl Crate {
     pub fn new(name: impl Into<String>) -> Self {
-        Self { name: name.into() }
+        Self {
+            name: name.into(),
+            version: None,
+        }
     }
 }
 

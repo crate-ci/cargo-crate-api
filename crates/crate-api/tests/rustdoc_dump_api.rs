@@ -34,9 +34,19 @@ fn main() {
             }
         },
         move |input_path| {
-            let input = std::fs::read_to_string(input_path).map_err(|e| e.to_string())?;
-            let actual =
+            let input = std::fs::read_to_string(&input_path).map_err(|e| e.to_string())?;
+            let mut actual =
                 crate_api::rustdoc::parse_raw(&input, input_path).map_err(|e| e.to_string())?;
+
+            let manifest_path = input_path.parent().unwrap().join("Cargo.toml");
+            let metadata = cargo_metadata::MetadataCommand::new()
+                .manifest_path(&manifest_path)
+                .exec()
+                .map_err(|e| e.to_string())?;
+            let root_id = metadata.resolve.unwrap().root.unwrap();
+            let pkg = metadata.packages.iter().find(|p| p.id == root_id).unwrap();
+            crate_api::manifest::Manifest::from(pkg).into_api(&mut actual);
+
             let actual = serde_json::to_string_pretty(&actual).map_err(|e| e.to_string())?;
             Ok(actual)
         },

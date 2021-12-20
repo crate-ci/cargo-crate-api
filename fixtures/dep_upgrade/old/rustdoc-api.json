@@ -151,7 +151,8 @@
       [
         0,
         {
-          "name": "dep_upgrade_dep"
+          "name": "dep_upgrade_dep",
+          "version": "^1.0"
         }
       ]
     ]

@@ -137,7 +137,7 @@
                     }
                   },
                   "id": "20:7",
-                  "name": "dep_upgrade_dep::ConvertFrom",
+                  "name": "dep::ConvertFrom",
                   "param_names": []
                 },
                 "kind": "resolved_path"
@@ -192,7 +192,7 @@
         "glob": false,
         "id": "20:3",
         "name": "Used",
-        "source": "dep_upgrade_dep::Used"
+        "source": "dep::Used"
       },
       "kind": "import",
       "links": {},
@@ -204,7 +204,7 @@
         ],
         "end": [
           1,
-          30
+          18
         ],
         "filename": "fixtures/dep_upgrade/old/src/lib.rs"
       },
@@ -232,7 +232,7 @@
                     }
                   },
                   "id": "20:5",
-                  "name": "dep_upgrade_dep::InFunc",
+                  "name": "dep::InFunc",
                   "param_names": []
                 },
                 "kind": "resolved_path"
@@ -257,7 +257,7 @@
         ],
         "end": [
           3,
-          48
+          36
         ],
         "filename": "fixtures/dep_upgrade/old/src/lib.rs"
       },

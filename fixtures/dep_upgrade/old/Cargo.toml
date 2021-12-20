@@ -5,4 +5,4 @@ version = "1.0.0"
 edition = "2021"
 
 [dependencies]
-dep_upgrade_dep = { path = "../dep_old", version = "1.0" }
+dep = { path = "../dep_old", version = "1.0", package = "dep_upgrade_dep" }

@@ -25,6 +25,26 @@ pub struct Ghi {
 
 pub struct Hij(u8);
 
-pub struct Iij {
+
+
+pub struct Ijk {
     field: u16,
+
+}
+
+pub struct Jkl {
+
+}
+
+#[non_exhaustive]
+pub struct Klm {
+}
+
+
+pub struct Lmn {
+}
+
+#[non_exhaustive]
+pub struct Mno {
+
 }

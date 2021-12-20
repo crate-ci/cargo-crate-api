@@ -13,6 +13,7 @@ pub enum Cde {
 
 pub enum Def {
     Abc,
+
 }
 
 pub enum Efg {
@@ -23,4 +24,17 @@ pub enum Efg {
     Efg { f: u8 },
     Fgh { f: u16 },
     Ghi { g: u8 },
+}
+
+#[non_exhaustive]
+pub enum Fgh {
+}
+
+
+pub enum Ghi {
+}
+
+#[non_exhaustive]
+pub enum Hij {
+    Abc,
 }

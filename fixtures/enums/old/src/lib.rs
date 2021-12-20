@@ -8,6 +8,7 @@ pub enum Bcd {
 
 pub enum Cde {
     Abc,
+
 }
 
 pub enum Def {
@@ -23,4 +24,17 @@ pub enum Efg {
     Efg(u8),
     Fgh { f: u8 },
     Ghi { f: u8 },
+}
+
+
+pub enum Fgh {
+}
+
+#[non_exhaustive]
+pub enum Ghi {
+}
+
+#[non_exhaustive]
+pub enum Hij {
+
 }

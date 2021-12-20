@@ -15,7 +15,7 @@
               0
             ],
             "end": [
-              33,
+              50,
               1
             ]
           },
@@ -28,7 +28,11 @@
             5,
             6,
             7,
-            8
+            8,
+            9,
+            10,
+            11,
+            12
           ]
         }
       ],
@@ -183,7 +187,7 @@
         8,
         {
           "crate_id": null,
-          "path": "structs_new::Iij",
+          "path": "structs_new::Ijk",
           "kind": "struct",
           "span": {
             "filename": "fixtures/structs/new/src/lib.rs",
@@ -197,6 +201,90 @@
             ]
           },
           "item_id": 7,
+          "children": []
+        }
+      ],
+      [
+        9,
+        {
+          "crate_id": null,
+          "path": "structs_new::Jkl",
+          "kind": "struct",
+          "span": {
+            "filename": "fixtures/structs/new/src/lib.rs",
+            "begin": [
+              35,
+              0
+            ],
+            "end": [
+              37,
+              1
+            ]
+          },
+          "item_id": 8,
+          "children": []
+        }
+      ],
+      [
+        10,
+        {
+          "crate_id": null,
+          "path": "structs_new::Klm",
+          "kind": "struct",
+          "span": {
+            "filename": "fixtures/structs/new/src/lib.rs",
+            "begin": [
+              40,
+              0
+            ],
+            "end": [
+              41,
+              1
+            ]
+          },
+          "item_id": 9,
+          "children": []
+        }
+      ],
+      [
+        11,
+        {
+          "crate_id": null,
+          "path": "structs_new::Lmn",
+          "kind": "struct",
+          "span": {
+            "filename": "fixtures/structs/new/src/lib.rs",
+            "begin": [
+              44,
+              0
+            ],
+            "end": [
+              45,
+              1
+            ]
+          },
+          "item_id": 10,
+          "children": []
+        }
+      ],
+      [
+        12,
+        {
+          "crate_id": null,
+          "path": "structs_new::Mno",
+          "kind": "struct",
+          "span": {
+            "filename": "fixtures/structs/new/src/lib.rs",
+            "begin": [
+              48,
+              0
+            ],
+            "end": [
+              50,
+              1
+            ]
+          },
+          "item_id": 11,
           "children": []
         }
       ]
@@ -334,7 +422,7 @@
         7,
         {
           "crate_id": null,
-          "name": "Iij",
+          "name": "Ijk",
           "span": {
             "filename": "fixtures/structs/new/src/lib.rs",
             "begin": [
@@ -343,6 +431,78 @@
             ],
             "end": [
               33,
+              1
+            ]
+          }
+        }
+      ],
+      [
+        8,
+        {
+          "crate_id": null,
+          "name": "Jkl",
+          "span": {
+            "filename": "fixtures/structs/new/src/lib.rs",
+            "begin": [
+              35,
+              0
+            ],
+            "end": [
+              37,
+              1
+            ]
+          }
+        }
+      ],
+      [
+        9,
+        {
+          "crate_id": null,
+          "name": "Klm",
+          "span": {
+            "filename": "fixtures/structs/new/src/lib.rs",
+            "begin": [
+              40,
+              0
+            ],
+            "end": [
+              41,
+              1
+            ]
+          }
+        }
+      ],
+      [
+        10,
+        {
+          "crate_id": null,
+          "name": "Lmn",
+          "span": {
+            "filename": "fixtures/structs/new/src/lib.rs",
+            "begin": [
+              44,
+              0
+            ],
+            "end": [
+              45,
+              1
+            ]
+          }
+        }
+      ],
+      [
+        11,
+        {
+          "crate_id": null,
+          "name": "Mno",
+          "span": {
+            "filename": "fixtures/structs/new/src/lib.rs",
+            "begin": [
+              48,
+              0
+            ],
+            "end": [
+              50,
               1
             ]
           }

@@ -27,7 +27,24 @@ pub struct Hij {
     field: u8,
 }
 
-pub struct Iij {
+pub struct Ijk {
     pub field1: u8,
     pub field2: u8,
+}
+
+pub struct Jkl {
+    field: u8
+}
+
+
+pub struct Klm {
+}
+
+#[non_exhaustive]
+pub struct Lmn {
+}
+
+#[non_exhaustive]
+pub struct Mno {
+    field: u8
 }

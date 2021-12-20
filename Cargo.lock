@@ -911,6 +911,14 @@ name = "regions_old"
 version = "1.0.0"
 
 [[package]]
+name = "removal_cargo_feature_new"
+version = "1.0.0"
+
+[[package]]
+name = "removal_cargo_feature_old"
+version = "1.0.0"
+
+[[package]]
 name = "removal_new"
 version = "1.0.0"
 

@@ -18,6 +18,7 @@ pub struct Api {
 pub struct Diff {
     pub manifest_path: std::path::PathBuf,
     pub against: Source,
+    pub before: crate_api::Api,
     pub after: crate_api::Api,
 }
 

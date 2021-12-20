@@ -40,16 +40,16 @@ fn run() -> proc_exit::ExitResult {
         .with_code(proc_exit::Code::CONFIG_ERR)?;
 
     let mode = args.mode();
-    let source = match mode {
+    let base = match mode {
         args::Mode::DumpRaw => None,
         args::Mode::Api => None,
         args::Mode::Diff => {
-            let source = args
-                .source()
+            let base = args
+                .base()
                 .map(Ok)
-                .unwrap_or_else(|| find_default_source(metadata.workspace_root.as_std_path()))
+                .unwrap_or_else(|| find_default_base(metadata.workspace_root.as_std_path()))
                 .with_code(proc_exit::Code::FAILURE)?;
-            Some(source)
+            Some(base)
         }
     };
 
@@ -58,7 +58,7 @@ fn run() -> proc_exit::ExitResult {
         let res = match mode {
             args::Mode::DumpRaw => dump_raw(selected, args.format),
             args::Mode::Api => api(selected, args.format),
-            args::Mode::Diff => diff(selected, source.clone().unwrap(), args.format),
+            args::Mode::Diff => diff(&metadata, selected, base.clone().unwrap(), args.format),
         };
         match res {
             Ok(()) => {}
@@ -139,15 +139,20 @@ fn api(pkg: &cargo_metadata::Package, format: args::Format) -> Result<(), eyre::
 }
 
 fn diff(
+    metadata: &cargo_metadata::Metadata,
     pkg: &cargo_metadata::Package,
-    source: report::Source,
+    base: report::Source,
     format: args::Format,
 ) -> Result<(), eyre::Report> {
-    let mut api =
+    let mut after =
         crate_api::RustDocBuilder::new().into_api(pkg.manifest_path.as_path().as_std_path())?;
-
     let manifest = crate_api::manifest::Manifest::from(pkg);
-    manifest.into_api(&mut api);
+    manifest.into_api(&mut after);
+
+    let base_path = resolve_source_path(metadata, pkg, &base)?;
+    let mut before = crate_api::RustDocBuilder::new().into_api(&base_path)?;
+    let manifest = crate_api::manifest::Manifest::from(pkg);
+    manifest.into_api(&mut before);
 
     match format {
         args::Format::Silent => {}
@@ -155,8 +160,9 @@ fn diff(
             // HACK: Real version (using `termtree`) isn't implemented yet
             let raw = report::Diff {
                 manifest_path: pkg.manifest_path.clone().into_std_path_buf(),
-                against: source,
-                after: api,
+                against: base,
+                before,
+                after,
             };
             let _ = writeln!(std::io::stdout(), "{}", serde_json::to_string_pretty(&raw)?);
         }
@@ -164,16 +170,18 @@ fn diff(
             // HACK: Real version isn't implemented yet
             let raw = report::Diff {
                 manifest_path: pkg.manifest_path.clone().into_std_path_buf(),
-                against: source,
-                after: api,
+                against: base,
+                before,
+                after,
             };
             let _ = writeln!(std::io::stdout(), "{}", serde_json::to_string_pretty(&raw)?);
         }
         args::Format::Json => {
             let raw = report::Diff {
                 manifest_path: pkg.manifest_path.clone().into_std_path_buf(),
-                against: source,
-                after: api,
+                against: base,
+                before,
+                after,
             };
             let _ = writeln!(std::io::stdout(), "{}", serde_json::to_string(&raw)?);
         }
@@ -182,7 +190,7 @@ fn diff(
     Ok(())
 }
 
-fn find_default_source(path: &std::path::Path) -> Result<report::Source, eyre::Report> {
+fn find_default_base(path: &std::path::Path) -> Result<report::Source, eyre::Report> {
     let repo = git2::Repository::discover(path)?;
 
     let mut tags = std::collections::HashMap::new();
@@ -202,5 +210,64 @@ fn find_default_source(path: &std::path::Path) -> Result<report::Source, eyre::R
         }
     }
 
-    eyre::bail!("Could not find a tag for {} for source", path.display());
+    eyre::bail!("Could not find a tag for {} for base", path.display());
+}
+
+fn resolve_source_path(
+    metadata: &cargo_metadata::Metadata,
+    pkg: &cargo_metadata::Package,
+    source: &report::Source,
+) -> Result<std::path::PathBuf, eyre::Report> {
+    match source {
+        report::Source::Git(rev) => {
+            let target = metadata
+                .target_directory
+                .join(format!("crate-api/{}-base", pkg.name))
+                .into_std_path_buf();
+            checkout_ref(pkg.manifest_path.as_std_path(), &target, rev)?;
+            find_by_package_name(&pkg.name, &target)
+        }
+        report::Source::Path(path) => Ok(path.to_owned()),
+        report::Source::Registry(_) => {
+            todo!()
+        }
+    }
+}
+
+fn find_by_package_name(
+    name: &str,
+    target: &std::path::Path,
+) -> Result<std::path::PathBuf, eyre::Report> {
+    let metadata = cargo_metadata::MetadataCommand::new()
+        .current_dir(target)
+        .no_deps()
+        .exec()?;
+    metadata
+        .packages
+        .iter()
+        .filter(|p| metadata.workspace_members.contains(&p.id))
+        .filter(|p| p.name == name)
+        .map(|p| p.manifest_path.as_std_path().to_owned())
+        .next()
+        .ok_or_else(|| eyre::eyre!("Could no find {} at {}", name, target.display()))
+}
+
+fn checkout_ref(
+    source: &std::path::Path,
+    target: &std::path::Path,
+    rev: &str,
+) -> Result<(), eyre::Report> {
+    let repo = git2::Repository::discover(source)?;
+
+    let rev = repo.revparse_single(rev)?;
+
+    let mut co = git2::build::CheckoutBuilder::new();
+    co.target_dir(target)
+        .remove_untracked(true)
+        .remove_ignored(true)
+        .use_ours(true)
+        .force();
+    repo.checkout_tree(&rev, Some(&mut co))?;
+
+    Ok(())
 }

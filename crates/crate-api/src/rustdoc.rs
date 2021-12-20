@@ -322,6 +322,11 @@ impl RustDocParser {
                     .extend(impl_.items.iter().map(move |i| (path_id, i.clone())));
                 None
             }
+            rustdoc_json_types_fork::ItemEnum::Enum(enum_) => {
+                self.unprocessed
+                    .extend(enum_.variants.iter().map(move |i| (path_id, i.clone())));
+                None
+            }
             _ => {
                 assert_ne!(self.api.root_id, None, "Module should be root");
                 let mut item = crate::Item::new();
@@ -357,6 +362,7 @@ fn _convert_path_kind(kind: rustdoc_json_types_fork::ItemKind) -> crate::PathKin
         rustdoc_json_types_fork::ItemKind::Struct => crate::PathKind::Struct,
         rustdoc_json_types_fork::ItemKind::Union => crate::PathKind::Union,
         rustdoc_json_types_fork::ItemKind::Enum => crate::PathKind::Enum,
+        rustdoc_json_types_fork::ItemKind::Variant => crate::PathKind::Variant,
         rustdoc_json_types_fork::ItemKind::Function => crate::PathKind::Function,
         rustdoc_json_types_fork::ItemKind::Typedef => crate::PathKind::Typedef,
         rustdoc_json_types_fork::ItemKind::OpaqueTy => crate::PathKind::OpaqueTy,
@@ -374,8 +380,7 @@ fn _convert_path_kind(kind: rustdoc_json_types_fork::ItemKind) -> crate::PathKin
         rustdoc_json_types_fork::ItemKind::AssocType => crate::PathKind::AssocType,
         rustdoc_json_types_fork::ItemKind::Primitive => crate::PathKind::Primitive,
         rustdoc_json_types_fork::ItemKind::Keyword => crate::PathKind::Keyword,
-        rustdoc_json_types_fork::ItemKind::StructField
-        | rustdoc_json_types_fork::ItemKind::Variant => {
+        rustdoc_json_types_fork::ItemKind::StructField => {
             unreachable!("These are handled by the Item")
         }
     }

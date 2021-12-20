@@ -89,6 +89,7 @@ pub enum PathKind {
     Struct,
     Union,
     Enum,
+    Variant,
     Function,
     Typedef,
     OpaqueTy,

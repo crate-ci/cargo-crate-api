@@ -91,7 +91,7 @@
               19
             ]
           },
-          "item_id": 0,
+          "item_id": null,
           "children": []
         }
       ],
@@ -112,7 +112,7 @@
               19
             ]
           },
-          "item_id": 1,
+          "item_id": 0,
           "children": []
         }
       ],
@@ -123,7 +123,7 @@
           "path": "mix_new::Def",
           "kind": "import",
           "span": null,
-          "item_id": 1,
+          "item_id": 0,
           "children": []
         }
       ],
@@ -134,7 +134,7 @@
           "path": "mix_new::b::Abc",
           "kind": "import",
           "span": null,
-          "item_id": 0,
+          "item_id": null,
           "children": []
         }
       ]
@@ -144,24 +144,6 @@
     "items": [
       [
         0,
-        {
-          "crate_id": null,
-          "name": "Abc",
-          "span": {
-            "filename": "fixtures/mix/new/src/lib.rs",
-            "begin": [
-              2,
-              4
-            ],
-            "end": [
-              2,
-              19
-            ]
-          }
-        }
-      ],
-      [
-        1,
         {
           "crate_id": null,
           "name": "Def",

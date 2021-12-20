@@ -110,7 +110,7 @@
               19
             ]
           },
-          "item_id": 1,
+          "item_id": null,
           "children": []
         }
       ],
@@ -142,24 +142,6 @@
             ],
             "end": [
               2,
-              19
-            ]
-          }
-        }
-      ],
-      [
-        1,
-        {
-          "crate_id": null,
-          "name": "Def",
-          "span": {
-            "filename": "fixtures/mix/old/src/lib.rs",
-            "begin": [
-              3,
-              4
-            ],
-            "end": [
-              3,
               19
             ]
           }

@@ -42,33 +42,14 @@
               1
             ]
           },
-          "item_id": 0,
+          "item_id": null,
           "children": []
         }
       ]
     ]
   },
   "items": {
-    "items": [
-      [
-        0,
-        {
-          "crate_id": null,
-          "name": "Abc",
-          "span": {
-            "filename": "fixtures/kind_change/new/src/lib.rs",
-            "begin": [
-              1,
-              0
-            ],
-            "end": [
-              3,
-              1
-            ]
-          }
-        }
-      ]
-    ]
+    "items": []
   },
   "crates": {
     "crates": []

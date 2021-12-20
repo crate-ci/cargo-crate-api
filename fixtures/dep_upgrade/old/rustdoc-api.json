@@ -1,0 +1,159 @@
+{
+  "root_id": 0,
+  "paths": {
+    "paths": [
+      [
+        0,
+        {
+          "crate_id": null,
+          "path": "dep_upgrade_old",
+          "span": {
+            "filename": "fixtures/dep_upgrade/old/src/lib.rs",
+            "begin": [
+              1,
+              0
+            ],
+            "end": [
+              11,
+              1
+            ]
+          },
+          "item_id": null,
+          "children": [
+            1,
+            2,
+            3
+          ]
+        }
+      ],
+      [
+        1,
+        {
+          "crate_id": 0,
+          "path": "dep_upgrade_dep::Used",
+          "span": {
+            "filename": "/home/epage/src/personal/cargo-api/fixtures/dep_upgrade/dep_old/src/lib.rs",
+            "begin": [
+              1,
+              0
+            ],
+            "end": [
+              1,
+              16
+            ]
+          },
+          "item_id": 0,
+          "children": []
+        }
+      ],
+      [
+        2,
+        {
+          "crate_id": null,
+          "path": "dep_upgrade_old::in_func",
+          "span": {
+            "filename": "fixtures/dep_upgrade/old/src/lib.rs",
+            "begin": [
+              3,
+              0
+            ],
+            "end": [
+              3,
+              48
+            ]
+          },
+          "item_id": 1,
+          "children": []
+        }
+      ],
+      [
+        3,
+        {
+          "crate_id": null,
+          "path": "dep_upgrade_old::ConvertTo",
+          "span": {
+            "filename": "fixtures/dep_upgrade/old/src/lib.rs",
+            "begin": [
+              5,
+              0
+            ],
+            "end": [
+              5,
+              21
+            ]
+          },
+          "item_id": 2,
+          "children": []
+        }
+      ]
+    ]
+  },
+  "items": {
+    "items": [
+      [
+        0,
+        {
+          "crate_id": 0,
+          "name": "Used",
+          "span": {
+            "filename": "/home/epage/src/personal/cargo-api/fixtures/dep_upgrade/dep_old/src/lib.rs",
+            "begin": [
+              1,
+              0
+            ],
+            "end": [
+              1,
+              16
+            ]
+          }
+        }
+      ],
+      [
+        1,
+        {
+          "crate_id": null,
+          "name": "in_func",
+          "span": {
+            "filename": "fixtures/dep_upgrade/old/src/lib.rs",
+            "begin": [
+              3,
+              0
+            ],
+            "end": [
+              3,
+              48
+            ]
+          }
+        }
+      ],
+      [
+        2,
+        {
+          "crate_id": null,
+          "name": "ConvertTo",
+          "span": {
+            "filename": "fixtures/dep_upgrade/old/src/lib.rs",
+            "begin": [
+              5,
+              0
+            ],
+            "end": [
+              5,
+              21
+            ]
+          }
+        }
+      ]
+    ]
+  },
+  "crates": {
+    "crates": [
+      [
+        0,
+        {
+          "name": "dep_upgrade_dep"
+        }
+      ]
+    ]
+  }
+}

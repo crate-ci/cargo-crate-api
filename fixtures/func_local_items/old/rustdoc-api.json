@@ -7,6 +7,7 @@
         {
           "crate_id": null,
           "path": "func_local_items_old",
+          "kind": "module",
           "span": {
             "filename": "fixtures/func_local_items/old/src/lib.rs",
             "begin": [
@@ -29,6 +30,7 @@
         {
           "crate_id": null,
           "path": "func_local_items_old::abc",
+          "kind": "function",
           "span": {
             "filename": "fixtures/func_local_items/old/src/lib.rs",
             "begin": [

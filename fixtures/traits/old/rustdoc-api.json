@@ -7,6 +7,7 @@
         {
           "crate_id": null,
           "path": "traits_old",
+          "kind": "module",
           "span": {
             "filename": "fixtures/traits/old/src/lib.rs",
             "begin": [
@@ -39,6 +40,7 @@
         {
           "crate_id": null,
           "path": "traits_old::Abc",
+          "kind": "trait",
           "span": {
             "filename": "fixtures/traits/old/src/lib.rs",
             "begin": [
@@ -59,6 +61,7 @@
         {
           "crate_id": null,
           "path": "traits_old::Bcd",
+          "kind": "trait",
           "span": {
             "filename": "fixtures/traits/old/src/lib.rs",
             "begin": [
@@ -79,6 +82,7 @@
         {
           "crate_id": null,
           "path": "traits_old::Cde",
+          "kind": "trait",
           "span": {
             "filename": "fixtures/traits/old/src/lib.rs",
             "begin": [
@@ -99,6 +103,7 @@
         {
           "crate_id": null,
           "path": "traits_old::Def",
+          "kind": "trait",
           "span": {
             "filename": "fixtures/traits/old/src/lib.rs",
             "begin": [
@@ -119,6 +124,7 @@
         {
           "crate_id": null,
           "path": "traits_old::Efg",
+          "kind": "trait",
           "span": {
             "filename": "fixtures/traits/old/src/lib.rs",
             "begin": [
@@ -139,6 +145,7 @@
         {
           "crate_id": null,
           "path": "traits_old::Ghi",
+          "kind": "trait",
           "span": {
             "filename": "fixtures/traits/old/src/lib.rs",
             "begin": [
@@ -159,6 +166,7 @@
         {
           "crate_id": null,
           "path": "traits_old::Hij",
+          "kind": "trait",
           "span": {
             "filename": "fixtures/traits/old/src/lib.rs",
             "begin": [
@@ -179,6 +187,7 @@
         {
           "crate_id": null,
           "path": "traits_old::Klm",
+          "kind": "trait",
           "span": {
             "filename": "fixtures/traits/old/src/lib.rs",
             "begin": [
@@ -199,6 +208,7 @@
         {
           "crate_id": null,
           "path": "traits_old::Nop",
+          "kind": "trait",
           "span": {
             "filename": "fixtures/traits/old/src/lib.rs",
             "begin": [
@@ -219,6 +229,7 @@
         {
           "crate_id": null,
           "path": "traits_old::Qrs",
+          "kind": "trait",
           "span": {
             "filename": "fixtures/traits/old/src/lib.rs",
             "begin": [
@@ -239,6 +250,7 @@
         {
           "crate_id": null,
           "path": "traits_old::Tuv",
+          "kind": "trait",
           "span": {
             "filename": "fixtures/traits/old/src/lib.rs",
             "begin": [

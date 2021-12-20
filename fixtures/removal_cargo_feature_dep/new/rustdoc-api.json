@@ -7,6 +7,7 @@
         {
           "crate_id": null,
           "path": "removal_cargo_feature_dep_new",
+          "kind": "module",
           "span": {
             "filename": "fixtures/removal_cargo_feature_dep/new/src/lib.rs",
             "begin": [

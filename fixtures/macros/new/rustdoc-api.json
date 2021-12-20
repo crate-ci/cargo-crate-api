@@ -7,6 +7,7 @@
         {
           "crate_id": null,
           "path": "macros_new",
+          "kind": "module",
           "span": {
             "filename": "fixtures/macros/new/src/lib.rs",
             "begin": [
@@ -32,6 +33,7 @@
         {
           "crate_id": null,
           "path": "macros_new::Item",
+          "kind": "struct",
           "span": {
             "filename": "fixtures/macros/new/src/lib.rs",
             "begin": [
@@ -52,6 +54,7 @@
         {
           "crate_id": null,
           "path": "macros_new::abc",
+          "kind": "function",
           "span": {
             "filename": "fixtures/macros/new/src/lib.rs",
             "begin": [
@@ -72,6 +75,7 @@
         {
           "crate_id": null,
           "path": "macros_new::bar",
+          "kind": "macro",
           "span": {
             "filename": "fixtures/macros/new/src/lib.rs",
             "begin": [
@@ -92,6 +96,7 @@
         {
           "crate_id": null,
           "path": "macros_new::quux2",
+          "kind": "macro",
           "span": {
             "filename": "fixtures/macros/new/src/lib.rs",
             "begin": [

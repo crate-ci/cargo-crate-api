@@ -7,6 +7,7 @@
         {
           "crate_id": null,
           "path": "removal_use_new",
+          "kind": "module",
           "span": {
             "filename": "fixtures/removal_use/new/src/lib.rs",
             "begin": [
@@ -29,6 +30,7 @@
         {
           "crate_id": null,
           "path": "removal_use_new::Def",
+          "kind": "struct",
           "span": {
             "filename": "fixtures/removal_use/new/src/lib.rs",
             "begin": [

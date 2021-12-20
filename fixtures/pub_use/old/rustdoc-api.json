@@ -7,6 +7,7 @@
         {
           "crate_id": null,
           "path": "pub_use_old",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pub_use/old/src/lib.rs",
             "begin": [
@@ -30,6 +31,7 @@
         {
           "crate_id": null,
           "path": "pub_use_old::a",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pub_use/old/src/lib.rs",
             "begin": [
@@ -52,6 +54,7 @@
         {
           "crate_id": null,
           "path": "pub_use_old::a::Abc",
+          "kind": "struct",
           "span": {
             "filename": "fixtures/pub_use/old/src/lib.rs",
             "begin": [
@@ -72,6 +75,7 @@
         {
           "crate_id": null,
           "path": "pub_use_old::b",
+          "kind": "import",
           "span": null,
           "item_id": null,
           "children": [

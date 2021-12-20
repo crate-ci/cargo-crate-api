@@ -7,6 +7,7 @@
         {
           "crate_id": null,
           "path": "addition_use_old",
+          "kind": "module",
           "span": {
             "filename": "fixtures/addition_use/old/src/lib.rs",
             "begin": [
@@ -29,6 +30,7 @@
         {
           "crate_id": null,
           "path": "addition_use_old::Def",
+          "kind": "struct",
           "span": {
             "filename": "fixtures/addition_use/old/src/lib.rs",
             "begin": [

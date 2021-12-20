@@ -7,6 +7,7 @@
         {
           "crate_id": null,
           "path": "issue_34_old",
+          "kind": "module",
           "span": {
             "filename": "fixtures/issue_34/old/src/lib.rs",
             "begin": [
@@ -30,6 +31,7 @@
         {
           "crate_id": null,
           "path": "issue_34_old::missing_field",
+          "kind": "function",
           "span": {
             "filename": "fixtures/issue_34/old/src/lib.rs",
             "begin": [
@@ -50,6 +52,7 @@
         {
           "crate_id": null,
           "path": "issue_34_old::Deserializer",
+          "kind": "trait",
           "span": {
             "filename": "fixtures/issue_34/old/src/lib.rs",
             "begin": [

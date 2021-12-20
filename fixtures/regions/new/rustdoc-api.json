@@ -7,6 +7,7 @@
         {
           "crate_id": null,
           "path": "regions_new",
+          "kind": "module",
           "span": {
             "filename": "fixtures/regions/new/src/lib.rs",
             "begin": [
@@ -37,6 +38,7 @@
         {
           "crate_id": null,
           "path": "regions_new::A",
+          "kind": "typedef",
           "span": {
             "filename": "fixtures/regions/new/src/lib.rs",
             "begin": [
@@ -57,6 +59,7 @@
         {
           "crate_id": null,
           "path": "regions_new::B",
+          "kind": "typedef",
           "span": {
             "filename": "fixtures/regions/new/src/lib.rs",
             "begin": [
@@ -77,6 +80,7 @@
         {
           "crate_id": null,
           "path": "regions_new::C",
+          "kind": "typedef",
           "span": {
             "filename": "fixtures/regions/new/src/lib.rs",
             "begin": [
@@ -97,6 +101,7 @@
         {
           "crate_id": null,
           "path": "regions_new::D",
+          "kind": "typedef",
           "span": {
             "filename": "fixtures/regions/new/src/lib.rs",
             "begin": [
@@ -117,6 +122,7 @@
         {
           "crate_id": null,
           "path": "regions_new::E",
+          "kind": "typedef",
           "span": {
             "filename": "fixtures/regions/new/src/lib.rs",
             "begin": [
@@ -137,6 +143,7 @@
         {
           "crate_id": null,
           "path": "regions_new::abc",
+          "kind": "function",
           "span": {
             "filename": "fixtures/regions/new/src/lib.rs",
             "begin": [
@@ -157,6 +164,7 @@
         {
           "crate_id": null,
           "path": "regions_new::def",
+          "kind": "function",
           "span": {
             "filename": "fixtures/regions/new/src/lib.rs",
             "begin": [
@@ -177,6 +185,7 @@
         {
           "crate_id": null,
           "path": "regions_new::efg",
+          "kind": "function",
           "span": {
             "filename": "fixtures/regions/new/src/lib.rs",
             "begin": [
@@ -197,6 +206,7 @@
         {
           "crate_id": null,
           "path": "regions_new::fgh",
+          "kind": "function",
           "span": {
             "filename": "fixtures/regions/new/src/lib.rs",
             "begin": [

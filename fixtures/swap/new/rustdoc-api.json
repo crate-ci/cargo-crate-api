@@ -7,6 +7,7 @@
         {
           "crate_id": null,
           "path": "swap_new",
+          "kind": "module",
           "span": {
             "filename": "fixtures/swap/new/src/lib.rs",
             "begin": [
@@ -30,6 +31,7 @@
         {
           "crate_id": null,
           "path": "swap_new::a",
+          "kind": "module",
           "span": {
             "filename": "fixtures/swap/new/src/lib.rs",
             "begin": [
@@ -52,6 +54,7 @@
         {
           "crate_id": null,
           "path": "swap_new::b",
+          "kind": "module",
           "span": {
             "filename": "fixtures/swap/new/src/lib.rs",
             "begin": [
@@ -74,6 +77,7 @@
         {
           "crate_id": null,
           "path": "swap_new::b::Abc",
+          "kind": "struct",
           "span": {
             "filename": "fixtures/swap/new/src/lib.rs",
             "begin": [
@@ -94,6 +98,7 @@
         {
           "crate_id": null,
           "path": "swap_new::a::Abc",
+          "kind": "import",
           "span": null,
           "item_id": 0,
           "children": []

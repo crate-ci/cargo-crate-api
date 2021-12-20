@@ -7,6 +7,7 @@
         {
           "crate_id": null,
           "path": "inherent_impls_new",
+          "kind": "module",
           "span": {
             "filename": "fixtures/inherent_impls/new/src/lib.rs",
             "begin": [
@@ -30,6 +31,7 @@
         {
           "crate_id": null,
           "path": "inherent_impls_new::Abc",
+          "kind": "struct",
           "span": {
             "filename": "fixtures/inherent_impls/new/src/lib.rs",
             "begin": [
@@ -50,6 +52,7 @@
         {
           "crate_id": null,
           "path": "inherent_impls_new::Def",
+          "kind": "struct",
           "span": {
             "filename": "fixtures/inherent_impls/new/src/lib.rs",
             "begin": [

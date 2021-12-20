@@ -7,6 +7,7 @@
         {
           "crate_id": null,
           "path": "removal_use_old",
+          "kind": "module",
           "span": {
             "filename": "fixtures/removal_use/old/src/lib.rs",
             "begin": [
@@ -31,6 +32,7 @@
         {
           "crate_id": null,
           "path": "removal_use_old::Abc",
+          "kind": "struct",
           "span": {
             "filename": "fixtures/removal_use/old/src/lib.rs",
             "begin": [
@@ -51,6 +53,7 @@
         {
           "crate_id": null,
           "path": "removal_use_old::Bcd",
+          "kind": "trait",
           "span": {
             "filename": "fixtures/removal_use/old/src/lib.rs",
             "begin": [
@@ -71,6 +74,7 @@
         {
           "crate_id": null,
           "path": "removal_use_old::Def",
+          "kind": "struct",
           "span": {
             "filename": "fixtures/removal_use/old/src/lib.rs",
             "begin": [

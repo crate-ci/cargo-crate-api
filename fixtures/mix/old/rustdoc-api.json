@@ -7,6 +7,7 @@
         {
           "crate_id": null,
           "path": "mix_old",
+          "kind": "module",
           "span": {
             "filename": "fixtures/mix/old/src/lib.rs",
             "begin": [
@@ -31,6 +32,7 @@
         {
           "crate_id": null,
           "path": "mix_old::a",
+          "kind": "module",
           "span": {
             "filename": "fixtures/mix/old/src/lib.rs",
             "begin": [
@@ -54,6 +56,7 @@
         {
           "crate_id": null,
           "path": "mix_old::b",
+          "kind": "module",
           "span": {
             "filename": "fixtures/mix/old/src/lib.rs",
             "begin": [
@@ -74,6 +77,7 @@
         {
           "crate_id": null,
           "path": "mix_old::a::Abc",
+          "kind": "struct",
           "span": {
             "filename": "fixtures/mix/old/src/lib.rs",
             "begin": [
@@ -94,6 +98,7 @@
         {
           "crate_id": null,
           "path": "mix_old::a::Def",
+          "kind": "enum",
           "span": {
             "filename": "fixtures/mix/old/src/lib.rs",
             "begin": [
@@ -114,6 +119,7 @@
         {
           "crate_id": null,
           "path": "mix_old::Abc",
+          "kind": "import",
           "span": null,
           "item_id": 0,
           "children": []

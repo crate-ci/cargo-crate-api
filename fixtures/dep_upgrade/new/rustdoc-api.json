@@ -7,6 +7,7 @@
         {
           "crate_id": null,
           "path": "dep_upgrade_new",
+          "kind": "module",
           "span": {
             "filename": "fixtures/dep_upgrade/new/src/lib.rs",
             "begin": [
@@ -31,6 +32,7 @@
         {
           "crate_id": 0,
           "path": "dep_upgrade_dep::Used",
+          "kind": "struct",
           "span": {
             "filename": "/home/epage/src/personal/cargo-api/fixtures/dep_upgrade/dep_new/src/lib.rs",
             "begin": [
@@ -51,6 +53,7 @@
         {
           "crate_id": null,
           "path": "dep_upgrade_new::in_func",
+          "kind": "function",
           "span": {
             "filename": "fixtures/dep_upgrade/new/src/lib.rs",
             "begin": [
@@ -71,6 +74,7 @@
         {
           "crate_id": null,
           "path": "dep_upgrade_new::ConvertTo",
+          "kind": "struct",
           "span": {
             "filename": "fixtures/dep_upgrade/new/src/lib.rs",
             "begin": [

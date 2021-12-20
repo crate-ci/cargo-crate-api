@@ -7,6 +7,7 @@
         {
           "crate_id": null,
           "path": "func_old",
+          "kind": "module",
           "span": {
             "filename": "fixtures/func/old/src/lib.rs",
             "begin": [
@@ -37,6 +38,7 @@
         {
           "crate_id": null,
           "path": "func_old::abc",
+          "kind": "function",
           "span": {
             "filename": "fixtures/func/old/src/lib.rs",
             "begin": [
@@ -57,6 +59,7 @@
         {
           "crate_id": null,
           "path": "func_old::bcd",
+          "kind": "function",
           "span": {
             "filename": "fixtures/func/old/src/lib.rs",
             "begin": [
@@ -77,6 +80,7 @@
         {
           "crate_id": null,
           "path": "func_old::cde",
+          "kind": "function",
           "span": {
             "filename": "fixtures/func/old/src/lib.rs",
             "begin": [
@@ -97,6 +101,7 @@
         {
           "crate_id": null,
           "path": "func_old::def",
+          "kind": "function",
           "span": {
             "filename": "fixtures/func/old/src/lib.rs",
             "begin": [
@@ -117,6 +122,7 @@
         {
           "crate_id": null,
           "path": "func_old::efg",
+          "kind": "function",
           "span": {
             "filename": "fixtures/func/old/src/lib.rs",
             "begin": [
@@ -137,6 +143,7 @@
         {
           "crate_id": null,
           "path": "func_old::fgh",
+          "kind": "function",
           "span": {
             "filename": "fixtures/func/old/src/lib.rs",
             "begin": [
@@ -157,6 +164,7 @@
         {
           "crate_id": null,
           "path": "func_old::ghi",
+          "kind": "function",
           "span": {
             "filename": "fixtures/func/old/src/lib.rs",
             "begin": [
@@ -177,6 +185,7 @@
         {
           "crate_id": null,
           "path": "func_old::hij",
+          "kind": "function",
           "span": {
             "filename": "fixtures/func/old/src/lib.rs",
             "begin": [
@@ -197,6 +206,7 @@
         {
           "crate_id": null,
           "path": "func_old::ijk",
+          "kind": "function",
           "span": {
             "filename": "fixtures/func/old/src/lib.rs",
             "begin": [

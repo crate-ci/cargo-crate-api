@@ -7,6 +7,7 @@
         {
           "crate_id": null,
           "path": "removal_path_old",
+          "kind": "module",
           "span": {
             "filename": "fixtures/removal_path/old/src/lib.rs",
             "begin": [
@@ -32,6 +33,7 @@
         {
           "crate_id": null,
           "path": "removal_path_old::a",
+          "kind": "module",
           "span": {
             "filename": "fixtures/removal_path/old/src/lib.rs",
             "begin": [
@@ -54,6 +56,7 @@
         {
           "crate_id": null,
           "path": "removal_path_old::b",
+          "kind": "module",
           "span": {
             "filename": "fixtures/removal_path/old/src/lib.rs",
             "begin": [
@@ -76,6 +79,7 @@
         {
           "crate_id": null,
           "path": "removal_path_old::c",
+          "kind": "module",
           "span": {
             "filename": "fixtures/removal_path/old/src/lib.rs",
             "begin": [
@@ -98,6 +102,7 @@
         {
           "crate_id": null,
           "path": "removal_path_old::a::Abc",
+          "kind": "struct",
           "span": {
             "filename": "fixtures/removal_path/old/src/lib.rs",
             "begin": [
@@ -118,6 +123,7 @@
         {
           "crate_id": null,
           "path": "removal_path_old::Abc",
+          "kind": "import",
           "span": null,
           "item_id": 0,
           "children": []
@@ -128,6 +134,7 @@
         {
           "crate_id": null,
           "path": "removal_path_old::b::a",
+          "kind": "import",
           "span": null,
           "item_id": null,
           "children": [
@@ -140,6 +147,7 @@
         {
           "crate_id": null,
           "path": "removal_path_old::c::Abc",
+          "kind": "import",
           "span": null,
           "item_id": 0,
           "children": []

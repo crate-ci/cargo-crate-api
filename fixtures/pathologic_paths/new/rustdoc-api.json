@@ -7,6 +7,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -30,6 +31,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -53,6 +55,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::b",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -75,6 +78,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -98,6 +102,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::b",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -120,6 +125,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -143,6 +149,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::b",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -165,6 +172,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -188,6 +196,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::b",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -210,6 +219,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -233,6 +243,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::b",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -255,6 +266,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -278,6 +290,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::b",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -300,6 +313,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -323,6 +337,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::b",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -345,6 +360,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -368,6 +384,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::b",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -390,6 +407,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -413,6 +431,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::b",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -435,6 +454,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -458,6 +478,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::b",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -480,6 +501,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -503,6 +525,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::b",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -525,6 +548,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -548,6 +572,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::b",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -570,6 +595,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -593,6 +619,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -615,6 +642,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -638,6 +666,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -660,6 +689,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -683,6 +713,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -705,6 +736,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -728,6 +760,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -750,6 +783,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -773,6 +807,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -795,6 +830,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -818,6 +854,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -840,6 +877,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -863,6 +901,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -885,6 +924,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -908,6 +948,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -930,6 +971,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -953,6 +995,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -975,6 +1018,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -998,6 +1042,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -1020,6 +1065,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -1043,6 +1089,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -1065,6 +1112,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -1088,6 +1136,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -1110,6 +1159,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -1133,6 +1183,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -1155,6 +1206,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -1178,6 +1230,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -1200,6 +1253,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -1223,6 +1277,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -1245,6 +1300,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -1268,6 +1324,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -1290,6 +1347,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -1313,6 +1371,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -1335,6 +1394,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -1358,6 +1418,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -1380,6 +1441,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -1403,6 +1465,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -1425,6 +1488,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -1448,6 +1512,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -1470,6 +1535,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -1493,6 +1559,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -1515,6 +1582,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -1538,6 +1606,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -1560,6 +1629,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -1583,6 +1653,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -1605,6 +1676,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -1628,6 +1700,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -1650,6 +1723,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -1673,6 +1747,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -1695,6 +1770,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -1718,6 +1794,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -1740,6 +1817,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -1763,6 +1841,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -1785,6 +1864,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -1808,6 +1888,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -1830,6 +1911,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -1853,6 +1935,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -1875,6 +1958,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -1898,6 +1982,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -1920,6 +2005,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -1943,6 +2029,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -1965,6 +2052,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -1988,6 +2076,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -2010,6 +2099,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -2033,6 +2123,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -2055,6 +2146,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -2078,6 +2170,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -2100,6 +2193,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -2123,6 +2217,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -2145,6 +2240,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -2168,6 +2264,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -2190,6 +2287,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -2213,6 +2311,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -2235,6 +2334,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -2258,6 +2358,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -2280,6 +2381,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -2303,6 +2405,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -2325,6 +2428,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -2348,6 +2452,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -2370,6 +2475,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -2393,6 +2499,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -2415,6 +2522,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -2438,6 +2546,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -2460,6 +2569,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -2483,6 +2593,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -2505,6 +2616,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -2528,6 +2640,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -2550,6 +2663,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -2573,6 +2687,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -2595,6 +2710,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -2618,6 +2734,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -2640,6 +2757,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -2663,6 +2781,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -2685,6 +2804,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -2708,6 +2828,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -2730,6 +2851,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -2753,6 +2875,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -2775,6 +2898,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -2798,6 +2922,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -2820,6 +2945,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -2843,6 +2969,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -2865,6 +2992,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -2885,6 +3013,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b",
+          "kind": "module",
           "span": {
             "filename": "fixtures/pathologic_paths/new/src/lib.rs",
             "begin": [
@@ -2907,6 +3036,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::b::a",
+          "kind": "import",
           "span": null,
           "item_id": null,
           "children": [
@@ -2920,6 +3050,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::b::a",
+          "kind": "import",
           "span": null,
           "item_id": null,
           "children": [
@@ -2933,6 +3064,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::b::a",
+          "kind": "import",
           "span": null,
           "item_id": null,
           "children": [
@@ -2946,6 +3078,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::b::a",
+          "kind": "import",
           "span": null,
           "item_id": null,
           "children": [
@@ -2959,6 +3092,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::b::a",
+          "kind": "import",
           "span": null,
           "item_id": null,
           "children": [
@@ -2972,6 +3106,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::b::a",
+          "kind": "import",
           "span": null,
           "item_id": null,
           "children": [
@@ -2985,6 +3120,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::b::a",
+          "kind": "import",
           "span": null,
           "item_id": null,
           "children": [
@@ -2998,6 +3134,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::b::a",
+          "kind": "import",
           "span": null,
           "item_id": null,
           "children": [
@@ -3011,6 +3148,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::b::a",
+          "kind": "import",
           "span": null,
           "item_id": null,
           "children": [
@@ -3024,6 +3162,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::b::a",
+          "kind": "import",
           "span": null,
           "item_id": null,
           "children": [
@@ -3037,6 +3176,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::b::a",
+          "kind": "import",
           "span": null,
           "item_id": null,
           "children": [
@@ -3050,6 +3190,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "kind": "import",
           "span": null,
           "item_id": null,
           "children": [
@@ -3063,6 +3204,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "kind": "import",
           "span": null,
           "item_id": null,
           "children": [
@@ -3076,6 +3218,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "kind": "import",
           "span": null,
           "item_id": null,
           "children": [
@@ -3089,6 +3232,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "kind": "import",
           "span": null,
           "item_id": null,
           "children": [
@@ -3102,6 +3246,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "kind": "import",
           "span": null,
           "item_id": null,
           "children": [
@@ -3115,6 +3260,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "kind": "import",
           "span": null,
           "item_id": null,
           "children": [
@@ -3128,6 +3274,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "kind": "import",
           "span": null,
           "item_id": null,
           "children": [
@@ -3141,6 +3288,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "kind": "import",
           "span": null,
           "item_id": null,
           "children": [
@@ -3154,6 +3302,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "kind": "import",
           "span": null,
           "item_id": null,
           "children": [
@@ -3167,6 +3316,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "kind": "import",
           "span": null,
           "item_id": null,
           "children": [
@@ -3180,6 +3330,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "kind": "import",
           "span": null,
           "item_id": null,
           "children": [
@@ -3193,6 +3344,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "kind": "import",
           "span": null,
           "item_id": null,
           "children": [
@@ -3206,6 +3358,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "kind": "import",
           "span": null,
           "item_id": null,
           "children": [
@@ -3219,6 +3372,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "kind": "import",
           "span": null,
           "item_id": null,
           "children": [
@@ -3232,6 +3386,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "kind": "import",
           "span": null,
           "item_id": null,
           "children": [
@@ -3245,6 +3400,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "kind": "import",
           "span": null,
           "item_id": null,
           "children": [
@@ -3258,6 +3414,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "kind": "import",
           "span": null,
           "item_id": null,
           "children": [
@@ -3271,6 +3428,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "kind": "import",
           "span": null,
           "item_id": null,
           "children": [
@@ -3284,6 +3442,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "kind": "import",
           "span": null,
           "item_id": null,
           "children": [
@@ -3297,6 +3456,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "kind": "import",
           "span": null,
           "item_id": null,
           "children": [
@@ -3310,6 +3470,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "kind": "import",
           "span": null,
           "item_id": null,
           "children": [
@@ -3323,6 +3484,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "kind": "import",
           "span": null,
           "item_id": null,
           "children": [
@@ -3336,6 +3498,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "kind": "import",
           "span": null,
           "item_id": null,
           "children": [
@@ -3349,6 +3512,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "kind": "import",
           "span": null,
           "item_id": null,
           "children": [
@@ -3362,6 +3526,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "kind": "import",
           "span": null,
           "item_id": null,
           "children": [
@@ -3375,6 +3540,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "kind": "import",
           "span": null,
           "item_id": null,
           "children": [
@@ -3388,6 +3554,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "kind": "import",
           "span": null,
           "item_id": null,
           "children": [
@@ -3401,6 +3568,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "kind": "import",
           "span": null,
           "item_id": null,
           "children": [
@@ -3414,6 +3582,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "kind": "import",
           "span": null,
           "item_id": null,
           "children": [
@@ -3427,6 +3596,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "kind": "import",
           "span": null,
           "item_id": null,
           "children": [
@@ -3440,6 +3610,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "kind": "import",
           "span": null,
           "item_id": null,
           "children": [
@@ -3453,6 +3624,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "kind": "import",
           "span": null,
           "item_id": null,
           "children": [
@@ -3466,6 +3638,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "kind": "import",
           "span": null,
           "item_id": null,
           "children": [
@@ -3479,6 +3652,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "kind": "import",
           "span": null,
           "item_id": null,
           "children": [
@@ -3492,6 +3666,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "kind": "import",
           "span": null,
           "item_id": null,
           "children": [
@@ -3505,6 +3680,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "kind": "import",
           "span": null,
           "item_id": null,
           "children": [
@@ -3518,6 +3694,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "kind": "import",
           "span": null,
           "item_id": null,
           "children": [
@@ -3531,6 +3708,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "kind": "import",
           "span": null,
           "item_id": null,
           "children": [
@@ -3544,6 +3722,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "kind": "import",
           "span": null,
           "item_id": null,
           "children": [
@@ -3557,6 +3736,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "kind": "import",
           "span": null,
           "item_id": null,
           "children": [
@@ -3570,6 +3750,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "kind": "import",
           "span": null,
           "item_id": null,
           "children": [
@@ -3583,6 +3764,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "kind": "import",
           "span": null,
           "item_id": null,
           "children": [
@@ -3596,6 +3778,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "kind": "import",
           "span": null,
           "item_id": null,
           "children": [
@@ -3609,6 +3792,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "kind": "import",
           "span": null,
           "item_id": null,
           "children": [
@@ -3622,6 +3806,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "kind": "import",
           "span": null,
           "item_id": null,
           "children": [
@@ -3635,6 +3820,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "kind": "import",
           "span": null,
           "item_id": null,
           "children": [
@@ -3648,6 +3834,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "kind": "import",
           "span": null,
           "item_id": null,
           "children": [
@@ -3661,6 +3848,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "kind": "import",
           "span": null,
           "item_id": null,
           "children": [
@@ -3674,6 +3862,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "kind": "import",
           "span": null,
           "item_id": null,
           "children": [
@@ -3687,6 +3876,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "kind": "import",
           "span": null,
           "item_id": null,
           "children": [
@@ -3700,6 +3890,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "kind": "import",
           "span": null,
           "item_id": null,
           "children": [
@@ -3713,6 +3904,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "kind": "import",
           "span": null,
           "item_id": null,
           "children": [
@@ -3726,6 +3918,7 @@
         {
           "crate_id": null,
           "path": "pathologic_paths_new::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::a::b::a",
+          "kind": "import",
           "span": null,
           "item_id": null,
           "children": []

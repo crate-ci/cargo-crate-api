@@ -7,6 +7,7 @@
         {
           "crate_id": null,
           "path": "bounds_old",
+          "kind": "module",
           "span": {
             "filename": "fixtures/bounds/old/src/lib.rs",
             "begin": [
@@ -32,6 +33,7 @@
         {
           "crate_id": null,
           "path": "bounds_old::Abc",
+          "kind": "struct",
           "span": {
             "filename": "fixtures/bounds/old/src/lib.rs",
             "begin": [
@@ -52,6 +54,7 @@
         {
           "crate_id": null,
           "path": "bounds_old::Def",
+          "kind": "struct",
           "span": {
             "filename": "fixtures/bounds/old/src/lib.rs",
             "begin": [
@@ -72,6 +75,7 @@
         {
           "crate_id": null,
           "path": "bounds_old::abc",
+          "kind": "function",
           "span": {
             "filename": "fixtures/bounds/old/src/lib.rs",
             "begin": [
@@ -92,6 +96,7 @@
         {
           "crate_id": null,
           "path": "bounds_old::def",
+          "kind": "function",
           "span": {
             "filename": "fixtures/bounds/old/src/lib.rs",
             "begin": [

@@ -60,21 +60,54 @@ pub struct PathId(usize);
 pub struct Path {
     pub crate_id: Option<CrateId>,
     pub path: String,
+    pub kind: PathKind,
     pub span: Option<Span>,
     pub item_id: Option<ItemId>,
     pub children: Vec<PathId>,
 }
 
 impl Path {
-    pub fn new(path: impl Into<String>) -> Self {
+    pub fn new(kind: PathKind, path: impl Into<String>) -> Self {
         Self {
             crate_id: None,
             path: path.into(),
+            kind,
             span: None,
             item_id: None,
             children: Vec::new(),
         }
     }
+}
+
+#[derive(Copy, Clone, Debug, serde::Serialize, serde::Deserialize)]
+#[serde(rename_all = "snake_case")]
+#[non_exhaustive]
+pub enum PathKind {
+    Module,
+    ExternCrate,
+    Import,
+    Struct,
+    StructField,
+    Union,
+    Enum,
+    Variant,
+    Function,
+    Typedef,
+    OpaqueTy,
+    Constant,
+    Trait,
+    TraitAlias,
+    Method,
+    Impl,
+    Static,
+    ForeignType,
+    Macro,
+    ProcAttribute,
+    ProcDerive,
+    AssocConst,
+    AssocType,
+    Primitive,
+    Keyword,
 }
 
 #[derive(Clone, Default, Debug, serde::Serialize, serde::Deserialize)]

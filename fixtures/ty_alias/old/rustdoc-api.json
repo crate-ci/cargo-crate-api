@@ -7,6 +7,7 @@
         {
           "crate_id": null,
           "path": "ty_alias_old",
+          "kind": "module",
           "span": {
             "filename": "fixtures/ty_alias/old/src/lib.rs",
             "begin": [
@@ -35,6 +36,7 @@
         {
           "crate_id": null,
           "path": "ty_alias_old::A",
+          "kind": "typedef",
           "span": {
             "filename": "fixtures/ty_alias/old/src/lib.rs",
             "begin": [
@@ -55,6 +57,7 @@
         {
           "crate_id": null,
           "path": "ty_alias_old::B",
+          "kind": "typedef",
           "span": {
             "filename": "fixtures/ty_alias/old/src/lib.rs",
             "begin": [
@@ -75,6 +78,7 @@
         {
           "crate_id": null,
           "path": "ty_alias_old::C",
+          "kind": "typedef",
           "span": {
             "filename": "fixtures/ty_alias/old/src/lib.rs",
             "begin": [
@@ -95,6 +99,7 @@
         {
           "crate_id": null,
           "path": "ty_alias_old::D",
+          "kind": "typedef",
           "span": {
             "filename": "fixtures/ty_alias/old/src/lib.rs",
             "begin": [
@@ -115,6 +120,7 @@
         {
           "crate_id": null,
           "path": "ty_alias_old::E",
+          "kind": "typedef",
           "span": {
             "filename": "fixtures/ty_alias/old/src/lib.rs",
             "begin": [
@@ -135,6 +141,7 @@
         {
           "crate_id": null,
           "path": "ty_alias_old::F",
+          "kind": "typedef",
           "span": {
             "filename": "fixtures/ty_alias/old/src/lib.rs",
             "begin": [
@@ -155,6 +162,7 @@
         {
           "crate_id": null,
           "path": "ty_alias_old::G",
+          "kind": "typedef",
           "span": {
             "filename": "fixtures/ty_alias/old/src/lib.rs",
             "begin": [

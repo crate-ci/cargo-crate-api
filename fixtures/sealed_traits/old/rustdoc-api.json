@@ -7,6 +7,7 @@
         {
           "crate_id": null,
           "path": "sealed_traits_old",
+          "kind": "module",
           "span": {
             "filename": "fixtures/sealed_traits/old/src/lib.rs",
             "begin": [
@@ -29,6 +30,7 @@
         {
           "crate_id": null,
           "path": "sealed_traits_old::PublicTrait",
+          "kind": "trait",
           "span": {
             "filename": "fixtures/sealed_traits/old/src/lib.rs",
             "begin": [

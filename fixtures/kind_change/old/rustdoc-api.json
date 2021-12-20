@@ -7,6 +7,7 @@
         {
           "crate_id": null,
           "path": "kind_change_old",
+          "kind": "module",
           "span": {
             "filename": "fixtures/kind_change/old/src/lib.rs",
             "begin": [
@@ -29,6 +30,7 @@
         {
           "crate_id": null,
           "path": "kind_change_old::Abc",
+          "kind": "struct",
           "span": {
             "filename": "fixtures/kind_change/old/src/lib.rs",
             "begin": [

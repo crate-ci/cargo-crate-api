@@ -7,6 +7,7 @@
         {
           "crate_id": null,
           "path": "addition_path_new",
+          "kind": "module",
           "span": {
             "filename": "fixtures/addition_path/new/src/lib.rs",
             "begin": [
@@ -33,6 +34,7 @@
         {
           "crate_id": null,
           "path": "addition_path_new::a",
+          "kind": "module",
           "span": {
             "filename": "fixtures/addition_path/new/src/lib.rs",
             "begin": [
@@ -55,6 +57,7 @@
         {
           "crate_id": null,
           "path": "addition_path_new::b",
+          "kind": "module",
           "span": {
             "filename": "fixtures/addition_path/new/src/lib.rs",
             "begin": [
@@ -77,6 +80,7 @@
         {
           "crate_id": null,
           "path": "addition_path_new::c",
+          "kind": "module",
           "span": {
             "filename": "fixtures/addition_path/new/src/lib.rs",
             "begin": [
@@ -99,6 +103,7 @@
         {
           "crate_id": null,
           "path": "addition_path_new::d",
+          "kind": "module",
           "span": {
             "filename": "fixtures/addition_path/new/src/lib.rs",
             "begin": [
@@ -119,6 +124,7 @@
         {
           "crate_id": null,
           "path": "addition_path_new::a::Abc",
+          "kind": "struct",
           "span": {
             "filename": "fixtures/addition_path/new/src/lib.rs",
             "begin": [
@@ -139,6 +145,7 @@
         {
           "crate_id": null,
           "path": "addition_path_new::Abc",
+          "kind": "import",
           "span": null,
           "item_id": 0,
           "children": []
@@ -149,6 +156,7 @@
         {
           "crate_id": null,
           "path": "addition_path_new::b::a",
+          "kind": "import",
           "span": null,
           "item_id": null,
           "children": [
@@ -161,6 +169,7 @@
         {
           "crate_id": null,
           "path": "addition_path_new::c::Abc",
+          "kind": "import",
           "span": null,
           "item_id": 0,
           "children": []

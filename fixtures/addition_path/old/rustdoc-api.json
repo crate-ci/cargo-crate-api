@@ -7,6 +7,7 @@
         {
           "crate_id": null,
           "path": "addition_path_old",
+          "kind": "module",
           "span": {
             "filename": "fixtures/addition_path/old/src/lib.rs",
             "begin": [
@@ -31,6 +32,7 @@
         {
           "crate_id": null,
           "path": "addition_path_old::a",
+          "kind": "module",
           "span": {
             "filename": "fixtures/addition_path/old/src/lib.rs",
             "begin": [
@@ -53,6 +55,7 @@
         {
           "crate_id": null,
           "path": "addition_path_old::b",
+          "kind": "module",
           "span": {
             "filename": "fixtures/addition_path/old/src/lib.rs",
             "begin": [
@@ -73,6 +76,7 @@
         {
           "crate_id": null,
           "path": "addition_path_old::c",
+          "kind": "module",
           "span": {
             "filename": "fixtures/addition_path/old/src/lib.rs",
             "begin": [
@@ -93,6 +97,7 @@
         {
           "crate_id": null,
           "path": "addition_path_old::a::Abc",
+          "kind": "struct",
           "span": {
             "filename": "fixtures/addition_path/old/src/lib.rs",
             "begin": [

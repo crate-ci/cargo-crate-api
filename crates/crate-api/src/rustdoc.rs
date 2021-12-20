@@ -254,7 +254,7 @@ impl RustDocParser {
                 .get(raw_item_id)
                 .expect("all item ids are in `index`");
 
-            let kind = _convert_kind(raw_path.kind.clone());
+            let kind = _convert_path_kind(raw_path.kind.clone());
 
             let mut path = crate::Path::new(kind, raw_path.path.join("::"));
             path.crate_id = crate_id;
@@ -349,16 +349,14 @@ impl RustDocParser {
     }
 }
 
-fn _convert_kind(kind: rustdoc_json_types_fork::ItemKind) -> crate::PathKind {
+fn _convert_path_kind(kind: rustdoc_json_types_fork::ItemKind) -> crate::PathKind {
     match kind {
         rustdoc_json_types_fork::ItemKind::Module => crate::PathKind::Module,
         rustdoc_json_types_fork::ItemKind::ExternCrate => crate::PathKind::ExternCrate,
         rustdoc_json_types_fork::ItemKind::Import => crate::PathKind::Import,
         rustdoc_json_types_fork::ItemKind::Struct => crate::PathKind::Struct,
-        rustdoc_json_types_fork::ItemKind::StructField => crate::PathKind::StructField,
         rustdoc_json_types_fork::ItemKind::Union => crate::PathKind::Union,
         rustdoc_json_types_fork::ItemKind::Enum => crate::PathKind::Enum,
-        rustdoc_json_types_fork::ItemKind::Variant => crate::PathKind::Variant,
         rustdoc_json_types_fork::ItemKind::Function => crate::PathKind::Function,
         rustdoc_json_types_fork::ItemKind::Typedef => crate::PathKind::Typedef,
         rustdoc_json_types_fork::ItemKind::OpaqueTy => crate::PathKind::OpaqueTy,
@@ -376,5 +374,9 @@ fn _convert_kind(kind: rustdoc_json_types_fork::ItemKind) -> crate::PathKind {
         rustdoc_json_types_fork::ItemKind::AssocType => crate::PathKind::AssocType,
         rustdoc_json_types_fork::ItemKind::Primitive => crate::PathKind::Primitive,
         rustdoc_json_types_fork::ItemKind::Keyword => crate::PathKind::Keyword,
+        rustdoc_json_types_fork::ItemKind::StructField
+        | rustdoc_json_types_fork::ItemKind::Variant => {
+            unreachable!("These are handled by the Item")
+        }
     }
 }

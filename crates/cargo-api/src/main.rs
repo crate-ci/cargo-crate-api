@@ -26,8 +26,6 @@ fn run() -> proc_exit::ExitResult {
         }
     };
 
-    let mode = args.mode();
-
     args.color.apply();
     let colored_stderr = concolor_control::get(concolor_control::Stream::Stderr).ansi_color();
 
@@ -40,15 +38,27 @@ fn run() -> proc_exit::ExitResult {
         .metadata()
         .exec()
         .with_code(proc_exit::Code::CONFIG_ERR)?;
+
+    let mode = args.mode();
+    let source = match mode {
+        args::Mode::DumpRaw => None,
+        args::Mode::Api => None,
+        args::Mode::Diff => {
+            let source = args
+                .source()
+                .map(Ok)
+                .unwrap_or_else(|| find_default_source(metadata.workspace_root.as_std_path()))
+                .with_code(proc_exit::Code::FAILURE)?;
+            Some(source)
+        }
+    };
+
     let (selected, _) = args.workspace.partition_packages(&metadata);
     for selected in selected {
         let res = match mode {
             args::Mode::DumpRaw => dump_raw(selected, args.format),
             args::Mode::Api => api(selected, args.format),
-            args::Mode::Diff => {
-                let source = args.source().unwrap();
-                diff(selected, source, args.format)
-            }
+            args::Mode::Diff => diff(selected, source.clone().unwrap(), args.format),
         };
         match res {
             Ok(()) => {}
@@ -170,4 +180,27 @@ fn diff(
     }
 
     Ok(())
+}
+
+fn find_default_source(path: &std::path::Path) -> Result<report::Source, eyre::Report> {
+    let repo = git2::Repository::discover(path)?;
+
+    let mut tags = std::collections::HashMap::new();
+    repo.tag_foreach(|oid, name| {
+        if let Ok(name) = std::str::from_utf8(name) {
+            tags.insert(oid, name.to_owned());
+        }
+        true
+    })?;
+
+    let mut revwalk = repo.revwalk()?;
+    revwalk.push_head()?;
+    for oid in revwalk {
+        let oid = oid?;
+        if let Some(tag) = tags.remove(&oid) {
+            return Ok(report::Source::Git(tag));
+        }
+    }
+
+    eyre::bail!("Could not find a tag for {} for source", path.display());
 }

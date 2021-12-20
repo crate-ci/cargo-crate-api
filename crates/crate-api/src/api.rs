@@ -5,6 +5,7 @@ pub struct Api {
     pub paths: Paths,
     pub items: Items,
     pub crates: Crates,
+    pub features: std::collections::BTreeMap<String, AnyFeature>,
 }
 
 impl Api {
@@ -188,4 +189,45 @@ pub struct Span {
     pub begin: (usize, usize),
     /// Zero indexed Line and Column of the last character of the `Span`
     pub end: (usize, usize),
+}
+
+#[derive(Clone, Debug, PartialEq, Eq, serde::Serialize, serde::Deserialize)]
+#[serde(tag = "kind")]
+pub enum AnyFeature {
+    Feature(Feature),
+    OptionalDependency(OptionalDependency),
+}
+
+#[derive(Clone, Debug, PartialEq, Eq, serde::Serialize, serde::Deserialize)]
+#[non_exhaustive]
+pub struct Feature {
+    pub name: String,
+    pub dependencies: Vec<String>,
+}
+
+impl Feature {
+    pub fn new(name: impl Into<String>) -> Self {
+        Self {
+            name: name.into(),
+            dependencies: Vec::new(),
+        }
+    }
+}
+
+#[derive(Clone, Debug, PartialEq, Eq, serde::Serialize, serde::Deserialize)]
+#[non_exhaustive]
+pub struct OptionalDependency {
+    /// The name used to activate this dependency
+    pub name: String,
+    /// If renamed, the actual dependency name
+    pub package: Option<String>,
+}
+
+impl OptionalDependency {
+    pub fn new(name: impl Into<String>) -> Self {
+        Self {
+            name: name.into(),
+            package: None,
+        }
+    }
 }

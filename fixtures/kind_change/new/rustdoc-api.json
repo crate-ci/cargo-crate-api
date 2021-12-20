@@ -70,5 +70,6 @@
   },
   "crates": {
     "crates": []
-  }
+  },
+  "features": {}
 }

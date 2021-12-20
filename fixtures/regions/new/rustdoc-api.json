@@ -382,5 +382,6 @@
   },
   "crates": {
     "crates": []
-  }
+  },
+  "features": {}
 }

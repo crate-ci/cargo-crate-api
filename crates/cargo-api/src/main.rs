@@ -5,6 +5,7 @@ use structopt::StructOpt;
 
 mod args;
 mod log;
+mod report;
 
 fn main() {
     human_panic::setup_panic!();
@@ -25,6 +26,8 @@ fn run() -> proc_exit::ExitResult {
         }
     };
 
+    let mode = args.mode();
+
     args.color.apply();
     let colored_stderr = concolor_control::get(concolor_control::Stream::Stderr).ansi_color();
 
@@ -39,39 +42,21 @@ fn run() -> proc_exit::ExitResult {
         .with_code(proc_exit::Code::CONFIG_ERR)?;
     let (selected, _) = args.workspace.partition_packages(&metadata);
     for selected in selected {
-        if args.dump_raw {
-            let api = crate_api::RustDocBuilder::new()
-                .dump_raw(selected.manifest_path.as_path().as_std_path());
-            let api = match api {
-                Ok(api) => api,
-                Err(err) => {
-                    ::log::error!("{}", err);
-                    success = false;
-                    continue;
-                }
-            };
-            println!("{}", api);
-        } else if args.dump_api {
-            let api = crate_api::RustDocBuilder::new()
-                .into_api(selected.manifest_path.as_path().as_std_path());
-            let api = match api {
-                Ok(api) => api,
-                Err(err) => {
-                    ::log::error!("{}", err);
-                    success = false;
-                    continue;
-                }
-            };
-            let api = match serde_json::to_string(&api) {
-                Ok(api) => api,
-                Err(err) => {
-                    ::log::error!("{}", err);
-                    success = false;
-                    continue;
-                }
-            };
-            println!("{}", api);
-        }
+        let res = match mode {
+            args::Mode::DumpRaw => dump_raw(selected, args.format),
+            args::Mode::Api => api(selected, args.format),
+            args::Mode::Diff => {
+                todo!()
+            }
+        };
+        match res {
+            Ok(()) => {}
+            Err(err) => {
+                ::log::error!("{}", err);
+                success = false;
+                continue;
+            }
+        };
     }
 
     if success {
@@ -79,4 +64,74 @@ fn run() -> proc_exit::ExitResult {
     } else {
         proc_exit::Code::FAILURE.ok()
     }
+}
+
+fn dump_raw(pkg: &cargo_metadata::Package, format: args::Format) -> Result<(), eyre::Report> {
+    let raw =
+        crate_api::RustDocBuilder::new().dump_raw(pkg.manifest_path.as_path().as_std_path())?;
+    let raw: rustdoc_json_types_fork::Crate = serde_json::from_str(&raw)?;
+
+    let manifest = crate_api::manifest::Manifest::from(pkg);
+
+    let raw = report::Raw {
+        manifest_path: pkg.manifest_path.clone().into_std_path_buf(),
+        rustdoc: Some(raw),
+        manifest: Some(manifest),
+    };
+
+    match format {
+        args::Format::Silent => {}
+        args::Format::Pretty => {
+            let _ = writeln!(std::io::stdout(), "{}", serde_json::to_string_pretty(&raw)?);
+        }
+        args::Format::Md => {
+            let _ = writeln!(
+                std::io::stdout(),
+                "```json
+{}
+```",
+                serde_json::to_string_pretty(&raw)?
+            );
+        }
+        args::Format::Json => {
+            let _ = writeln!(std::io::stdout(), "{}", serde_json::to_string(&raw)?);
+        }
+    }
+
+    Ok(())
+}
+
+fn api(pkg: &cargo_metadata::Package, format: args::Format) -> Result<(), eyre::Report> {
+    let mut api =
+        crate_api::RustDocBuilder::new().into_api(pkg.manifest_path.as_path().as_std_path())?;
+
+    let manifest = crate_api::manifest::Manifest::from(pkg);
+    manifest.into_api(&mut api);
+
+    let raw = report::Api {
+        manifest_path: pkg.manifest_path.clone().into_std_path_buf(),
+        api: api,
+    };
+
+    match format {
+        args::Format::Silent => {}
+        args::Format::Pretty => {
+            // HACK: Real version (using `termtree`) isn't implemented yet
+            let _ = writeln!(std::io::stdout(), "{}", serde_json::to_string_pretty(&raw)?);
+        }
+        args::Format::Md => {
+            let _ = writeln!(
+                std::io::stdout(),
+                "```json
+{}
+```",
+                serde_json::to_string_pretty(&raw)?
+            );
+        }
+        args::Format::Json => {
+            let _ = writeln!(std::io::stdout(), "{}", serde_json::to_string(&raw)?);
+        }
+    }
+
+    Ok(())
 }

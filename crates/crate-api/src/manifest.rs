@@ -1,6 +1,7 @@
 use std::collections::HashMap;
 
-#[derive(Clone, Debug, PartialEq, Eq)]
+#[derive(Clone, Debug, PartialEq, Eq, serde::Serialize, serde::Deserialize)]
+#[serde(rename_all = "snake_case")]
 #[non_exhaustive]
 pub struct Manifest {
     pub name: String,
@@ -69,7 +70,8 @@ impl<'p> From<&'p cargo_metadata::Package> for Manifest {
     }
 }
 
-#[derive(Clone, Debug, PartialEq, Eq)]
+#[derive(Clone, Debug, PartialEq, Eq, serde::Serialize, serde::Deserialize)]
+#[serde(rename_all = "snake_case")]
 pub enum AnyFeature {
     Feature(Feature),
     Dependency(Dependency),
@@ -84,7 +86,8 @@ impl From<AnyFeature> for crate::AnyFeature {
     }
 }
 
-#[derive(Clone, Debug, PartialEq, Eq)]
+#[derive(Clone, Debug, PartialEq, Eq, serde::Serialize, serde::Deserialize)]
+#[serde(rename_all = "snake_case")]
 #[non_exhaustive]
 pub struct Feature {
     pub name: String,
@@ -109,7 +112,8 @@ impl From<Feature> for crate::Feature {
     }
 }
 
-#[derive(Clone, Debug, PartialEq, Eq)]
+#[derive(Clone, Debug, PartialEq, Eq, serde::Serialize, serde::Deserialize)]
+#[serde(rename_all = "snake_case")]
 #[non_exhaustive]
 pub struct Dependency {
     pub name: String,

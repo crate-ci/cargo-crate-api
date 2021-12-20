@@ -20,7 +20,13 @@ pub struct Api {
     pub dump_raw: bool,
 
     #[structopt(long, group = "mode")]
-    pub dump_api: bool,
+    pub api: bool,
+
+    #[structopt(short, long, group = "mode")]
+    pub diff: bool,
+
+    #[structopt(short, long, possible_values(&Format::variants()), default_value = "pretty")]
+    pub format: Format,
 
     #[structopt(flatten)]
     pub manifest: clap_cargo::Manifest,
@@ -33,4 +39,69 @@ pub struct Api {
 
     #[structopt(flatten)]
     pub verbose: clap_verbosity_flag::Verbosity,
+}
+
+impl Api {
+    pub fn mode(&self) -> Mode {
+        if self.dump_raw {
+            Mode::DumpRaw
+        } else if self.api {
+            Mode::Api
+        } else if self.diff {
+            Mode::Diff
+        } else {
+            Mode::Api
+        }
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq, Eq)]
+pub enum Mode {
+    DumpRaw,
+    Api,
+    Diff,
+}
+
+#[derive(Copy, Clone, Debug, PartialEq, Eq)]
+pub enum Format {
+    Silent,
+    Pretty,
+    Md,
+    Json,
+}
+
+impl Format {
+    pub fn variants() -> [&'static str; 4] {
+        ["silent", "pretty", "md", "json"]
+    }
+}
+
+impl std::str::FromStr for Format {
+    type Err = String;
+    fn from_str(s: &str) -> ::std::result::Result<Self, Self::Err> {
+        match s {
+            "silent" => Ok(Format::Silent),
+            "pretty" => Ok(Format::Pretty),
+            "md" | "markdown" => Ok(Format::Md),
+            "json" => Ok(Format::Json),
+            _ => Err(format!("valid values: {}", Self::variants().join(", "))),
+        }
+    }
+}
+
+impl std::fmt::Display for Format {
+    fn fmt(&self, f: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
+        match self {
+            Format::Silent => "silent".fmt(f),
+            Format::Pretty => "pretty".fmt(f),
+            Format::Md => "md".fmt(f),
+            Format::Json => "json".fmt(f),
+        }
+    }
+}
+
+impl Default for Format {
+    fn default() -> Self {
+        Format::Pretty
+    }
 }

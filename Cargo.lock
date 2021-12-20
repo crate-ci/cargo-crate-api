@@ -133,6 +133,7 @@ dependencies = [
 name = "cargo-api"
 version = "0.1.0"
 dependencies = [
+ "cargo_metadata",
  "clap-cargo",
  "clap-verbosity-flag",
  "concolor-clap",
@@ -143,6 +144,8 @@ dependencies = [
  "human-panic",
  "log",
  "proc-exit",
+ "rustdoc-json-types-fork",
+ "serde",
  "serde_json",
  "structopt",
  "termtree",

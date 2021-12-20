@@ -2,7 +2,7 @@
 pub struct Error {
     kind: ErrorKind,
     context: String,
-    source: Option<std::sync::Arc<dyn std::error::Error + 'static>>,
+    source: Option<std::sync::Arc<dyn std::error::Error + Send + Sync + 'static>>,
 }
 
 impl Error {
@@ -14,7 +14,7 @@ impl Error {
         }
     }
 
-    pub fn set_source(mut self, source: impl std::error::Error + 'static) -> Self {
+    pub fn set_source(mut self, source: impl std::error::Error + Send + Sync + 'static) -> Self {
         self.source = Some(std::sync::Arc::new(source));
         self
     }
@@ -32,7 +32,9 @@ impl std::fmt::Display for Error {
 
 impl std::error::Error for Error {
     fn source(&self) -> Option<&(dyn std::error::Error + 'static)> {
-        self.source.as_deref()
+        self.source
+            .as_ref()
+            .map(|s| s as &(dyn std::error::Error + 'static))
     }
 }
 

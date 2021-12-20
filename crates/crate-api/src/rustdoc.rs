@@ -73,7 +73,7 @@ impl RustDocBuilder {
                 .as_path()
                 .as_std_path()
                 // HACK: Avoid potential errors when mixing toolchains
-                .join("crate-api");
+                .join("crate-api/target");
             manifest_target_directory.as_path()
         };
 

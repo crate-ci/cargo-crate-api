@@ -32,6 +32,14 @@ impl Paths {
         id
     }
 
+    pub fn len(&self) -> usize {
+        self.paths.len()
+    }
+
+    pub fn is_empty(&self) -> bool {
+        self.paths.is_empty()
+    }
+
     pub fn get(&self, id: PathId) -> Option<&Path> {
         self.paths.get(id.0).map(|(_i, c)| c)
     }
@@ -79,7 +87,9 @@ impl Path {
     }
 }
 
-#[derive(Copy, Clone, Debug, serde::Serialize, serde::Deserialize)]
+#[derive(
+    Copy, Clone, Debug, PartialEq, Eq, PartialOrd, Ord, serde::Serialize, serde::Deserialize,
+)]
 #[serde(rename_all = "snake_case")]
 #[non_exhaustive]
 pub enum PathKind {
@@ -124,6 +134,14 @@ impl Items {
         let id = ItemId(self.items.len());
         self.items.push((id, item_));
         id
+    }
+
+    pub fn len(&self) -> usize {
+        self.items.len()
+    }
+
+    pub fn is_empty(&self) -> bool {
+        self.items.is_empty()
     }
 
     pub fn get(&self, id: ItemId) -> Option<&Item> {
@@ -182,6 +200,14 @@ impl Crates {
         let id = CrateId(self.crates.len());
         self.crates.push((id, crate_));
         id
+    }
+
+    pub fn len(&self) -> usize {
+        self.crates.len()
+    }
+
+    pub fn is_empty(&self) -> bool {
+        self.crates.is_empty()
     }
 
     pub fn get(&self, id: CrateId) -> Option<&Crate> {

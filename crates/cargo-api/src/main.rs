@@ -108,28 +108,19 @@ fn api(pkg: &cargo_metadata::Package, format: args::Format) -> Result<(), eyre::
     let manifest = crate_api::manifest::Manifest::from(pkg);
     manifest.into_api(&mut api);
 
-    let raw = report::Api {
-        manifest_path: pkg.manifest_path.clone().into_std_path_buf(),
-        api: api,
-    };
-
     match format {
         args::Format::Silent => {}
         args::Format::Pretty => {
             // HACK: Real version (using `termtree`) isn't implemented yet
-            let _ = writeln!(std::io::stdout(), "{}", serde_json::to_string_pretty(&raw)?);
+            let _ = writeln!(std::io::stdout(), "{}", serde_json::to_string_pretty(&api)?);
         }
         args::Format::Md => {
-            let _ = writeln!(
-                std::io::stdout(),
-                "```json
-{}
-```",
-                serde_json::to_string_pretty(&raw)?
-            );
+            let stdout = std::io::stdout();
+            let mut stdout = stdout.lock();
+            report::render_api_markdown(&mut stdout, &api)?;
         }
         args::Format::Json => {
-            let _ = writeln!(std::io::stdout(), "{}", serde_json::to_string(&raw)?);
+            let _ = writeln!(std::io::stdout(), "{}", serde_json::to_string(&api)?);
         }
     }
 

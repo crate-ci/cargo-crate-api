@@ -6,6 +6,7 @@ license = "MIT OR Apache-2.0"
 categories = ["development-tools::cargo-plugins"]
 keywords = ["cargo"]
 edition = "2021"
+rust-version = "1.57.0"  # MSRV
 include = [
   "src/**/*",
   "Cargo.toml",

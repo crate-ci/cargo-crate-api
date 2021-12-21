@@ -151,8 +151,12 @@ fn diff(
 
     let base_path = resolve_source_path(metadata, pkg, &base)?;
     let mut before = crate_api::RustDocBuilder::new().into_api(&base_path)?;
-    let manifest = crate_api::manifest::Manifest::from(pkg);
+    let old_pkg = resolve_package(&base_path)?;
+    let manifest = crate_api::manifest::Manifest::from(&old_pkg);
     manifest.into_api(&mut before);
+
+    let mut diffs = Vec::new();
+    crate_api::diff::diff(&before, &after, &mut diffs);
 
     match format {
         args::Format::Silent => {}
@@ -163,6 +167,7 @@ fn diff(
                 against: base,
                 before,
                 after,
+                diffs,
             };
             let _ = writeln!(std::io::stdout(), "{}", serde_json::to_string_pretty(&raw)?);
         }
@@ -173,6 +178,7 @@ fn diff(
                 against: base,
                 before,
                 after,
+                diffs,
             };
             let _ = writeln!(std::io::stdout(), "{}", serde_json::to_string_pretty(&raw)?);
         }
@@ -182,6 +188,7 @@ fn diff(
                 against: base,
                 before,
                 after,
+                diffs,
             };
             let _ = writeln!(std::io::stdout(), "{}", serde_json::to_string(&raw)?);
         }
@@ -211,6 +218,28 @@ fn find_default_base(path: &std::path::Path) -> Result<report::Source, eyre::Rep
     }
 
     eyre::bail!("Could not find a tag for {} for base", path.display());
+}
+
+fn resolve_package(path: &std::path::Path) -> Result<cargo_metadata::Package, eyre::Report> {
+    let metadata = cargo_metadata::MetadataCommand::new()
+        .manifest_path(path)
+        .exec()?;
+    let root_id = metadata
+        .resolve
+        .expect("present because called with deps")
+        .root
+        .ok_or_else(|| {
+            eyre::eyre!(
+                "Expected package manifest, got virtual workspace at {}",
+                path.display()
+            )
+        })?;
+    let pkg = metadata
+        .packages
+        .into_iter()
+        .find(|p| p.id == root_id)
+        .expect("resolved root_id to exist");
+    Ok(pkg)
 }
 
 fn resolve_source_path(

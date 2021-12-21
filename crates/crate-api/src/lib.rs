@@ -1,8 +1,9 @@
 mod api;
 mod error;
-pub mod rustdoc;
 
+pub mod diff;
 pub mod manifest;
+pub mod rustdoc;
 
 pub use api::*;
 pub use error::*;

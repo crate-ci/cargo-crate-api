@@ -292,6 +292,7 @@ dependencies = [
  "cargo_metadata",
  "fs-snapshot",
  "rustdoc-json-types-fork",
+ "semver",
  "serde",
  "serde_json",
  "tempfile",

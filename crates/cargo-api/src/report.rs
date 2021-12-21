@@ -20,6 +20,7 @@ pub struct Diff {
     pub against: Source,
     pub before: crate_api::Api,
     pub after: crate_api::Api,
+    pub diffs: Vec<crate_api::diff::Diff>,
 }
 
 #[derive(Clone, Debug, PartialEq, Eq, serde::Serialize)]

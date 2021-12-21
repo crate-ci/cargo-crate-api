@@ -88,8 +88,11 @@ fn overwrite(actual: &str, case: &Case) -> libtest_mimic::Outcome {
 }
 
 fn try_overwrite(actual: &str, case: &Case) -> Result<(), String> {
-    std::fs::write(&case.expected, actual)
-        .map_err(|e| format!("Failed to write to {}: {}", case.expected.display(), e))
+    std::fs::write(
+        &case.expected,
+        String::from_iter(normalize_line_endings::normalized(actual.chars())),
+    )
+    .map_err(|e| format!("Failed to write to {}: {}", case.expected.display(), e))
 }
 
 fn verify(actual: &str, case: &Case) -> libtest_mimic::Outcome {
@@ -103,12 +106,15 @@ fn try_verify(actual: &str, case: &Case) -> Result<(), String> {
     let palette = crate::color::Palette::current();
     let expected = std::fs::read_to_string(&case.expected)
         .map_err(|e| format!("Failed to read {}: {}", case.expected.display(), e))?;
+    let expected = String::from_iter(normalize_line_endings::normalized(expected.chars()));
+
+    let actual = String::from_iter(normalize_line_endings::normalized(actual.chars()));
 
     if actual != expected {
         if cfg!(feature = "diff") {
             let diff = crate::diff::diff(
                 &expected,
-                actual,
+                &actual,
                 case.expected.display(),
                 case.expected.display(),
                 palette,

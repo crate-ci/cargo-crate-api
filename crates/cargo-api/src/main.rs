@@ -172,15 +172,9 @@ fn diff(
             let _ = writeln!(std::io::stdout(), "{}", serde_json::to_string_pretty(&raw)?);
         }
         args::Format::Md => {
-            // HACK: Real version isn't implemented yet
-            let raw = report::Diff {
-                manifest_path: pkg.manifest_path.clone().into_std_path_buf(),
-                against: base,
-                before,
-                after,
-                diffs,
-            };
-            let _ = writeln!(std::io::stdout(), "{}", serde_json::to_string_pretty(&raw)?);
+            let stdout = std::io::stdout();
+            let mut stdout = stdout.lock();
+            report::render_diff_markdown(&mut stdout, &before, &after, &diffs)?;
         }
         args::Format::Json => {
             let raw = report::Diff {

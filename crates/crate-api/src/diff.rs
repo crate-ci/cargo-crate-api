@@ -21,25 +21,24 @@ pub struct Diff {
     pub after: Option<Location>,
 }
 
-#[derive(Copy, Clone, Debug, PartialEq, Eq, serde::Serialize)]
+#[derive(Copy, Clone, Debug, PartialEq, Eq, PartialOrd, Ord, serde::Serialize)]
 #[serde(rename_all = "snake_case")]
 pub enum Category {
+    Unknown,
     Added,
     Removed,
     Changed,
-    Unknown,
 }
 
 #[derive(Copy, Clone, Debug, PartialEq, Eq, PartialOrd, Ord, serde::Serialize)]
 #[serde(rename_all = "snake_case")]
 pub enum Severity {
-    Forbid,
-    Warn,
-    Report,
     Allow,
+    Report,
+    Warn,
 }
 
-#[derive(Default, Clone, Debug, PartialEq, Eq, serde::Serialize)]
+#[derive(Default, Copy, Clone, Debug, PartialEq, Eq, serde::Serialize)]
 #[serde(rename_all = "snake_case")]
 #[non_exhaustive]
 pub struct Location {
@@ -87,7 +86,7 @@ pub const DEPENDENCY_REQUIREMENT: Id = Id {
     name: "dependency-requirement",
     explanation: "Changing the major version requirements breaks compatibility",
     category: Category::Changed,
-    default_severity: Severity::Forbid,
+    default_severity: Severity::Warn,
 };
 
 pub fn public_dependencies(before: &crate::Api, after: &crate::Api, changes: &mut Vec<Diff>) {

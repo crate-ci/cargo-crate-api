@@ -1,9 +1,12 @@
 [
   {
-    "category": "changed",
-    "severity": "allow",
-    "id": "dependency-requirement",
-    "explanation": "Changing the major version requirements breaks compatibility",
+    "severity": "warn",
+    "id": {
+      "name": "dependency-requirement",
+      "explanation": "Changing the major version requirements breaks compatibility",
+      "category": "changed",
+      "default_severity": "warn"
+    },
     "before": {
       "crate_id": 0,
       "path_id": null,

@@ -1,14 +1,22 @@
 use std::collections::HashMap;
 use std::collections::HashSet;
 
+#[derive(Copy, Clone, Debug, PartialEq, Eq, serde::Serialize)]
+#[serde(rename_all = "snake_case")]
+#[non_exhaustive]
+pub struct Id {
+    pub name: &'static str,
+    pub explanation: &'static str,
+    pub category: Category,
+    pub default_severity: Severity,
+}
+
 #[derive(Clone, Debug, PartialEq, Eq, serde::Serialize)]
 #[serde(rename_all = "snake_case")]
 #[non_exhaustive]
 pub struct Diff {
-    pub category: Category,
-    pub severity: Option<Severity>,
-    pub id: &'static str,
-    pub explanation: &'static str,
+    pub severity: Severity,
+    pub id: Id,
     pub before: Option<Location>,
     pub after: Option<Location>,
 }
@@ -44,6 +52,44 @@ pub fn diff(before: &crate::Api, after: &crate::Api, changes: &mut Vec<Diff>) {
     public_dependencies(before, after, changes);
 }
 
+pub const ALL_IDS: &[Id] = &[
+    DEPENDENCY_REMOVED,
+    DEPENDENCY_ADDED,
+    DEPENDENCY_AMBIGUOUS,
+    DEPENDENCY_REQUIREMENT,
+];
+
+pub const DEPENDENCY_REMOVED: Id = Id {
+    name: "dependency-removed",
+    explanation: "Public dependency removed because of an API change",
+    category: Category::Removed,
+    // This is a side effect of an API change but not an API change in of itself
+    default_severity: Severity::Allow,
+};
+
+pub const DEPENDENCY_ADDED: Id = Id {
+    name: "dependency-added",
+    explanation: "Public dependency removed because of an API change",
+    category: Category::Added,
+    // In case people weren't aware they added a dependency to their public API
+    default_severity: Severity::Report,
+};
+
+pub const DEPENDENCY_AMBIGUOUS: Id = Id {
+    name: "dependency-ambiguous",
+    explanation: "Could not determine the dependency version to check it",
+    category: Category::Unknown,
+    // In case people weren't aware they added a dependency to their public API
+    default_severity: Severity::Allow,
+};
+
+pub const DEPENDENCY_REQUIREMENT: Id = Id {
+    name: "dependency-requirement",
+    explanation: "Changing the major version requirements breaks compatibility",
+    category: Category::Changed,
+    default_severity: Severity::Forbid,
+};
+
 pub fn public_dependencies(before: &crate::Api, after: &crate::Api, changes: &mut Vec<Diff>) {
     let before_by_name: HashMap<_, _> = before
         .crates
@@ -62,11 +108,8 @@ pub fn public_dependencies(before: &crate::Api, after: &crate::Api, changes: &mu
     for removed_name in before_names.difference(&after_names) {
         let before_crate_id = *before_by_name.get(*removed_name).unwrap();
         changes.push(Diff {
-            category: Category::Removed,
-            // This is a side effect of an API change but not an API change in of itself
-            severity: Some(Severity::Allow),
-            id: "dependency-removed",
-            explanation: "Public dependency removed because of an API change",
+            severity: DEPENDENCY_REMOVED.default_severity,
+            id: DEPENDENCY_REMOVED,
             before: Some(Location {
                 crate_id: Some(before_crate_id),
                 ..Default::default()
@@ -78,11 +121,8 @@ pub fn public_dependencies(before: &crate::Api, after: &crate::Api, changes: &mu
     for added_name in after_names.difference(&before_names) {
         let after_crate_id = *after_by_name.get(*added_name).unwrap();
         changes.push(Diff {
-            category: Category::Added,
-            // In case people weren't aware they added a dependency to their public API
-            severity: Some(Severity::Report),
-            id: "dependency-added",
-            explanation: "Public dependency removed because of an API change",
+            severity: DEPENDENCY_ADDED.default_severity,
+            id: DEPENDENCY_ADDED,
             before: None,
             after: Some(Location {
                 crate_id: Some(after_crate_id),
@@ -99,10 +139,8 @@ pub fn public_dependencies(before: &crate::Api, after: &crate::Api, changes: &mu
 
         if before_crate.version.is_none() || after_crate.version.is_none() {
             changes.push(Diff {
-                category: Category::Unknown,
-                severity: Some(Severity::Allow),
-                id: "dependency-ambiguous",
-                explanation: "Could not determine the dependency version to check it",
+                severity: DEPENDENCY_AMBIGUOUS.default_severity,
+                id: DEPENDENCY_AMBIGUOUS,
                 before: Some(Location {
                     crate_id: Some(before_crate_id),
                     ..Default::default()
@@ -124,10 +162,8 @@ pub fn public_dependencies(before: &crate::Api, after: &crate::Api, changes: &mu
 
             if before_lower < after_lower || after_upper < before_upper {
                 changes.push(Diff {
-                    category: Category::Changed,
-                    severity: Some(Severity::Allow),
-                    id: "dependency-requirement",
-                    explanation: "Changing the major version requirements breaks compatibility",
+                    severity: DEPENDENCY_REQUIREMENT.default_severity,
+                    id: DEPENDENCY_REQUIREMENT,
                     before: Some(Location {
                         crate_id: Some(before_crate_id),
                         ..Default::default()

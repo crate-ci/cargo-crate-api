@@ -3,3 +3,6 @@
 name = "pathologic_paths_old"
 version = "1.0.0"
 edition = "2021"
+
+[package.metadata.release]
+release = false

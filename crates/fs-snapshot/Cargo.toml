@@ -1,8 +1,10 @@
 [package]
 name = "fs-snapshot"
-version = "0.1.0"
+version = "0.0.1"
 description = "Simple input/output file snapshotting"
 license = "MIT OR Apache-2.0"
+repository = "https://github.com/crate-ci/cargo-api.git"
+homepage = "https://github.com/crate-ci/cargo-api"
 documentation = "http://docs.rs/fs-snapshot/"
 readme = "README.md"
 categories = ["development-tools::testing"]

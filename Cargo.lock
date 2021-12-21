@@ -292,6 +292,7 @@ dependencies = [
  "cargo_metadata",
  "fs-snapshot",
  "rustdoc-json-types-fork",
+ "semver",
  "serde",
  "serde_json",
  "tempfile",
@@ -458,6 +459,7 @@ dependencies = [
  "difflib",
  "ignore",
  "libtest-mimic",
+ "normalize-line-endings",
  "yansi",
 ]
 
@@ -808,6 +810,12 @@ version = "1.0.0"
 [[package]]
 name = "mix_old"
 version = "1.0.0"
+
+[[package]]
+name = "normalize-line-endings"
+version = "0.3.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "61807f77802ff30975e01f4f071c8ba10c022052f98b3294119f3e615d13e5be"
 
 [[package]]
 name = "num_cpus"

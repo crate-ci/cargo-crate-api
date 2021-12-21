@@ -20,6 +20,7 @@ pub struct Diff {
     pub against: Source,
     pub before: crate_api::Api,
     pub after: crate_api::Api,
+    pub diffs: Vec<crate_api::diff::Diff>,
 }
 
 #[derive(Clone, Debug, PartialEq, Eq, serde::Serialize)]
@@ -145,4 +146,90 @@ pub fn render_api_markdown(
     }
 
     Ok(())
+}
+
+pub fn render_diff_markdown(
+    writer: &mut dyn std::io::Write,
+    before: &crate_api::Api,
+    after: &crate_api::Api,
+    diffs: &[crate_api::diff::Diff],
+) -> Result<(), eyre::Report> {
+    let mut diffs = diffs.to_vec();
+    diffs.sort_by_key(|diff| (diff.severity, diff.id.category, diff.id.name));
+
+    let mut last_severity = crate_api::diff::Severity::Allow;
+    let mut last_category = None;
+    for diff in diffs {
+        if diff.severity != last_severity {
+            match diff.severity {
+                crate_api::diff::Severity::Allow => unreachable!(),
+                crate_api::diff::Severity::Report => {
+                    let _ = writeln!(writer, "## Changes");
+                    let _ = writeln!(writer);
+                }
+                crate_api::diff::Severity::Warn => {
+                    let _ = writeln!(writer, "## Breaking Changes");
+                    let _ = writeln!(writer);
+                }
+            }
+            last_severity = diff.severity;
+        }
+        if Some(diff.id.category) != last_category {
+            match diff.id.category {
+                crate_api::diff::Category::Unknown => {}
+                crate_api::diff::Category::Added => {
+                    let _ = writeln!(writer, "**Added**");
+                }
+                crate_api::diff::Category::Removed => {
+                    let _ = writeln!(writer, "**Removed**");
+                }
+                crate_api::diff::Category::Changed => {
+                    let _ = writeln!(writer, "**Changed**");
+                }
+            }
+            last_category = Some(diff.id.category);
+        }
+
+        match diff.id {
+            crate_api::diff::DEPENDENCY_REQUIREMENT => {
+                let before_crate = before
+                    .crates
+                    .get(diff.before.unwrap().crate_id.unwrap())
+                    .unwrap();
+                let after_crate = after
+                    .crates
+                    .get(diff.after.unwrap().crate_id.unwrap())
+                    .unwrap();
+                let _ = writeln!(
+                    writer,
+                    "- `{}` (public dependency): changed version requirement from {} to {}",
+                    after_crate.name,
+                    before_crate.version.as_ref().unwrap(),
+                    after_crate.version.as_ref().unwrap()
+                );
+            }
+            _ => {
+                let name = diff
+                    .after
+                    .map(|loc| location_name(after, loc))
+                    .or_else(|| diff.before.map(|loc| location_name(before, loc)))
+                    .expect("at least before or after exists");
+                let _ = writeln!(writer, "- `{}`: {}", name, diff.id.explanation);
+            }
+        }
+    }
+
+    Ok(())
+}
+
+fn location_name(api: &crate_api::Api, location: crate_api::diff::Location) -> &str {
+    if let Some(path_id) = location.path_id {
+        api.paths.get(path_id).unwrap().path.as_str()
+    } else if let Some(item_id) = location.item_id {
+        api.items.get(item_id).unwrap().name.as_deref().unwrap()
+    } else if let Some(crate_id) = location.crate_id {
+        api.crates.get(crate_id).unwrap().name.as_str()
+    } else {
+        unimplemented!("{:?} had no location", location)
+    }
 }

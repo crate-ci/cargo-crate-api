@@ -1,6 +1,6 @@
 fn main() {
     let action = std::env::var("RUSTDOC_DUMP_API");
-    let action = action.as_deref().unwrap_or("ignore");
+    let action = action.as_deref().unwrap_or("verify");
     let action = match action {
         "overwrite" => Action::Overwrite,
         "ignore" => Action::Ignore,

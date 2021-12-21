@@ -3,8 +3,8 @@
 > Interact with the crate's API
 
 [![Documentation](https://img.shields.io/badge/docs-master-blue.svg)][Documentation]
-![License](https://img.shields.io/crates/l/assert_fs.svg)
-[![Crates Status](https://img.shields.io/crates/v/assert_fs.svg)](https://crates.io/crates/assert_fs)
+![License](https://img.shields.io/crates/l/cargo-api.svg)
+[![Crates Status](https://img.shields.io/crates/v/cargo-api.svg)](https://crates.io/crates/cargo-api)
 
 ## Documentation
 

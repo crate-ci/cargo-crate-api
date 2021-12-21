@@ -2,8 +2,11 @@
 [package]
 name = "rustdoc-json-types-fork"
 description = "Interact with the crate's API"
-version = "0.1.0"
+version = "0.0.1"
 license = "MIT OR Apache-2.0"
+repository = "https://github.com/crate-ci/cargo-api.git"
+homepage = "https://github.com/crate-ci/cargo-api"
+documentation = "http://docs.rs/rustdoc-json-types-fork/"
 categories = ["development-tools::cargo-plugins"]
 keywords = ["cargo"]
 edition = "2021"

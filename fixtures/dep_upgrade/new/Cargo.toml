@@ -4,5 +4,8 @@ name = "dep_upgrade_new"
 version = "1.0.0"
 edition = "2021"
 
+[package.metadata.release]
+release = false
+
 [dependencies]
 dep = { path = "../dep_new", version = "2.0", package = "dep_upgrade_dep" }

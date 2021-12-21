@@ -6,13 +6,37 @@
 ![License](https://img.shields.io/crates/l/assert_fs.svg)
 [![Crates Status](https://img.shields.io/crates/v/assert_fs.svg)](https://crates.io/crates/assert_fs)
 
-## Prior Art
+## Documentation
 
-- [cargo-breaking](https://github.com/iomentum/cargo-breaking)
-  - Originally used "cargo expand" and `syn`
-  - Branch switching to rustc internals
-- [semverver](https://github.com/rust-lang/rust-semverver)
-  - Compiler driver
+- [Installation](#install)
+- [Getting Started](#getting-started)
+- [Reference](docs/reference.md)
+- [FAQ](docs/faq.md)
+- [Contribute](CONTRIBUTING.md)
+- [CHANGELOG](CHANGELOG.md)
+
+## Install
+
+[Download](https://github.com/crate-ci/cargo-api/releases) a pre-built binary
+(installable via [gh-install](https://github.com/crate-ci/gh-install)).
+
+Or use rust to install:
+```bash
+cargo install cargo-api
+```
+
+## Getting Started
+
+To diff your crate against the last tag, run
+```bash
+$ cargo api --diff
+```
+*(choose the git reference with `--git <REF>`)*
+
+To help get started writing your `CHANGELOG.md`, run:
+```bash
+$ cargo api --diff --format md
+```
 
 ## License
 

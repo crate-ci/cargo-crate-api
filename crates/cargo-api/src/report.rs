@@ -191,6 +191,23 @@ pub fn render_diff_markdown(
         }
 
         match diff.id {
+            crate_api::diff::DEPENDENCY_REQUIREMENT => {
+                let before_crate = before
+                    .crates
+                    .get(diff.before.unwrap().crate_id.unwrap())
+                    .unwrap();
+                let after_crate = after
+                    .crates
+                    .get(diff.after.unwrap().crate_id.unwrap())
+                    .unwrap();
+                let _ = writeln!(
+                    writer,
+                    "- `{}` (public dependency): changed version requirement from {} to {}",
+                    after_crate.name,
+                    before_crate.version.as_ref().unwrap(),
+                    after_crate.version.as_ref().unwrap()
+                );
+            }
             _ => {
                 let name = diff
                     .after

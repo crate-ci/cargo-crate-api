@@ -145,7 +145,7 @@ dependencies = [
  "human-panic",
  "log",
  "proc-exit",
- "rustdoc-json-types-fork",
+ "rustdoc-types",
  "serde",
  "serde_json",
  "structopt",
@@ -291,7 +291,7 @@ version = "0.0.1"
 dependencies = [
  "cargo_metadata",
  "fs_snapshot",
- "rustdoc-json-types-fork",
+ "rustdoc-types",
  "semver",
  "serde",
  "serde_json",
@@ -1090,8 +1090,10 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "7ef03e0a2b150c7a90d01faf6254c9c48a41e95fb2a8c2ac1c6f0d2b9aefc342"
 
 [[package]]
-name = "rustdoc-json-types-fork"
-version = "0.0.1"
+name = "rustdoc-types"
+version = "0.5.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "c827d666a869ec2774bab0eab417ae1f3fa00f735814778929212cb25b84028b"
 dependencies = [
  "serde",
 ]

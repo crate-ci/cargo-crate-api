@@ -80,7 +80,7 @@ fn run() -> proc_exit::ExitResult {
 fn dump_raw(pkg: &cargo_metadata::Package, format: args::Format) -> Result<(), eyre::Report> {
     let raw =
         crate_api::RustDocBuilder::new().dump_raw(pkg.manifest_path.as_path().as_std_path())?;
-    let raw: rustdoc_json_types_fork::Crate = serde_json::from_str(&raw)?;
+    let raw: rustdoc_types::Crate = serde_json::from_str(&raw)?;
 
     let manifest = crate_api::manifest::Manifest::from(pkg);
 

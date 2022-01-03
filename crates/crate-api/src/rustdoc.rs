@@ -135,13 +135,13 @@ pub fn parse_raw(raw: &str, manifest_path: &std::path::Path) -> Result<crate::Ap
 
 #[derive(Default)]
 struct RustDocParser {
-    unprocessed: VecDeque<(Option<crate::PathId>, rustdoc_json_types_fork::Id)>,
-    deferred_imports: Vec<(crate::PathId, String, rustdoc_json_types_fork::Id)>,
+    unprocessed: VecDeque<(Option<crate::PathId>, rustdoc_types::Id)>,
+    deferred_imports: Vec<(crate::PathId, String, rustdoc_types::Id)>,
 
     api: crate::Api,
     crate_ids: HashMap<u32, Option<crate::CrateId>>,
-    path_ids: HashMap<rustdoc_json_types_fork::Id, Option<crate::PathId>>,
-    item_ids: HashMap<rustdoc_json_types_fork::Id, Option<crate::ItemId>>,
+    path_ids: HashMap<rustdoc_types::Id, Option<crate::PathId>>,
+    item_ids: HashMap<rustdoc_types::Id, Option<crate::ItemId>>,
 }
 
 impl RustDocParser {
@@ -154,7 +154,7 @@ impl RustDocParser {
         raw: &str,
         manifest_path: &std::path::Path,
     ) -> Result<crate::Api, crate::Error> {
-        let raw: rustdoc_json_types_fork::Crate = serde_json::from_str(raw).map_err(|e| {
+        let raw: rustdoc_types::Crate = serde_json::from_str(raw).map_err(|e| {
             crate::Error::new(
                 crate::ErrorKind::ApiParse,
                 format!(
@@ -218,7 +218,7 @@ impl RustDocParser {
 
     fn _parse_crate(
         &mut self,
-        raw: &rustdoc_json_types_fork::Crate,
+        raw: &rustdoc_types::Crate,
         raw_crate_id: u32,
     ) -> Option<crate::CrateId> {
         if let Some(crate_id) = self.crate_ids.get(&raw_crate_id) {
@@ -239,9 +239,9 @@ impl RustDocParser {
 
     fn _parse_path(
         &mut self,
-        raw: &rustdoc_json_types_fork::Crate,
+        raw: &rustdoc_types::Crate,
         parent_path_id: Option<crate::PathId>,
-        raw_item_id: &rustdoc_json_types_fork::Id,
+        raw_item_id: &rustdoc_types::Id,
         crate_id: Option<crate::CrateId>,
     ) -> Option<crate::PathId> {
         if let Some(path_id) = self.path_ids.get(&raw_item_id) {
@@ -282,8 +282,8 @@ impl RustDocParser {
 
     fn _parse_item(
         &mut self,
-        raw: &rustdoc_json_types_fork::Crate,
-        raw_item_id: &rustdoc_json_types_fork::Id,
+        raw: &rustdoc_types::Crate,
+        raw_item_id: &rustdoc_types::Id,
         path_id: Option<crate::PathId>,
         crate_id: Option<crate::CrateId>,
     ) -> Option<crate::ItemId> {
@@ -297,12 +297,12 @@ impl RustDocParser {
             .expect("all item ids are in `index`");
 
         let item_id = match &raw_item.inner {
-            rustdoc_json_types_fork::ItemEnum::Module(module) => {
+            rustdoc_types::ItemEnum::Module(module) => {
                 self.unprocessed
                     .extend(module.items.iter().map(move |i| (path_id, i.clone())));
                 None
             }
-            rustdoc_json_types_fork::ItemEnum::Import(import) => {
+            rustdoc_types::ItemEnum::Import(import) => {
                 let raw_target_id = import.id.as_ref().unwrap();
                 self.unprocessed.push_back((path_id, raw_target_id.clone()));
                 self.deferred_imports.push((
@@ -312,17 +312,17 @@ impl RustDocParser {
                 ));
                 None
             }
-            rustdoc_json_types_fork::ItemEnum::Trait(trait_) => {
+            rustdoc_types::ItemEnum::Trait(trait_) => {
                 self.unprocessed
                     .extend(trait_.items.iter().map(move |i| (path_id, i.clone())));
                 None
             }
-            rustdoc_json_types_fork::ItemEnum::Impl(impl_) => {
+            rustdoc_types::ItemEnum::Impl(impl_) => {
                 self.unprocessed
                     .extend(impl_.items.iter().map(move |i| (path_id, i.clone())));
                 None
             }
-            rustdoc_json_types_fork::ItemEnum::Enum(enum_) => {
+            rustdoc_types::ItemEnum::Enum(enum_) => {
                 self.unprocessed
                     .extend(enum_.variants.iter().map(move |i| (path_id, i.clone())));
                 None
@@ -354,33 +354,33 @@ impl RustDocParser {
     }
 }
 
-fn _convert_path_kind(kind: rustdoc_json_types_fork::ItemKind) -> crate::PathKind {
+fn _convert_path_kind(kind: rustdoc_types::ItemKind) -> crate::PathKind {
     match kind {
-        rustdoc_json_types_fork::ItemKind::Module => crate::PathKind::Module,
-        rustdoc_json_types_fork::ItemKind::ExternCrate => crate::PathKind::ExternCrate,
-        rustdoc_json_types_fork::ItemKind::Import => crate::PathKind::Import,
-        rustdoc_json_types_fork::ItemKind::Struct => crate::PathKind::Struct,
-        rustdoc_json_types_fork::ItemKind::Union => crate::PathKind::Union,
-        rustdoc_json_types_fork::ItemKind::Enum => crate::PathKind::Enum,
-        rustdoc_json_types_fork::ItemKind::Variant => crate::PathKind::Variant,
-        rustdoc_json_types_fork::ItemKind::Function => crate::PathKind::Function,
-        rustdoc_json_types_fork::ItemKind::Typedef => crate::PathKind::Typedef,
-        rustdoc_json_types_fork::ItemKind::OpaqueTy => crate::PathKind::OpaqueTy,
-        rustdoc_json_types_fork::ItemKind::Constant => crate::PathKind::Constant,
-        rustdoc_json_types_fork::ItemKind::Trait => crate::PathKind::Trait,
-        rustdoc_json_types_fork::ItemKind::TraitAlias => crate::PathKind::TraitAlias,
-        rustdoc_json_types_fork::ItemKind::Method => crate::PathKind::Method,
-        rustdoc_json_types_fork::ItemKind::Impl => crate::PathKind::Impl,
-        rustdoc_json_types_fork::ItemKind::Static => crate::PathKind::Static,
-        rustdoc_json_types_fork::ItemKind::ForeignType => crate::PathKind::ForeignType,
-        rustdoc_json_types_fork::ItemKind::Macro => crate::PathKind::Macro,
-        rustdoc_json_types_fork::ItemKind::ProcAttribute => crate::PathKind::ProcAttribute,
-        rustdoc_json_types_fork::ItemKind::ProcDerive => crate::PathKind::ProcDerive,
-        rustdoc_json_types_fork::ItemKind::AssocConst => crate::PathKind::AssocConst,
-        rustdoc_json_types_fork::ItemKind::AssocType => crate::PathKind::AssocType,
-        rustdoc_json_types_fork::ItemKind::Primitive => crate::PathKind::Primitive,
-        rustdoc_json_types_fork::ItemKind::Keyword => crate::PathKind::Keyword,
-        rustdoc_json_types_fork::ItemKind::StructField => {
+        rustdoc_types::ItemKind::Module => crate::PathKind::Module,
+        rustdoc_types::ItemKind::ExternCrate => crate::PathKind::ExternCrate,
+        rustdoc_types::ItemKind::Import => crate::PathKind::Import,
+        rustdoc_types::ItemKind::Struct => crate::PathKind::Struct,
+        rustdoc_types::ItemKind::Union => crate::PathKind::Union,
+        rustdoc_types::ItemKind::Enum => crate::PathKind::Enum,
+        rustdoc_types::ItemKind::Variant => crate::PathKind::Variant,
+        rustdoc_types::ItemKind::Function => crate::PathKind::Function,
+        rustdoc_types::ItemKind::Typedef => crate::PathKind::Typedef,
+        rustdoc_types::ItemKind::OpaqueTy => crate::PathKind::OpaqueTy,
+        rustdoc_types::ItemKind::Constant => crate::PathKind::Constant,
+        rustdoc_types::ItemKind::Trait => crate::PathKind::Trait,
+        rustdoc_types::ItemKind::TraitAlias => crate::PathKind::TraitAlias,
+        rustdoc_types::ItemKind::Method => crate::PathKind::Method,
+        rustdoc_types::ItemKind::Impl => crate::PathKind::Impl,
+        rustdoc_types::ItemKind::Static => crate::PathKind::Static,
+        rustdoc_types::ItemKind::ForeignType => crate::PathKind::ForeignType,
+        rustdoc_types::ItemKind::Macro => crate::PathKind::Macro,
+        rustdoc_types::ItemKind::ProcAttribute => crate::PathKind::ProcAttribute,
+        rustdoc_types::ItemKind::ProcDerive => crate::PathKind::ProcDerive,
+        rustdoc_types::ItemKind::AssocConst => crate::PathKind::AssocConst,
+        rustdoc_types::ItemKind::AssocType => crate::PathKind::AssocType,
+        rustdoc_types::ItemKind::Primitive => crate::PathKind::Primitive,
+        rustdoc_types::ItemKind::Keyword => crate::PathKind::Keyword,
+        rustdoc_types::ItemKind::StructField => {
             unreachable!("These are handled by the Item")
         }
     }

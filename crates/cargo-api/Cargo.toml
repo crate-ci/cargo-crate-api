@@ -33,7 +33,7 @@ concolor-clap = { version = "0.0.6", features = ["api_unstable"] }
 termtree = "0.2.3"
 
 cargo_metadata = "0.14"
-rustdoc-json-types-fork = { version = "0.0.1", path = "../rustdoc-json-types-fork" }
+rustdoc-types = "0.5.0"
 crate-api = { version = "0.0.1", path = "../crate-api" }
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"

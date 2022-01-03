@@ -290,7 +290,7 @@ name = "crate-api"
 version = "0.0.1"
 dependencies = [
  "cargo_metadata",
- "fs-snapshot",
+ "fs_snapshot",
  "rustdoc-json-types-fork",
  "semver",
  "serde",
@@ -452,8 +452,10 @@ dependencies = [
 ]
 
 [[package]]
-name = "fs-snapshot"
-version = "0.0.1"
+name = "fs_snapshot"
+version = "0.1.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "9ae9ef1c05fb672e4187312543065b2820dd517f813b89d91c9f9280fa324666"
 dependencies = [
  "concolor-control",
  "difflib",

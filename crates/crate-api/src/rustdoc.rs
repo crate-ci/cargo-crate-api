@@ -82,6 +82,8 @@ impl RustDocBuilder {
             "RUSTDOCFLAGS",
             "-Z unstable-options --document-hidden-items --output-format=json",
         )
+        .stdout(std::process::Stdio::null()) // Don't pollute cargo api output
+        .stderr(std::process::Stdio::inherit()) // Print cargo doc progress
         .args(["+nightly", "doc", "--all-features"])
         .arg("--manifest-path")
         .arg(manifest_path)
@@ -94,16 +96,15 @@ impl RustDocBuilder {
             cmd.arg("--no-deps");
         }
 
-        let output = cmd
-            .output()
+        let status = cmd
+            .status()
             .map_err(|e| crate::Error::new(crate::ErrorKind::ApiParse, e))?;
-        if !output.status.success() {
+        if !status.success() {
             return Err(crate::Error::new(
                 crate::ErrorKind::ApiParse,
                 format!(
-                    "Failed when running cargo-doc on {}: {}",
+                    "Failed when running cargo-doc on {}. See stderr.",
                     manifest_path.display(),
-                    String::from_utf8_lossy(&output.stderr)
                 ),
             ));
         }

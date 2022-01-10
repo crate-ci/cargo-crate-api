@@ -8,7 +8,7 @@ pub struct Error {
 impl Error {
     pub fn new(kind: ErrorKind, context: impl std::fmt::Display) -> Self {
         Self {
-            kind: kind,
+            kind,
             context: context.to_string(),
             source: None,
         }

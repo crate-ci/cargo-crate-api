@@ -267,7 +267,7 @@ impl RustDocParser {
             let crate_ = crate::Crate::new(&raw_crate.name);
             self.api.crates.push(crate_)
         });
-        self.crate_ids.insert(raw_crate_id.clone(), crate_id);
+        self.crate_ids.insert(raw_crate_id, crate_id);
         crate_id
     }
 
@@ -278,7 +278,7 @@ impl RustDocParser {
         raw_item_id: &rustdoc_json_types_fork::Id,
         crate_id: Option<crate::CrateId>,
     ) -> Option<crate::PathId> {
-        if let Some(path_id) = self.path_ids.get(&raw_item_id) {
+        if let Some(path_id) = self.path_ids.get(raw_item_id) {
             return *path_id;
         }
 
@@ -321,7 +321,7 @@ impl RustDocParser {
         path_id: Option<crate::PathId>,
         crate_id: Option<crate::CrateId>,
     ) -> Option<crate::ItemId> {
-        if let Some(item_id) = self.item_ids.get(&raw_item_id) {
+        if let Some(item_id) = self.item_ids.get(raw_item_id) {
             return *item_id;
         }
 

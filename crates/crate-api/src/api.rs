@@ -185,6 +185,12 @@ impl Item {
     }
 }
 
+impl Default for Item {
+    fn default() -> Self {
+        Self::new()
+    }
+}
+
 #[derive(Clone, Default, Debug, serde::Serialize, serde::Deserialize)]
 #[serde(rename_all = "snake_case")]
 pub struct Crates {

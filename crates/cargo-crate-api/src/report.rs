@@ -57,7 +57,7 @@ pub fn render_api_markdown(
                 let _ = writeln!(writer, " `{}`", next_path.path);
                 let _ = writeln!(writer);
 
-                if let Some(crate_id) = next_path.crate_id.clone() {
+                if let Some(crate_id) = next_path.crate_id {
                     let crate_ = api.crates.get(crate_id).unwrap();
                     let _ = writeln!(writer, "*from crate `{}`*", crate_.name);
                     let _ = writeln!(writer);
@@ -86,7 +86,7 @@ pub fn render_api_markdown(
                 let _ = writeln!(writer, "**`{}`** *({:?})*", next_path.path, next_path.kind);
                 let _ = writeln!(writer);
 
-                if let Some(crate_id) = next_path.crate_id.clone() {
+                if let Some(crate_id) = next_path.crate_id {
                     let crate_ = api.crates.get(crate_id).unwrap();
                     let _ = writeln!(writer, "*from crate `{}`*", crate_.name);
                     let _ = writeln!(writer);

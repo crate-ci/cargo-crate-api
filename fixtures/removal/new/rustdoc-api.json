@@ -9,7 +9,7 @@
           "path": "removal_new",
           "kind": "module",
           "span": {
-            "filename": "fixtures/removal/new/src/lib.rs",
+            "filename": "removal/new/src/lib.rs",
             "begin": [
               1,
               0

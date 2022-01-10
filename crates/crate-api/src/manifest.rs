@@ -16,12 +16,12 @@ impl Manifest {
         for (id, crate_) in api.crates.iter() {
             crate_ids
                 .entry(crate_.name.clone())
-                .or_insert_with(|| Vec::new())
+                .or_insert_with(Vec::new)
                 .push(id);
         }
         for dependency in self.dependencies {
-            match crate_ids.get(&dependency.name) {
-                Some(crate_ids) => match crate_ids.len() {
+            if let Some(crate_ids) = crate_ids.get(&dependency.name) {
+                match crate_ids.len() {
                     0 => unreachable!("Vec should only have 1+ entries"),
                     1 => {
                         api.crates.get_mut(crate_ids[0]).unwrap().version =
@@ -29,9 +29,7 @@ impl Manifest {
                     }
                     // Can't figure out which to map it to, so ignore it
                     _ => {}
-                },
-                // Not in the public API, can ignore
-                None => {}
+                }
             }
         }
 
@@ -56,7 +54,7 @@ impl<'p> From<&'p cargo_metadata::Package> for Manifest {
             if dep.optional {
                 features
                     .entry(dependency.name.clone())
-                    .or_insert(AnyFeature::Dependency(dependency.clone()));
+                    .or_insert_with(|| AnyFeature::Dependency(dependency.clone()));
             }
             dependencies.push(dependency);
         }

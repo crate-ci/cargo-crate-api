@@ -9,7 +9,7 @@
           "path": "circular_old",
           "kind": "module",
           "span": {
-            "filename": "fixtures/circular/old/src/lib.rs",
+            "filename": "circular/old/src/lib.rs",
             "begin": [
               1,
               0

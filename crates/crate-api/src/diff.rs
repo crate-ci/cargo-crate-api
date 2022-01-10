@@ -177,7 +177,7 @@ pub fn public_dependencies(before: &crate::Api, after: &crate::Api, changes: &mu
     }
 }
 
-fn breaking(version: &semver::VersionReq) -> (Option<(u64, u64, u64)>, Option<(u64, u64, u64)>) {
+fn breaking(version: &semver::VersionReq) -> VersionRange {
     if *version == semver::VersionReq::STAR {
         return (None, None);
     }
@@ -199,9 +199,11 @@ fn breaking(version: &semver::VersionReq) -> (Option<(u64, u64, u64)>, Option<(u
     (lower, upper)
 }
 
-fn breaking_comparator(
-    comparator: &semver::Comparator,
-) -> (Option<(u64, u64, u64)>, Option<(u64, u64, u64)>) {
+type VersionParts = (u64, u64, u64);
+
+type VersionRange = (Option<VersionParts>, Option<VersionParts>);
+
+fn breaking_comparator(comparator: &semver::Comparator) -> VersionRange {
     match comparator.op {
         semver::Op::Exact => {
             if let Some(major) = exact_break(comparator) {

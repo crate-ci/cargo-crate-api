@@ -15,17 +15,26 @@ fn main() {
         "../../fixtures",
         move |input_path| {
             let age_dir = input_path.parent().unwrap();
-            let case_dir = age_dir.parent().unwrap();
-            let name = format!(
-                "{}_{}",
-                case_dir.file_name().unwrap().to_str().unwrap(),
-                age_dir.file_name().unwrap().to_str().unwrap()
-            );
+            let (name, is_ignored) =
+                if age_dir.file_name() == Some(std::ffi::OsStr::new("fixtures")) {
+                    let name = "workspace".to_owned();
+                    let is_ignored = true;
+                    (name, is_ignored)
+                } else {
+                    let case_dir = age_dir.parent().unwrap();
+                    let name = format!(
+                        "{}_{}",
+                        case_dir.file_name().unwrap().to_str().unwrap(),
+                        age_dir.file_name().unwrap().to_str().unwrap()
+                    );
+                    let is_ignored = action == Action::Ignore;
+                    (name, is_ignored)
+                };
             let expected = age_dir.join("rustdoc-raw.json");
             fs_snapshot::Test {
                 name,
                 kind: "".into(),
-                is_ignored: action == Action::Ignore,
+                is_ignored,
                 is_bench: false,
                 data: fs_snapshot::Case {
                     fixture: input_path,

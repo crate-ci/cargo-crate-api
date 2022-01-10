@@ -9,7 +9,7 @@
           "path": "pub_use_new",
           "kind": "module",
           "span": {
-            "filename": "fixtures/pub_use/new/src/lib.rs",
+            "filename": "pub_use/new/src/lib.rs",
             "begin": [
               1,
               0
@@ -33,7 +33,7 @@
           "path": "pub_use_new::a",
           "kind": "module",
           "span": {
-            "filename": "fixtures/pub_use/new/src/lib.rs",
+            "filename": "pub_use/new/src/lib.rs",
             "begin": [
               1,
               0
@@ -56,7 +56,7 @@
           "path": "pub_use_new::b",
           "kind": "module",
           "span": {
-            "filename": "fixtures/pub_use/new/src/lib.rs",
+            "filename": "pub_use/new/src/lib.rs",
             "begin": [
               5,
               0
@@ -79,7 +79,7 @@
           "path": "pub_use_new::a::Abc",
           "kind": "struct",
           "span": {
-            "filename": "fixtures/pub_use/new/src/lib.rs",
+            "filename": "pub_use/new/src/lib.rs",
             "begin": [
               2,
               4
@@ -116,7 +116,7 @@
           "crate_id": null,
           "name": "Abc",
           "span": {
-            "filename": "fixtures/pub_use/new/src/lib.rs",
+            "filename": "pub_use/new/src/lib.rs",
             "begin": [
               2,
               4

@@ -9,7 +9,7 @@
           "path": "sealed_traits_new",
           "kind": "module",
           "span": {
-            "filename": "fixtures/sealed_traits/new/src/lib.rs",
+            "filename": "sealed_traits/new/src/lib.rs",
             "begin": [
               1,
               0
@@ -32,7 +32,7 @@
           "path": "sealed_traits_new::PublicTrait",
           "kind": "trait",
           "span": {
-            "filename": "fixtures/sealed_traits/new/src/lib.rs",
+            "filename": "sealed_traits/new/src/lib.rs",
             "begin": [
               1,
               0
@@ -56,7 +56,7 @@
           "crate_id": null,
           "name": "abc",
           "span": {
-            "filename": "fixtures/sealed_traits/new/src/lib.rs",
+            "filename": "sealed_traits/new/src/lib.rs",
             "begin": [
               2,
               4

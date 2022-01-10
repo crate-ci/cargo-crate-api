@@ -9,7 +9,7 @@
           "path": "max_priv_new",
           "kind": "module",
           "span": {
-            "filename": "fixtures/max_priv/new/src/lib.rs",
+            "filename": "max_priv/new/src/lib.rs",
             "begin": [
               1,
               0

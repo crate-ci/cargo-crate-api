@@ -9,7 +9,7 @@
           "path": "traits_new",
           "kind": "module",
           "span": {
-            "filename": "fixtures/traits/new/src/lib.rs",
+            "filename": "traits/new/src/lib.rs",
             "begin": [
               1,
               0
@@ -42,7 +42,7 @@
           "path": "traits_new::Abc",
           "kind": "trait",
           "span": {
-            "filename": "fixtures/traits/new/src/lib.rs",
+            "filename": "traits/new/src/lib.rs",
             "begin": [
               1,
               0
@@ -63,7 +63,7 @@
           "path": "traits_new::Bcd",
           "kind": "trait",
           "span": {
-            "filename": "fixtures/traits/new/src/lib.rs",
+            "filename": "traits/new/src/lib.rs",
             "begin": [
               16,
               0
@@ -84,7 +84,7 @@
           "path": "traits_new::Cde",
           "kind": "trait",
           "span": {
-            "filename": "fixtures/traits/new/src/lib.rs",
+            "filename": "traits/new/src/lib.rs",
             "begin": [
               18,
               0
@@ -105,7 +105,7 @@
           "path": "traits_new::Def",
           "kind": "trait",
           "span": {
-            "filename": "fixtures/traits/new/src/lib.rs",
+            "filename": "traits/new/src/lib.rs",
             "begin": [
               20,
               0
@@ -126,7 +126,7 @@
           "path": "traits_new::Efg",
           "kind": "trait",
           "span": {
-            "filename": "fixtures/traits/new/src/lib.rs",
+            "filename": "traits/new/src/lib.rs",
             "begin": [
               26,
               0
@@ -147,7 +147,7 @@
           "path": "traits_new::Ghi",
           "kind": "trait",
           "span": {
-            "filename": "fixtures/traits/new/src/lib.rs",
+            "filename": "traits/new/src/lib.rs",
             "begin": [
               36,
               0
@@ -168,7 +168,7 @@
           "path": "traits_new::Hij",
           "kind": "trait",
           "span": {
-            "filename": "fixtures/traits/new/src/lib.rs",
+            "filename": "traits/new/src/lib.rs",
             "begin": [
               38,
               0
@@ -189,7 +189,7 @@
           "path": "traits_new::Klm",
           "kind": "trait",
           "span": {
-            "filename": "fixtures/traits/new/src/lib.rs",
+            "filename": "traits/new/src/lib.rs",
             "begin": [
               42,
               0
@@ -210,7 +210,7 @@
           "path": "traits_new::Nop",
           "kind": "trait",
           "span": {
-            "filename": "fixtures/traits/new/src/lib.rs",
+            "filename": "traits/new/src/lib.rs",
             "begin": [
               44,
               0
@@ -231,7 +231,7 @@
           "path": "traits_new::Qrs",
           "kind": "trait",
           "span": {
-            "filename": "fixtures/traits/new/src/lib.rs",
+            "filename": "traits/new/src/lib.rs",
             "begin": [
               46,
               0
@@ -252,7 +252,7 @@
           "path": "traits_new::Tuv",
           "kind": "trait",
           "span": {
-            "filename": "fixtures/traits/new/src/lib.rs",
+            "filename": "traits/new/src/lib.rs",
             "begin": [
               48,
               0
@@ -276,7 +276,7 @@
           "crate_id": null,
           "name": "A",
           "span": {
-            "filename": "fixtures/traits/new/src/lib.rs",
+            "filename": "traits/new/src/lib.rs",
             "begin": [
               2,
               4
@@ -294,7 +294,7 @@
           "crate_id": null,
           "name": "test",
           "span": {
-            "filename": "fixtures/traits/new/src/lib.rs",
+            "filename": "traits/new/src/lib.rs",
             "begin": [
               3,
               4
@@ -312,7 +312,7 @@
           "crate_id": null,
           "name": "test3",
           "span": {
-            "filename": "fixtures/traits/new/src/lib.rs",
+            "filename": "traits/new/src/lib.rs",
             "begin": [
               4,
               4
@@ -330,7 +330,7 @@
           "crate_id": null,
           "name": "test4",
           "span": {
-            "filename": "fixtures/traits/new/src/lib.rs",
+            "filename": "traits/new/src/lib.rs",
             "begin": [
               5,
               4
@@ -348,7 +348,7 @@
           "crate_id": null,
           "name": "test6",
           "span": {
-            "filename": "fixtures/traits/new/src/lib.rs",
+            "filename": "traits/new/src/lib.rs",
             "begin": [
               8,
               4
@@ -366,7 +366,7 @@
           "crate_id": null,
           "name": "test7",
           "span": {
-            "filename": "fixtures/traits/new/src/lib.rs",
+            "filename": "traits/new/src/lib.rs",
             "begin": [
               11,
               4
@@ -384,7 +384,7 @@
           "crate_id": null,
           "name": "test8",
           "span": {
-            "filename": "fixtures/traits/new/src/lib.rs",
+            "filename": "traits/new/src/lib.rs",
             "begin": [
               12,
               4
@@ -402,7 +402,7 @@
           "crate_id": null,
           "name": "test9",
           "span": {
-            "filename": "fixtures/traits/new/src/lib.rs",
+            "filename": "traits/new/src/lib.rs",
             "begin": [
               13,
               4
@@ -420,7 +420,7 @@
           "crate_id": null,
           "name": "def",
           "span": {
-            "filename": "fixtures/traits/new/src/lib.rs",
+            "filename": "traits/new/src/lib.rs",
             "begin": [
               23,
               4
@@ -438,7 +438,7 @@
           "crate_id": null,
           "name": "efg",
           "span": {
-            "filename": "fixtures/traits/new/src/lib.rs",
+            "filename": "traits/new/src/lib.rs",
             "begin": [
               27,
               4
@@ -456,7 +456,7 @@
           "crate_id": null,
           "name": "A",
           "span": {
-            "filename": "fixtures/traits/new/src/lib.rs",
+            "filename": "traits/new/src/lib.rs",
             "begin": [
               39,
               4

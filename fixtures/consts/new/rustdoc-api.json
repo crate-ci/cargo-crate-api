@@ -9,7 +9,7 @@
           "path": "consts_new",
           "kind": "module",
           "span": {
-            "filename": "fixtures/consts/new/src/lib.rs",
+            "filename": "consts/new/src/lib.rs",
             "begin": [
               1,
               0
@@ -36,7 +36,7 @@
           "path": "consts_new::A",
           "kind": "constant",
           "span": {
-            "filename": "fixtures/consts/new/src/lib.rs",
+            "filename": "consts/new/src/lib.rs",
             "begin": [
               1,
               0
@@ -57,7 +57,7 @@
           "path": "consts_new::B",
           "kind": "static",
           "span": {
-            "filename": "fixtures/consts/new/src/lib.rs",
+            "filename": "consts/new/src/lib.rs",
             "begin": [
               3,
               0
@@ -78,7 +78,7 @@
           "path": "consts_new::C",
           "kind": "constant",
           "span": {
-            "filename": "fixtures/consts/new/src/lib.rs",
+            "filename": "consts/new/src/lib.rs",
             "begin": [
               5,
               0
@@ -99,7 +99,7 @@
           "path": "consts_new::D",
           "kind": "static",
           "span": {
-            "filename": "fixtures/consts/new/src/lib.rs",
+            "filename": "consts/new/src/lib.rs",
             "begin": [
               7,
               0
@@ -120,7 +120,7 @@
           "path": "consts_new::E",
           "kind": "static",
           "span": {
-            "filename": "fixtures/consts/new/src/lib.rs",
+            "filename": "consts/new/src/lib.rs",
             "begin": [
               9,
               0
@@ -144,7 +144,7 @@
           "crate_id": null,
           "name": "A",
           "span": {
-            "filename": "fixtures/consts/new/src/lib.rs",
+            "filename": "consts/new/src/lib.rs",
             "begin": [
               1,
               0
@@ -162,7 +162,7 @@
           "crate_id": null,
           "name": "B",
           "span": {
-            "filename": "fixtures/consts/new/src/lib.rs",
+            "filename": "consts/new/src/lib.rs",
             "begin": [
               3,
               0
@@ -180,7 +180,7 @@
           "crate_id": null,
           "name": "C",
           "span": {
-            "filename": "fixtures/consts/new/src/lib.rs",
+            "filename": "consts/new/src/lib.rs",
             "begin": [
               5,
               0
@@ -198,7 +198,7 @@
           "crate_id": null,
           "name": "D",
           "span": {
-            "filename": "fixtures/consts/new/src/lib.rs",
+            "filename": "consts/new/src/lib.rs",
             "begin": [
               7,
               0
@@ -216,7 +216,7 @@
           "crate_id": null,
           "name": "E",
           "span": {
-            "filename": "fixtures/consts/new/src/lib.rs",
+            "filename": "consts/new/src/lib.rs",
             "begin": [
               9,
               0

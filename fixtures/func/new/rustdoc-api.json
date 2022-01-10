@@ -9,7 +9,7 @@
           "path": "func_new",
           "kind": "module",
           "span": {
-            "filename": "fixtures/func/new/src/lib.rs",
+            "filename": "func/new/src/lib.rs",
             "begin": [
               1,
               0
@@ -40,7 +40,7 @@
           "path": "func_new::abc",
           "kind": "function",
           "span": {
-            "filename": "fixtures/func/new/src/lib.rs",
+            "filename": "func/new/src/lib.rs",
             "begin": [
               1,
               0
@@ -61,7 +61,7 @@
           "path": "func_new::bcd",
           "kind": "function",
           "span": {
-            "filename": "fixtures/func/new/src/lib.rs",
+            "filename": "func/new/src/lib.rs",
             "begin": [
               3,
               0
@@ -82,7 +82,7 @@
           "path": "func_new::cde",
           "kind": "function",
           "span": {
-            "filename": "fixtures/func/new/src/lib.rs",
+            "filename": "func/new/src/lib.rs",
             "begin": [
               5,
               0
@@ -103,7 +103,7 @@
           "path": "func_new::def",
           "kind": "function",
           "span": {
-            "filename": "fixtures/func/new/src/lib.rs",
+            "filename": "func/new/src/lib.rs",
             "begin": [
               9,
               0
@@ -124,7 +124,7 @@
           "path": "func_new::efg",
           "kind": "function",
           "span": {
-            "filename": "fixtures/func/new/src/lib.rs",
+            "filename": "func/new/src/lib.rs",
             "begin": [
               11,
               0
@@ -145,7 +145,7 @@
           "path": "func_new::fgh",
           "kind": "function",
           "span": {
-            "filename": "fixtures/func/new/src/lib.rs",
+            "filename": "func/new/src/lib.rs",
             "begin": [
               15,
               0
@@ -166,7 +166,7 @@
           "path": "func_new::ghi",
           "kind": "function",
           "span": {
-            "filename": "fixtures/func/new/src/lib.rs",
+            "filename": "func/new/src/lib.rs",
             "begin": [
               19,
               0
@@ -187,7 +187,7 @@
           "path": "func_new::hij",
           "kind": "function",
           "span": {
-            "filename": "fixtures/func/new/src/lib.rs",
+            "filename": "func/new/src/lib.rs",
             "begin": [
               23,
               0
@@ -208,7 +208,7 @@
           "path": "func_new::ijk",
           "kind": "function",
           "span": {
-            "filename": "fixtures/func/new/src/lib.rs",
+            "filename": "func/new/src/lib.rs",
             "begin": [
               27,
               0
@@ -232,7 +232,7 @@
           "crate_id": null,
           "name": "abc",
           "span": {
-            "filename": "fixtures/func/new/src/lib.rs",
+            "filename": "func/new/src/lib.rs",
             "begin": [
               1,
               0
@@ -250,7 +250,7 @@
           "crate_id": null,
           "name": "bcd",
           "span": {
-            "filename": "fixtures/func/new/src/lib.rs",
+            "filename": "func/new/src/lib.rs",
             "begin": [
               3,
               0
@@ -268,7 +268,7 @@
           "crate_id": null,
           "name": "cde",
           "span": {
-            "filename": "fixtures/func/new/src/lib.rs",
+            "filename": "func/new/src/lib.rs",
             "begin": [
               5,
               0
@@ -286,7 +286,7 @@
           "crate_id": null,
           "name": "def",
           "span": {
-            "filename": "fixtures/func/new/src/lib.rs",
+            "filename": "func/new/src/lib.rs",
             "begin": [
               9,
               0
@@ -304,7 +304,7 @@
           "crate_id": null,
           "name": "efg",
           "span": {
-            "filename": "fixtures/func/new/src/lib.rs",
+            "filename": "func/new/src/lib.rs",
             "begin": [
               11,
               0
@@ -322,7 +322,7 @@
           "crate_id": null,
           "name": "fgh",
           "span": {
-            "filename": "fixtures/func/new/src/lib.rs",
+            "filename": "func/new/src/lib.rs",
             "begin": [
               15,
               0
@@ -340,7 +340,7 @@
           "crate_id": null,
           "name": "ghi",
           "span": {
-            "filename": "fixtures/func/new/src/lib.rs",
+            "filename": "func/new/src/lib.rs",
             "begin": [
               19,
               0
@@ -358,7 +358,7 @@
           "crate_id": null,
           "name": "hij",
           "span": {
-            "filename": "fixtures/func/new/src/lib.rs",
+            "filename": "func/new/src/lib.rs",
             "begin": [
               23,
               0
@@ -376,7 +376,7 @@
           "crate_id": null,
           "name": "ijk",
           "span": {
-            "filename": "fixtures/func/new/src/lib.rs",
+            "filename": "func/new/src/lib.rs",
             "begin": [
               27,
               0

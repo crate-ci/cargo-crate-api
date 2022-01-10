@@ -9,7 +9,7 @@
           "path": "mix_new",
           "kind": "module",
           "span": {
-            "filename": "fixtures/mix/new/src/lib.rs",
+            "filename": "mix/new/src/lib.rs",
             "begin": [
               1,
               0
@@ -34,7 +34,7 @@
           "path": "mix_new::a",
           "kind": "module",
           "span": {
-            "filename": "fixtures/mix/new/src/lib.rs",
+            "filename": "mix/new/src/lib.rs",
             "begin": [
               1,
               0
@@ -58,7 +58,7 @@
           "path": "mix_new::b",
           "kind": "module",
           "span": {
-            "filename": "fixtures/mix/new/src/lib.rs",
+            "filename": "mix/new/src/lib.rs",
             "begin": [
               6,
               0
@@ -81,7 +81,7 @@
           "path": "mix_new::a::Abc",
           "kind": "enum",
           "span": {
-            "filename": "fixtures/mix/new/src/lib.rs",
+            "filename": "mix/new/src/lib.rs",
             "begin": [
               2,
               4
@@ -102,7 +102,7 @@
           "path": "mix_new::a::Def",
           "kind": "struct",
           "span": {
-            "filename": "fixtures/mix/new/src/lib.rs",
+            "filename": "mix/new/src/lib.rs",
             "begin": [
               3,
               4
@@ -148,7 +148,7 @@
           "crate_id": null,
           "name": "Def",
           "span": {
-            "filename": "fixtures/mix/new/src/lib.rs",
+            "filename": "mix/new/src/lib.rs",
             "begin": [
               3,
               4

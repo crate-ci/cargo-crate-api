@@ -1,7 +1,6 @@
 [workspace]
 members = [
     "crates/*",
-    "fixtures/*/*",
 ]
 exclude = [
     "fixtures/dep_upgrade/dep_old",

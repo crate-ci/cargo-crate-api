@@ -9,7 +9,7 @@
           "path": "dep_upgrade_dep",
           "kind": "module",
           "span": {
-            "filename": "src/lib.rs",
+            "filename": "dep_upgrade/dep_new/src/lib.rs",
             "begin": [
               1,
               0
@@ -34,7 +34,7 @@
           "path": "dep_upgrade_dep::Used",
           "kind": "struct",
           "span": {
-            "filename": "src/lib.rs",
+            "filename": "dep_upgrade/dep_new/src/lib.rs",
             "begin": [
               1,
               0
@@ -55,7 +55,7 @@
           "path": "dep_upgrade_dep::InFunc",
           "kind": "struct",
           "span": {
-            "filename": "src/lib.rs",
+            "filename": "dep_upgrade/dep_new/src/lib.rs",
             "begin": [
               3,
               0
@@ -76,7 +76,7 @@
           "path": "dep_upgrade_dep::ConvertFrom",
           "kind": "struct",
           "span": {
-            "filename": "src/lib.rs",
+            "filename": "dep_upgrade/dep_new/src/lib.rs",
             "begin": [
               5,
               0
@@ -100,7 +100,7 @@
           "crate_id": null,
           "name": "Used",
           "span": {
-            "filename": "src/lib.rs",
+            "filename": "dep_upgrade/dep_new/src/lib.rs",
             "begin": [
               1,
               0
@@ -118,7 +118,7 @@
           "crate_id": null,
           "name": "InFunc",
           "span": {
-            "filename": "src/lib.rs",
+            "filename": "dep_upgrade/dep_new/src/lib.rs",
             "begin": [
               3,
               0
@@ -136,7 +136,7 @@
           "crate_id": null,
           "name": "ConvertFrom",
           "span": {
-            "filename": "src/lib.rs",
+            "filename": "dep_upgrade/dep_new/src/lib.rs",
             "begin": [
               5,
               0

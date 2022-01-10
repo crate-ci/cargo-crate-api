@@ -9,7 +9,7 @@
           "path": "removal_cargo_feature_dep_new",
           "kind": "module",
           "span": {
-            "filename": "fixtures/removal_cargo_feature_dep/new/src/lib.rs",
+            "filename": "removal_cargo_feature_dep/new/src/lib.rs",
             "begin": [
               0,
               0

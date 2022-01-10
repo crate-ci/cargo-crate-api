@@ -9,7 +9,7 @@
           "path": "addition_old",
           "kind": "module",
           "span": {
-            "filename": "fixtures/addition/old/src/lib.rs",
+            "filename": "addition/old/src/lib.rs",
             "begin": [
               1,
               0

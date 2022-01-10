@@ -67,6 +67,7 @@ impl Api {
     }
 
     pub fn base(&self) -> Option<Source> {
+        #[allow(clippy::manual_map)]
         if let Some(git) = self.git.as_ref() {
             Some(Source::Git(git.clone()))
         } else if let Some(path) = self.path.as_ref() {

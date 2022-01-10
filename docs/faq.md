@@ -18,12 +18,12 @@ resulting output with [`syn`](docs.rs/syn):
 
 There is a branch to switch to rustc.  This seems like it'd make fairly similar to `semverer`.
 
-## So how is `cargo-api` different?
+## So how is `cargo-crate-api` different?
 
-`cargo-api` started in a
+`cargo-crate-api` started in a
 [conversation with cargo-breaking authors](https://github.com/iomentum/cargo-breaking/issues/40)
 on alternative approaches.  The idea of building on top of `rustdoc -wjson`
-came up.  `cargo-api` started as a proof-of-concept for the idea.  Further
+came up.  `cargo-crate-api` started as a proof-of-concept for the idea.  Further
 collaboration is still being determined.
 
 Highlights:
@@ -35,7 +35,7 @@ Highlights:
 ## Why not report back a suggested version?
 
 `cargo-breaking` can output what version to bump to.
-[For now](https://github.com/epage/cargo-api/issues/14) we forego this out of
-concern for people exclusively relying on `cargo-api` to determine whether
+[For now](https://github.com/epage/cargo-crate-api/issues/14) we forego this out of
+concern for people exclusively relying on `cargo-crate-api` to determine whether
 there are breaking changes, rather than using it as a safety to catch
 unexpected breaking changes.

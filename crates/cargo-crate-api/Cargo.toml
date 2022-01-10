@@ -1,11 +1,11 @@
 [package]
-name = "cargo-api"
+name = "cargo-crate-api"
 description = "Interact with the crate's API"
 version = "0.0.1"
 license = "MIT OR Apache-2.0"
-repository = "https://github.com/crate-ci/cargo-api.git"
-homepage = "https://github.com/crate-ci/cargo-api"
-documentation = "https://github.com/crate-ci/cargo-api"
+repository = "https://github.com/crate-ci/cargo-crate-api.git"
+homepage = "https://github.com/crate-ci/cargo-crate-api"
+documentation = "https://github.com/crate-ci/cargo-crate-api"
 categories = ["development-tools::cargo-plugins"]
 keywords = ["cargo"]
 edition = "2021"

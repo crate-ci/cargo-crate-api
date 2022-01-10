@@ -5,6 +5,8 @@ use std::collections::VecDeque;
 pub struct RustDocBuilder {
     deps: bool,
     target_directory: Option<std::path::PathBuf>,
+    silence: bool,
+    color: Option<bool>,
 }
 
 impl RustDocBuilder {
@@ -12,6 +14,8 @@ impl RustDocBuilder {
         Self {
             deps: false,
             target_directory: None,
+            silence: false,
+            color: None,
         }
     }
 
@@ -33,6 +37,18 @@ impl RustDocBuilder {
 
     pub fn target_directory(mut self, path: impl Into<std::path::PathBuf>) -> Self {
         self.target_directory = Some(path.into());
+        self
+    }
+
+    /// Don't write progress to stderr
+    pub fn silence(mut self, yes: bool) -> Self {
+        self.silence = yes;
+        self
+    }
+
+    /// Whether stderr can be colored
+    pub fn color(mut self, yes: impl Into<Option<bool>>) -> Self {
+        self.color = yes.into();
         self
     }
 
@@ -77,36 +93,53 @@ impl RustDocBuilder {
             manifest_target_directory.as_path()
         };
 
+        let stderr = if self.silence {
+            std::process::Stdio::piped()
+        } else {
+            // Print cargo doc progress
+            std::process::Stdio::inherit()
+        };
+
         let mut cmd = std::process::Command::new("cargo");
         cmd.env(
             "RUSTDOCFLAGS",
             "-Z unstable-options --document-hidden-items --output-format=json",
         )
         .stdout(std::process::Stdio::null()) // Don't pollute cargo api output
-        .stderr(std::process::Stdio::inherit()) // Print cargo doc progress
+        .stderr(stderr)
         .args(["+nightly", "doc", "--all-features"])
         .arg("--manifest-path")
         .arg(manifest_path)
         .arg("--target-dir")
         .arg(target_dir);
         if !self.deps {
-            // HACK: Trying to reduce chance of hitting
-            // - rust-lang/rust#89097
-            // - rust-lang/rust#83718
             cmd.arg("--no-deps");
         }
+        if let Some(color) = self.color {
+            if color {
+                cmd.arg("--color=always");
+            } else {
+                cmd.arg("--color=never");
+            }
+        }
 
-        let status = cmd
-            .status()
+        let output = cmd
+            .output()
             .map_err(|e| crate::Error::new(crate::ErrorKind::ApiParse, e))?;
-        if !status.success() {
-            return Err(crate::Error::new(
-                crate::ErrorKind::ApiParse,
+        if !output.status.success() {
+            let message = if self.silence {
+                format!(
+                    "Failed when running cargo-doc on {}: {}",
+                    manifest_path.display(),
+                    String::from_utf8_lossy(&output.stderr)
+                )
+            } else {
                 format!(
                     "Failed when running cargo-doc on {}. See stderr.",
                     manifest_path.display(),
-                ),
-            ));
+                )
+            };
+            return Err(crate::Error::new(crate::ErrorKind::ApiParse, message));
         }
 
         let json_path = target_dir.join(format!("doc/{}.json", crate_name));

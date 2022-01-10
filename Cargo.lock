@@ -130,7 +130,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "cargo-api"
+name = "cargo-crate-api"
 version = "0.0.1"
 dependencies = [
  "cargo_metadata",

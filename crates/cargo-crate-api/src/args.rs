@@ -11,7 +11,7 @@ use crate::report::Source;
         global_setting = concolor_clap::color_choice(),
 )]
 pub enum Command {
-    Api(Api),
+    CrateApi(Api),
 }
 
 #[derive(structopt::StructOpt)]

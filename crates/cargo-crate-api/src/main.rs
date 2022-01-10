@@ -78,8 +78,10 @@ fn run() -> proc_exit::ExitResult {
 }
 
 fn dump_raw(pkg: &cargo_metadata::Package, format: args::Format) -> Result<(), eyre::Report> {
-    let raw =
-        crate_api::RustDocBuilder::new().dump_raw(pkg.manifest_path.as_path().as_std_path())?;
+    let colored_stderr = concolor_control::get(concolor_control::Stream::Stderr).color();
+    let raw = crate_api::RustDocBuilder::new()
+        .color(colored_stderr)
+        .dump_raw(pkg.manifest_path.as_path().as_std_path())?;
     let raw: rustdoc_json_types_fork::Crate = serde_json::from_str(&raw)?;
 
     let manifest = crate_api::manifest::Manifest::from(pkg);
@@ -113,8 +115,10 @@ fn dump_raw(pkg: &cargo_metadata::Package, format: args::Format) -> Result<(), e
 }
 
 fn api(pkg: &cargo_metadata::Package, format: args::Format) -> Result<(), eyre::Report> {
-    let mut api =
-        crate_api::RustDocBuilder::new().into_api(pkg.manifest_path.as_path().as_std_path())?;
+    let colored_stderr = concolor_control::get(concolor_control::Stream::Stderr).color();
+    let mut api = crate_api::RustDocBuilder::new()
+        .color(colored_stderr)
+        .into_api(pkg.manifest_path.as_path().as_std_path())?;
 
     let manifest = crate_api::manifest::Manifest::from(pkg);
     manifest.into_api(&mut api);
@@ -144,13 +148,17 @@ fn diff(
     base: report::Source,
     format: args::Format,
 ) -> Result<(), eyre::Report> {
-    let mut after =
-        crate_api::RustDocBuilder::new().into_api(pkg.manifest_path.as_path().as_std_path())?;
+    let colored_stderr = concolor_control::get(concolor_control::Stream::Stderr).color();
+    let mut after = crate_api::RustDocBuilder::new()
+        .color(colored_stderr)
+        .into_api(pkg.manifest_path.as_path().as_std_path())?;
     let manifest = crate_api::manifest::Manifest::from(pkg);
     manifest.into_api(&mut after);
 
     let base_path = resolve_source_path(metadata, pkg, &base)?;
-    let mut before = crate_api::RustDocBuilder::new().into_api(&base_path)?;
+    let mut before = crate_api::RustDocBuilder::new()
+        .color(colored_stderr)
+        .into_api(&base_path)?;
     let old_pkg = resolve_package(&base_path)?;
     let manifest = crate_api::manifest::Manifest::from(&old_pkg);
     manifest.into_api(&mut before);

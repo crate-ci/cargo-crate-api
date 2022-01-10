@@ -6,6 +6,7 @@ pub struct RustDocBuilder {
     deps: bool,
     target_directory: Option<std::path::PathBuf>,
     silence: bool,
+    color: Option<bool>,
 }
 
 impl RustDocBuilder {
@@ -14,6 +15,7 @@ impl RustDocBuilder {
             deps: false,
             target_directory: None,
             silence: false,
+            color: None,
         }
     }
 
@@ -41,6 +43,12 @@ impl RustDocBuilder {
     /// Don't write progress to stderr
     pub fn silence(mut self, yes: bool) -> Self {
         self.silence = yes;
+        self
+    }
+
+    /// Whether stderr can be colored
+    pub fn color(mut self, yes: impl Into<Option<bool>>) -> Self {
+        self.color = yes.into();
         self
     }
 
@@ -106,6 +114,13 @@ impl RustDocBuilder {
         .arg(target_dir);
         if !self.deps {
             cmd.arg("--no-deps");
+        }
+        if let Some(color) = self.color {
+            if color {
+                cmd.arg("--color=always");
+            } else {
+                cmd.arg("--color=never");
+            }
         }
 
         let output = cmd

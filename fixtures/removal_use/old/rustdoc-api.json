@@ -9,7 +9,7 @@
           "path": "removal_use_old",
           "kind": "module",
           "span": {
-            "filename": "fixtures/removal_use/old/src/lib.rs",
+            "filename": "removal_use/old/src/lib.rs",
             "begin": [
               1,
               0
@@ -34,7 +34,7 @@
           "path": "removal_use_old::Abc",
           "kind": "struct",
           "span": {
-            "filename": "fixtures/removal_use/old/src/lib.rs",
+            "filename": "removal_use/old/src/lib.rs",
             "begin": [
               1,
               0
@@ -55,7 +55,7 @@
           "path": "removal_use_old::Bcd",
           "kind": "trait",
           "span": {
-            "filename": "fixtures/removal_use/old/src/lib.rs",
+            "filename": "removal_use/old/src/lib.rs",
             "begin": [
               3,
               0
@@ -76,7 +76,7 @@
           "path": "removal_use_old::Def",
           "kind": "struct",
           "span": {
-            "filename": "fixtures/removal_use/old/src/lib.rs",
+            "filename": "removal_use/old/src/lib.rs",
             "begin": [
               5,
               0
@@ -100,7 +100,7 @@
           "crate_id": null,
           "name": "Abc",
           "span": {
-            "filename": "fixtures/removal_use/old/src/lib.rs",
+            "filename": "removal_use/old/src/lib.rs",
             "begin": [
               1,
               0
@@ -118,7 +118,7 @@
           "crate_id": null,
           "name": "Def",
           "span": {
-            "filename": "fixtures/removal_use/old/src/lib.rs",
+            "filename": "removal_use/old/src/lib.rs",
             "begin": [
               5,
               0

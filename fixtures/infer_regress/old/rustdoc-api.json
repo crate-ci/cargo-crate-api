@@ -9,7 +9,7 @@
           "path": "infer_regress_old",
           "kind": "module",
           "span": {
-            "filename": "fixtures/infer_regress/old/src/lib.rs",
+            "filename": "infer_regress/old/src/lib.rs",
             "begin": [
               1,
               0
@@ -33,7 +33,7 @@
           "path": "infer_regress_old::abc",
           "kind": "function",
           "span": {
-            "filename": "fixtures/infer_regress/old/src/lib.rs",
+            "filename": "infer_regress/old/src/lib.rs",
             "begin": [
               1,
               0
@@ -54,7 +54,7 @@
           "path": "infer_regress_old::Abc",
           "kind": "struct",
           "span": {
-            "filename": "fixtures/infer_regress/old/src/lib.rs",
+            "filename": "infer_regress/old/src/lib.rs",
             "begin": [
               5,
               0
@@ -78,7 +78,7 @@
           "crate_id": null,
           "name": "abc",
           "span": {
-            "filename": "fixtures/infer_regress/old/src/lib.rs",
+            "filename": "infer_regress/old/src/lib.rs",
             "begin": [
               1,
               0
@@ -96,7 +96,7 @@
           "crate_id": null,
           "name": "Abc",
           "span": {
-            "filename": "fixtures/infer_regress/old/src/lib.rs",
+            "filename": "infer_regress/old/src/lib.rs",
             "begin": [
               5,
               0

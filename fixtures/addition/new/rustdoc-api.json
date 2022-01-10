@@ -9,7 +9,7 @@
           "path": "addition_new",
           "kind": "module",
           "span": {
-            "filename": "fixtures/addition/new/src/lib.rs",
+            "filename": "addition/new/src/lib.rs",
             "begin": [
               1,
               0
@@ -36,7 +36,7 @@
           "path": "addition_new::a",
           "kind": "module",
           "span": {
-            "filename": "fixtures/addition/new/src/lib.rs",
+            "filename": "addition/new/src/lib.rs",
             "begin": [
               5,
               0
@@ -57,7 +57,7 @@
           "path": "addition_new::b",
           "kind": "module",
           "span": {
-            "filename": "fixtures/addition/new/src/lib.rs",
+            "filename": "addition/new/src/lib.rs",
             "begin": [
               9,
               0
@@ -80,7 +80,7 @@
           "path": "addition_new::d",
           "kind": "module",
           "span": {
-            "filename": "fixtures/addition/new/src/lib.rs",
+            "filename": "addition/new/src/lib.rs",
             "begin": [
               19,
               0
@@ -101,7 +101,7 @@
           "path": "addition_new::Abc",
           "kind": "struct",
           "span": {
-            "filename": "fixtures/addition/new/src/lib.rs",
+            "filename": "addition/new/src/lib.rs",
             "begin": [
               1,
               0
@@ -122,7 +122,7 @@
           "path": "addition_new::Bcd",
           "kind": "struct",
           "span": {
-            "filename": "fixtures/addition/new/src/lib.rs",
+            "filename": "addition/new/src/lib.rs",
             "begin": [
               3,
               0
@@ -143,7 +143,7 @@
           "path": "addition_new::b::Cde",
           "kind": "struct",
           "span": {
-            "filename": "fixtures/addition/new/src/lib.rs",
+            "filename": "addition/new/src/lib.rs",
             "begin": [
               11,
               4
@@ -167,7 +167,7 @@
           "crate_id": null,
           "name": "Abc",
           "span": {
-            "filename": "fixtures/addition/new/src/lib.rs",
+            "filename": "addition/new/src/lib.rs",
             "begin": [
               1,
               0
@@ -185,7 +185,7 @@
           "crate_id": null,
           "name": "Bcd",
           "span": {
-            "filename": "fixtures/addition/new/src/lib.rs",
+            "filename": "addition/new/src/lib.rs",
             "begin": [
               3,
               0
@@ -203,7 +203,7 @@
           "crate_id": null,
           "name": "Cde",
           "span": {
-            "filename": "fixtures/addition/new/src/lib.rs",
+            "filename": "addition/new/src/lib.rs",
             "begin": [
               11,
               4

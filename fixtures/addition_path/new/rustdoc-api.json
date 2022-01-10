@@ -9,7 +9,7 @@
           "path": "addition_path_new",
           "kind": "module",
           "span": {
-            "filename": "fixtures/addition_path/new/src/lib.rs",
+            "filename": "addition_path/new/src/lib.rs",
             "begin": [
               1,
               0
@@ -36,7 +36,7 @@
           "path": "addition_path_new::a",
           "kind": "module",
           "span": {
-            "filename": "fixtures/addition_path/new/src/lib.rs",
+            "filename": "addition_path/new/src/lib.rs",
             "begin": [
               1,
               0
@@ -59,7 +59,7 @@
           "path": "addition_path_new::b",
           "kind": "module",
           "span": {
-            "filename": "fixtures/addition_path/new/src/lib.rs",
+            "filename": "addition_path/new/src/lib.rs",
             "begin": [
               5,
               0
@@ -82,7 +82,7 @@
           "path": "addition_path_new::c",
           "kind": "module",
           "span": {
-            "filename": "fixtures/addition_path/new/src/lib.rs",
+            "filename": "addition_path/new/src/lib.rs",
             "begin": [
               9,
               0
@@ -105,7 +105,7 @@
           "path": "addition_path_new::d",
           "kind": "module",
           "span": {
-            "filename": "fixtures/addition_path/new/src/lib.rs",
+            "filename": "addition_path/new/src/lib.rs",
             "begin": [
               15,
               0
@@ -126,7 +126,7 @@
           "path": "addition_path_new::a::Abc",
           "kind": "struct",
           "span": {
-            "filename": "fixtures/addition_path/new/src/lib.rs",
+            "filename": "addition_path/new/src/lib.rs",
             "begin": [
               2,
               4
@@ -185,7 +185,7 @@
           "crate_id": null,
           "name": "Abc",
           "span": {
-            "filename": "fixtures/addition_path/new/src/lib.rs",
+            "filename": "addition_path/new/src/lib.rs",
             "begin": [
               2,
               4

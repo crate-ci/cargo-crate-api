@@ -9,7 +9,7 @@
           "path": "func_local_items_old",
           "kind": "module",
           "span": {
-            "filename": "fixtures/func_local_items/old/src/lib.rs",
+            "filename": "func_local_items/old/src/lib.rs",
             "begin": [
               1,
               0
@@ -32,7 +32,7 @@
           "path": "func_local_items_old::abc",
           "kind": "function",
           "span": {
-            "filename": "fixtures/func_local_items/old/src/lib.rs",
+            "filename": "func_local_items/old/src/lib.rs",
             "begin": [
               1,
               0
@@ -56,7 +56,7 @@
           "crate_id": null,
           "name": "abc",
           "span": {
-            "filename": "fixtures/func_local_items/old/src/lib.rs",
+            "filename": "func_local_items/old/src/lib.rs",
             "begin": [
               1,
               0

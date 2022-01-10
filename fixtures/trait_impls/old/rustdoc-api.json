@@ -9,7 +9,7 @@
           "path": "trait_impls_old",
           "kind": "module",
           "span": {
-            "filename": "fixtures/trait_impls/old/src/lib.rs",
+            "filename": "trait_impls/old/src/lib.rs",
             "begin": [
               1,
               0
@@ -33,7 +33,7 @@
           "path": "trait_impls_old::Def",
           "kind": "struct",
           "span": {
-            "filename": "fixtures/trait_impls/old/src/lib.rs",
+            "filename": "trait_impls/old/src/lib.rs",
             "begin": [
               1,
               0
@@ -54,7 +54,7 @@
           "path": "trait_impls_old::Abc",
           "kind": "trait",
           "span": {
-            "filename": "fixtures/trait_impls/old/src/lib.rs",
+            "filename": "trait_impls/old/src/lib.rs",
             "begin": [
               3,
               0
@@ -78,7 +78,7 @@
           "crate_id": null,
           "name": "Def",
           "span": {
-            "filename": "fixtures/trait_impls/old/src/lib.rs",
+            "filename": "trait_impls/old/src/lib.rs",
             "begin": [
               1,
               0

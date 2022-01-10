@@ -9,7 +9,7 @@
           "path": "kind_change_old",
           "kind": "module",
           "span": {
-            "filename": "fixtures/kind_change/old/src/lib.rs",
+            "filename": "kind_change/old/src/lib.rs",
             "begin": [
               1,
               0
@@ -32,7 +32,7 @@
           "path": "kind_change_old::Abc",
           "kind": "struct",
           "span": {
-            "filename": "fixtures/kind_change/old/src/lib.rs",
+            "filename": "kind_change/old/src/lib.rs",
             "begin": [
               1,
               0
@@ -56,7 +56,7 @@
           "crate_id": null,
           "name": "Abc",
           "span": {
-            "filename": "fixtures/kind_change/old/src/lib.rs",
+            "filename": "kind_change/old/src/lib.rs",
             "begin": [
               1,
               0

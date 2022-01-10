@@ -9,7 +9,7 @@
           "path": "issue_50_new",
           "kind": "module",
           "span": {
-            "filename": "fixtures/issue_50/new/src/lib.rs",
+            "filename": "issue_50/new/src/lib.rs",
             "begin": [
               1,
               0
@@ -34,7 +34,7 @@
           "path": "issue_50_new::TypedArrayElement",
           "kind": "trait",
           "span": {
-            "filename": "fixtures/issue_50/new/src/lib.rs",
+            "filename": "issue_50/new/src/lib.rs",
             "begin": [
               1,
               0
@@ -55,7 +55,7 @@
           "path": "issue_50_new::CreateWith",
           "kind": "struct",
           "span": {
-            "filename": "fixtures/issue_50/new/src/lib.rs",
+            "filename": "issue_50/new/src/lib.rs",
             "begin": [
               5,
               0
@@ -76,7 +76,7 @@
           "path": "issue_50_new::create",
           "kind": "function",
           "span": {
-            "filename": "fixtures/issue_50/new/src/lib.rs",
+            "filename": "issue_50/new/src/lib.rs",
             "begin": [
               7,
               0
@@ -100,7 +100,7 @@
           "crate_id": null,
           "name": "CreateWith",
           "span": {
-            "filename": "fixtures/issue_50/new/src/lib.rs",
+            "filename": "issue_50/new/src/lib.rs",
             "begin": [
               5,
               0
@@ -118,7 +118,7 @@
           "crate_id": null,
           "name": "create",
           "span": {
-            "filename": "fixtures/issue_50/new/src/lib.rs",
+            "filename": "issue_50/new/src/lib.rs",
             "begin": [
               7,
               0
@@ -136,7 +136,7 @@
           "crate_id": null,
           "name": "Element",
           "span": {
-            "filename": "fixtures/issue_50/new/src/lib.rs",
+            "filename": "issue_50/new/src/lib.rs",
             "begin": [
               2,
               4

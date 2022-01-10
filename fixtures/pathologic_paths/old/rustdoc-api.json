@@ -9,7 +9,7 @@
           "path": "pathologic_paths_old",
           "kind": "module",
           "span": {
-            "filename": "fixtures/pathologic_paths/old/src/lib.rs",
+            "filename": "pathologic_paths/old/src/lib.rs",
             "begin": [
               1,
               1

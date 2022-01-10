@@ -9,7 +9,7 @@
           "path": "enums_old",
           "kind": "module",
           "span": {
-            "filename": "fixtures/enums/old/src/lib.rs",
+            "filename": "enums/old/src/lib.rs",
             "begin": [
               1,
               0
@@ -39,7 +39,7 @@
           "path": "enums_old::Abc",
           "kind": "enum",
           "span": {
-            "filename": "fixtures/enums/old/src/lib.rs",
+            "filename": "enums/old/src/lib.rs",
             "begin": [
               1,
               0
@@ -60,7 +60,7 @@
           "path": "enums_old::Bcd",
           "kind": "enum",
           "span": {
-            "filename": "fixtures/enums/old/src/lib.rs",
+            "filename": "enums/old/src/lib.rs",
             "begin": [
               5,
               0
@@ -83,7 +83,7 @@
           "path": "enums_old::Cde",
           "kind": "enum",
           "span": {
-            "filename": "fixtures/enums/old/src/lib.rs",
+            "filename": "enums/old/src/lib.rs",
             "begin": [
               9,
               0
@@ -106,7 +106,7 @@
           "path": "enums_old::Def",
           "kind": "enum",
           "span": {
-            "filename": "fixtures/enums/old/src/lib.rs",
+            "filename": "enums/old/src/lib.rs",
             "begin": [
               14,
               0
@@ -130,7 +130,7 @@
           "path": "enums_old::Efg",
           "kind": "enum",
           "span": {
-            "filename": "fixtures/enums/old/src/lib.rs",
+            "filename": "enums/old/src/lib.rs",
             "begin": [
               19,
               0
@@ -159,7 +159,7 @@
           "path": "enums_old::Fgh",
           "kind": "enum",
           "span": {
-            "filename": "fixtures/enums/old/src/lib.rs",
+            "filename": "enums/old/src/lib.rs",
             "begin": [
               30,
               0
@@ -180,7 +180,7 @@
           "path": "enums_old::Ghi",
           "kind": "enum",
           "span": {
-            "filename": "fixtures/enums/old/src/lib.rs",
+            "filename": "enums/old/src/lib.rs",
             "begin": [
               34,
               0
@@ -201,7 +201,7 @@
           "path": "enums_old::Hij",
           "kind": "enum",
           "span": {
-            "filename": "fixtures/enums/old/src/lib.rs",
+            "filename": "enums/old/src/lib.rs",
             "begin": [
               38,
               0
@@ -222,7 +222,7 @@
           "path": "enums_old::Bcd::Abc",
           "kind": "variant",
           "span": {
-            "filename": "fixtures/enums/old/src/lib.rs",
+            "filename": "enums/old/src/lib.rs",
             "begin": [
               6,
               4
@@ -243,7 +243,7 @@
           "path": "enums_old::Cde::Abc",
           "kind": "variant",
           "span": {
-            "filename": "fixtures/enums/old/src/lib.rs",
+            "filename": "enums/old/src/lib.rs",
             "begin": [
               10,
               4
@@ -264,7 +264,7 @@
           "path": "enums_old::Def::Abc",
           "kind": "variant",
           "span": {
-            "filename": "fixtures/enums/old/src/lib.rs",
+            "filename": "enums/old/src/lib.rs",
             "begin": [
               15,
               4
@@ -285,7 +285,7 @@
           "path": "enums_old::Def::Bcd",
           "kind": "variant",
           "span": {
-            "filename": "fixtures/enums/old/src/lib.rs",
+            "filename": "enums/old/src/lib.rs",
             "begin": [
               16,
               4
@@ -306,7 +306,7 @@
           "path": "enums_old::Efg::Abc",
           "kind": "variant",
           "span": {
-            "filename": "fixtures/enums/old/src/lib.rs",
+            "filename": "enums/old/src/lib.rs",
             "begin": [
               20,
               4
@@ -327,7 +327,7 @@
           "path": "enums_old::Efg::Bcd",
           "kind": "variant",
           "span": {
-            "filename": "fixtures/enums/old/src/lib.rs",
+            "filename": "enums/old/src/lib.rs",
             "begin": [
               21,
               4
@@ -348,7 +348,7 @@
           "path": "enums_old::Efg::Cde",
           "kind": "variant",
           "span": {
-            "filename": "fixtures/enums/old/src/lib.rs",
+            "filename": "enums/old/src/lib.rs",
             "begin": [
               22,
               4
@@ -369,7 +369,7 @@
           "path": "enums_old::Efg::Def",
           "kind": "variant",
           "span": {
-            "filename": "fixtures/enums/old/src/lib.rs",
+            "filename": "enums/old/src/lib.rs",
             "begin": [
               23,
               4
@@ -390,7 +390,7 @@
           "path": "enums_old::Efg::Efg",
           "kind": "variant",
           "span": {
-            "filename": "fixtures/enums/old/src/lib.rs",
+            "filename": "enums/old/src/lib.rs",
             "begin": [
               24,
               4
@@ -411,7 +411,7 @@
           "path": "enums_old::Efg::Fgh",
           "kind": "variant",
           "span": {
-            "filename": "fixtures/enums/old/src/lib.rs",
+            "filename": "enums/old/src/lib.rs",
             "begin": [
               25,
               4
@@ -432,7 +432,7 @@
           "path": "enums_old::Efg::Ghi",
           "kind": "variant",
           "span": {
-            "filename": "fixtures/enums/old/src/lib.rs",
+            "filename": "enums/old/src/lib.rs",
             "begin": [
               26,
               4
@@ -456,7 +456,7 @@
           "crate_id": null,
           "name": "Abc",
           "span": {
-            "filename": "fixtures/enums/old/src/lib.rs",
+            "filename": "enums/old/src/lib.rs",
             "begin": [
               6,
               4
@@ -474,7 +474,7 @@
           "crate_id": null,
           "name": "Abc",
           "span": {
-            "filename": "fixtures/enums/old/src/lib.rs",
+            "filename": "enums/old/src/lib.rs",
             "begin": [
               10,
               4
@@ -492,7 +492,7 @@
           "crate_id": null,
           "name": "Abc",
           "span": {
-            "filename": "fixtures/enums/old/src/lib.rs",
+            "filename": "enums/old/src/lib.rs",
             "begin": [
               15,
               4
@@ -510,7 +510,7 @@
           "crate_id": null,
           "name": "Bcd",
           "span": {
-            "filename": "fixtures/enums/old/src/lib.rs",
+            "filename": "enums/old/src/lib.rs",
             "begin": [
               16,
               4
@@ -528,7 +528,7 @@
           "crate_id": null,
           "name": "Abc",
           "span": {
-            "filename": "fixtures/enums/old/src/lib.rs",
+            "filename": "enums/old/src/lib.rs",
             "begin": [
               20,
               4
@@ -546,7 +546,7 @@
           "crate_id": null,
           "name": "Bcd",
           "span": {
-            "filename": "fixtures/enums/old/src/lib.rs",
+            "filename": "enums/old/src/lib.rs",
             "begin": [
               21,
               4
@@ -564,7 +564,7 @@
           "crate_id": null,
           "name": "Cde",
           "span": {
-            "filename": "fixtures/enums/old/src/lib.rs",
+            "filename": "enums/old/src/lib.rs",
             "begin": [
               22,
               4
@@ -582,7 +582,7 @@
           "crate_id": null,
           "name": "Def",
           "span": {
-            "filename": "fixtures/enums/old/src/lib.rs",
+            "filename": "enums/old/src/lib.rs",
             "begin": [
               23,
               4
@@ -600,7 +600,7 @@
           "crate_id": null,
           "name": "Efg",
           "span": {
-            "filename": "fixtures/enums/old/src/lib.rs",
+            "filename": "enums/old/src/lib.rs",
             "begin": [
               24,
               4
@@ -618,7 +618,7 @@
           "crate_id": null,
           "name": "Fgh",
           "span": {
-            "filename": "fixtures/enums/old/src/lib.rs",
+            "filename": "enums/old/src/lib.rs",
             "begin": [
               25,
               4
@@ -636,7 +636,7 @@
           "crate_id": null,
           "name": "Ghi",
           "span": {
-            "filename": "fixtures/enums/old/src/lib.rs",
+            "filename": "enums/old/src/lib.rs",
             "begin": [
               26,
               4

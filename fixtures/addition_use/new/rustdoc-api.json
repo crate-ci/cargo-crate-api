@@ -9,7 +9,7 @@
           "path": "addition_use_new",
           "kind": "module",
           "span": {
-            "filename": "fixtures/addition_use/new/src/lib.rs",
+            "filename": "addition_use/new/src/lib.rs",
             "begin": [
               1,
               0
@@ -34,7 +34,7 @@
           "path": "addition_use_new::Abc",
           "kind": "struct",
           "span": {
-            "filename": "fixtures/addition_use/new/src/lib.rs",
+            "filename": "addition_use/new/src/lib.rs",
             "begin": [
               1,
               0
@@ -55,7 +55,7 @@
           "path": "addition_use_new::Bcd",
           "kind": "trait",
           "span": {
-            "filename": "fixtures/addition_use/new/src/lib.rs",
+            "filename": "addition_use/new/src/lib.rs",
             "begin": [
               3,
               0
@@ -76,7 +76,7 @@
           "path": "addition_use_new::Def",
           "kind": "struct",
           "span": {
-            "filename": "fixtures/addition_use/new/src/lib.rs",
+            "filename": "addition_use/new/src/lib.rs",
             "begin": [
               5,
               0
@@ -100,7 +100,7 @@
           "crate_id": null,
           "name": "Abc",
           "span": {
-            "filename": "fixtures/addition_use/new/src/lib.rs",
+            "filename": "addition_use/new/src/lib.rs",
             "begin": [
               1,
               0
@@ -118,7 +118,7 @@
           "crate_id": null,
           "name": "Def",
           "span": {
-            "filename": "fixtures/addition_use/new/src/lib.rs",
+            "filename": "addition_use/new/src/lib.rs",
             "begin": [
               5,
               0

@@ -9,7 +9,7 @@
           "path": "kind_change_new",
           "kind": "module",
           "span": {
-            "filename": "fixtures/kind_change/new/src/lib.rs",
+            "filename": "kind_change/new/src/lib.rs",
             "begin": [
               1,
               0
@@ -32,7 +32,7 @@
           "path": "kind_change_new::Abc",
           "kind": "enum",
           "span": {
-            "filename": "fixtures/kind_change/new/src/lib.rs",
+            "filename": "kind_change/new/src/lib.rs",
             "begin": [
               1,
               0

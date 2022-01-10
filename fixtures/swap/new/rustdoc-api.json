@@ -9,7 +9,7 @@
           "path": "swap_new",
           "kind": "module",
           "span": {
-            "filename": "fixtures/swap/new/src/lib.rs",
+            "filename": "swap/new/src/lib.rs",
             "begin": [
               1,
               0
@@ -33,7 +33,7 @@
           "path": "swap_new::a",
           "kind": "module",
           "span": {
-            "filename": "fixtures/swap/new/src/lib.rs",
+            "filename": "swap/new/src/lib.rs",
             "begin": [
               1,
               0
@@ -56,7 +56,7 @@
           "path": "swap_new::b",
           "kind": "module",
           "span": {
-            "filename": "fixtures/swap/new/src/lib.rs",
+            "filename": "swap/new/src/lib.rs",
             "begin": [
               5,
               0
@@ -79,7 +79,7 @@
           "path": "swap_new::b::Abc",
           "kind": "struct",
           "span": {
-            "filename": "fixtures/swap/new/src/lib.rs",
+            "filename": "swap/new/src/lib.rs",
             "begin": [
               6,
               4
@@ -114,7 +114,7 @@
           "crate_id": null,
           "name": "Abc",
           "span": {
-            "filename": "fixtures/swap/new/src/lib.rs",
+            "filename": "swap/new/src/lib.rs",
             "begin": [
               6,
               4

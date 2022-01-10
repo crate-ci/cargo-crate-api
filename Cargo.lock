@@ -3,30 +3,6 @@
 version = 3
 
 [[package]]
-name = "addition_new"
-version = "1.0.0"
-
-[[package]]
-name = "addition_old"
-version = "1.0.0"
-
-[[package]]
-name = "addition_path_new"
-version = "1.0.0"
-
-[[package]]
-name = "addition_path_old"
-version = "1.0.0"
-
-[[package]]
-name = "addition_use_new"
-version = "1.0.0"
-
-[[package]]
-name = "addition_use_old"
-version = "1.0.0"
-
-[[package]]
 name = "addr2line"
 version = "0.17.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -96,14 +72,6 @@ name = "bitflags"
 version = "1.3.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "bef38d45163c2f1dde094a7dfd33ccf595c92905c8f8f4fdc18d06fb1037718a"
-
-[[package]]
-name = "bounds_new"
-version = "1.0.0"
-
-[[package]]
-name = "bounds_old"
-version = "1.0.0"
 
 [[package]]
 name = "bstr"
@@ -197,14 +165,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "baf1de4339761588bc0619e3cbc0120ee582ebb74b53b4efbf79117bd2da40fd"
 
 [[package]]
-name = "circular_new"
-version = "1.0.0"
-
-[[package]]
-name = "circular_old"
-version = "1.0.0"
-
-[[package]]
 name = "clap"
 version = "2.34.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -276,14 +236,6 @@ name = "concolor-query"
 version = "0.0.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "ad159cc964ac8f9d407cbc0aa44b02436c054b541f2b4b5f06972e1efdc54bc7"
-
-[[package]]
-name = "consts_new"
-version = "1.0.0"
-
-[[package]]
-name = "consts_old"
-version = "1.0.0"
 
 [[package]]
 name = "crate-api"
@@ -365,28 +317,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "dep_upgrade_dep"
-version = "1.0.0"
-
-[[package]]
-name = "dep_upgrade_dep"
-version = "2.0.0"
-
-[[package]]
-name = "dep_upgrade_new"
-version = "1.0.0"
-dependencies = [
- "dep_upgrade_dep 2.0.0",
-]
-
-[[package]]
-name = "dep_upgrade_old"
-version = "1.0.0"
-dependencies = [
- "dep_upgrade_dep 1.0.0",
-]
-
-[[package]]
 name = "difflib"
 version = "0.4.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -403,14 +333,6 @@ name = "either"
 version = "1.6.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e78d4f1cc4ae33bbfc157ed5d5a5ef3bc29227303d595861deb238fcec4e9457"
-
-[[package]]
-name = "enums_new"
-version = "1.0.0"
-
-[[package]]
-name = "enums_old"
-version = "1.0.0"
 
 [[package]]
 name = "env_logger"
@@ -464,22 +386,6 @@ dependencies = [
  "normalize-line-endings",
  "yansi",
 ]
-
-[[package]]
-name = "func_local_items_new"
-version = "1.0.0"
-
-[[package]]
-name = "func_local_items_old"
-version = "1.0.0"
-
-[[package]]
-name = "func_new"
-version = "1.0.0"
-
-[[package]]
-name = "func_old"
-version = "1.0.0"
 
 [[package]]
 name = "getrandom"
@@ -615,46 +521,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "infer_new"
-version = "1.0.0"
-
-[[package]]
-name = "infer_old"
-version = "1.0.0"
-
-[[package]]
-name = "infer_regress_new"
-version = "1.0.0"
-
-[[package]]
-name = "infer_regress_old"
-version = "1.0.0"
-
-[[package]]
-name = "inherent_impls_new"
-version = "1.0.0"
-
-[[package]]
-name = "inherent_impls_old"
-version = "1.0.0"
-
-[[package]]
-name = "issue_34_new"
-version = "1.0.0"
-
-[[package]]
-name = "issue_34_old"
-version = "1.0.0"
-
-[[package]]
-name = "issue_50_new"
-version = "1.0.0"
-
-[[package]]
-name = "issue_50_old"
-version = "1.0.0"
-
-[[package]]
 name = "itertools"
 version = "0.10.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -677,14 +543,6 @@ checksum = "af25a77299a7f711a01975c35a6a424eb6862092cc2d6c72c4ed6cbc56dfc1fa"
 dependencies = [
  "libc",
 ]
-
-[[package]]
-name = "kind_change_new"
-version = "1.0.0"
-
-[[package]]
-name = "kind_change_old"
-version = "1.0.0"
 
 [[package]]
 name = "kstring"
@@ -753,26 +611,10 @@ dependencies = [
 ]
 
 [[package]]
-name = "macros_new"
-version = "1.0.0"
-
-[[package]]
-name = "macros_old"
-version = "1.0.0"
-
-[[package]]
 name = "matches"
 version = "0.1.9"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "a3e378b66a060d48947b590737b30a1be76706c8dd7b8ba0f2fe3989c68a853f"
-
-[[package]]
-name = "max_priv_new"
-version = "1.0.0"
-
-[[package]]
-name = "max_priv_old"
-version = "1.0.0"
 
 [[package]]
 name = "maybe-uninit"
@@ -804,14 +646,6 @@ dependencies = [
  "adler",
  "autocfg",
 ]
-
-[[package]]
-name = "mix_new"
-version = "1.0.0"
-
-[[package]]
-name = "mix_old"
-version = "1.0.0"
 
 [[package]]
 name = "normalize-line-endings"
@@ -852,14 +686,6 @@ checksum = "96eaebe22d9f12429b1af6a0b5dd411ccfc5cb5968710abbb8c512046be9df90"
 dependencies = [
  "regex",
 ]
-
-[[package]]
-name = "pathologic_paths_new"
-version = "1.0.0"
-
-[[package]]
-name = "pathologic_paths_old"
-version = "1.0.0"
 
 [[package]]
 name = "percent-encoding"
@@ -917,14 +743,6 @@ checksum = "2f84e92c0f7c9d58328b85a78557813e4bd845130db68d7184635344399423b1"
 dependencies = [
  "unicode-xid",
 ]
-
-[[package]]
-name = "pub_use_new"
-version = "1.0.0"
-
-[[package]]
-name = "pub_use_old"
-version = "1.0.0"
 
 [[package]]
 name = "quote"
@@ -1027,54 +845,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "f497285884f3fcff424ffc933e56d7cbca511def0c9831a7f9b5f6153e3cc89b"
 
 [[package]]
-name = "regions_new"
-version = "1.0.0"
-
-[[package]]
-name = "regions_old"
-version = "1.0.0"
-
-[[package]]
-name = "removal_cargo_feature_dep_new"
-version = "1.0.0"
-
-[[package]]
-name = "removal_cargo_feature_dep_old"
-version = "1.0.0"
-
-[[package]]
-name = "removal_cargo_feature_new"
-version = "1.0.0"
-
-[[package]]
-name = "removal_cargo_feature_old"
-version = "1.0.0"
-
-[[package]]
-name = "removal_new"
-version = "1.0.0"
-
-[[package]]
-name = "removal_old"
-version = "1.0.0"
-
-[[package]]
-name = "removal_path_new"
-version = "1.0.0"
-
-[[package]]
-name = "removal_path_old"
-version = "1.0.0"
-
-[[package]]
-name = "removal_use_new"
-version = "1.0.0"
-
-[[package]]
-name = "removal_use_old"
-version = "1.0.0"
-
-[[package]]
 name = "remove_dir_all"
 version = "0.5.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1116,14 +886,6 @@ name = "scopeguard"
 version = "1.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "d29ab0c6d3fc0ee92fe66e2d99f700eab17a8d57d1c1d3b748380fb20baa78cd"
-
-[[package]]
-name = "sealed_traits_new"
-version = "1.0.0"
-
-[[package]]
-name = "sealed_traits_old"
-version = "1.0.0"
 
 [[package]]
 name = "semver"
@@ -1194,22 +956,6 @@ dependencies = [
  "quote",
  "syn",
 ]
-
-[[package]]
-name = "structs_new"
-version = "1.0.0"
-
-[[package]]
-name = "structs_old"
-version = "1.0.0"
-
-[[package]]
-name = "swap_new"
-version = "1.0.0"
-
-[[package]]
-name = "swap_old"
-version = "1.0.0"
 
 [[package]]
 name = "syn"
@@ -1304,38 +1050,6 @@ dependencies = [
  "itertools",
  "kstring",
 ]
-
-[[package]]
-name = "trait_impls_new"
-version = "1.0.0"
-
-[[package]]
-name = "trait_impls_old"
-version = "1.0.0"
-
-[[package]]
-name = "trait_objects_new"
-version = "1.0.0"
-
-[[package]]
-name = "trait_objects_old"
-version = "1.0.0"
-
-[[package]]
-name = "traits_new"
-version = "1.0.0"
-
-[[package]]
-name = "traits_old"
-version = "1.0.0"
-
-[[package]]
-name = "ty_alias_new"
-version = "1.0.0"
-
-[[package]]
-name = "ty_alias_old"
-version = "1.0.0"
 
 [[package]]
 name = "unicode-bidi"

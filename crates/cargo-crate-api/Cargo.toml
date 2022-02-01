@@ -19,7 +19,7 @@ include = [
 ]
 
 [dependencies]
-clap = { version = "3.0.6", features = ["derive"] }
+clap = { version = "3.0.13", features = ["derive"] }
 clap-cargo = { version = "0.8", features = ["cargo_metadata"] }
 clap-verbosity-flag = "0.4"
 log = "0.4"

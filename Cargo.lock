@@ -241,6 +241,17 @@ dependencies = [
 ]
 
 [[package]]
+name = "concolor"
+version = "0.0.8"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "015267563b1df20adccdd00cb05257b1dfbea70a04928e9cf88ffb850c1a40af"
+dependencies = [
+ "atty",
+ "bitflags",
+ "concolor-query 0.0.5",
+]
+
+[[package]]
 name = "concolor-clap"
 version = "0.0.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -258,7 +269,7 @@ checksum = "7104119c2f80d887239879d0c50e033cd40eac9a3f3561e0684ba7d5d654f4da"
 dependencies = [
  "atty",
  "bitflags",
- "concolor-query",
+ "concolor-query 0.0.4",
 ]
 
 [[package]]
@@ -266,6 +277,12 @@ name = "concolor-query"
 version = "0.0.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "ad159cc964ac8f9d407cbc0aa44b02436c054b541f2b4b5f06972e1efdc54bc7"
+
+[[package]]
+name = "concolor-query"
+version = "0.0.5"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "d6417fe6fc03a8b533fd2177742eeb39a90c7233eedec7bac96d4d6b69a09449"
 
 [[package]]
 name = "crate-api"
@@ -414,11 +431,11 @@ dependencies = [
 
 [[package]]
 name = "fs_snapshot"
-version = "0.1.1"
+version = "0.1.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "9ae9ef1c05fb672e4187312543065b2820dd517f813b89d91c9f9280fa324666"
+checksum = "ef566c3ee21236483f9da734162a0947323e5025e9db7753dbebd5958fbd14a6"
 dependencies = [
- "concolor-control",
+ "concolor",
  "difflib",
  "ignore",
  "libtest-mimic",

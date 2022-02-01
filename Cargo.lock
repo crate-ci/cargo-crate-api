@@ -431,11 +431,11 @@ dependencies = [
 
 [[package]]
 name = "fs_snapshot"
-version = "0.1.1"
+version = "0.1.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "9ae9ef1c05fb672e4187312543065b2820dd517f813b89d91c9f9280fa324666"
+checksum = "ef566c3ee21236483f9da734162a0947323e5025e9db7753dbebd5958fbd14a6"
 dependencies = [
- "concolor-control",
+ "concolor",
  "difflib",
  "ignore",
  "libtest-mimic",

@@ -15,7 +15,8 @@ include = [
   "Cargo.toml",
   "LICENSE*",
   "README.md",
-  "examples/**/*"
+  "examples/**/*",
+  "tests/**/*",
 ]
 
 [dependencies]

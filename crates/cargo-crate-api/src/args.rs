@@ -53,7 +53,7 @@ pub struct Api {
     pub(crate) color: concolor_clap::Color,
 
     #[clap(flatten)]
-    pub verbose: clap_verbosity_flag::Verbosity,
+    pub verbose: clap_verbosity_flag::Verbosity<clap_verbosity_flag::InfoLevel>,
 }
 
 impl Api {

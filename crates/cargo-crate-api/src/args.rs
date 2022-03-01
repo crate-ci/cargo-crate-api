@@ -5,7 +5,7 @@ use crate::report::Source;
 #[clap(bin_name = "cargo")]
 #[clap(
         global_setting = clap::AppSettings::DeriveDisplayOrder,
-        global_setting = clap::AppSettings::DontCollapseArgsInUsage,
+        dont_collapse_args_in_usage = true,
 )]
 #[clap(color =concolor_clap::color_choice())]
 pub enum Command {
@@ -53,7 +53,7 @@ pub struct Api {
     pub(crate) color: concolor_clap::Color,
 
     #[clap(flatten)]
-    pub verbose: clap_verbosity_flag::Verbosity,
+    pub verbose: clap_verbosity_flag::Verbosity<clap_verbosity_flag::InfoLevel>,
 }
 
 impl Api {
@@ -107,6 +107,6 @@ impl Default for Format {
 
 #[test]
 fn verify_app() {
-    use clap::IntoApp;
-    Command::into_app().debug_assert()
+    use clap::CommandFactory;
+    Command::command().debug_assert()
 }

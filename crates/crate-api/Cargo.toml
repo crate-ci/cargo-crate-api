@@ -20,7 +20,7 @@ include = [
 ]
 
 [dependencies]
-toml_edit = "0.13"
+toml_edit = "0.14"
 cargo_metadata = "0.14"
 semver = "1.0"
 rustdoc-json-types-fork = { version = "0.0.1", path = "../rustdoc-json-types-fork" }

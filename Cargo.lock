@@ -102,7 +102,7 @@ name = "cargo-crate-api"
 version = "0.0.1"
 dependencies = [
  "cargo_metadata",
- "clap 3.1.7",
+ "clap 3.2.2",
  "clap-cargo",
  "clap-verbosity-flag",
  "concolor-clap",
@@ -181,16 +181,16 @@ dependencies = [
 
 [[package]]
 name = "clap"
-version = "3.1.7"
+version = "3.2.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c67e7973e74896f4bba06ca2dcfd28d54f9cb8c035e940a32b88ed48f5f5ecf2"
+checksum = "8e538f9ee5aa3b3963f09a997035f883677966ed50fce0292611927ce6f6d8c6"
 dependencies = [
  "atty",
  "bitflags",
  "clap_derive",
+ "clap_lex",
  "indexmap",
  "lazy_static",
- "os_str_bytes",
  "strsim 0.10.0",
  "termcolor",
  "textwrap 0.15.0",
@@ -203,7 +203,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "551b6aa534ced210e29bc4ea2016bc11c74770f0a2b94b29dfc1a92ab6fc28d4"
 dependencies = [
  "cargo_metadata",
- "clap 3.1.7",
+ "clap 3.2.2",
  "doc-comment",
 ]
 
@@ -213,21 +213,30 @@ version = "1.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "17e437250f23cdd03daf3de763093aa27873a026ef9a156800da9ddd617c51d4"
 dependencies = [
- "clap 3.1.7",
+ "clap 3.2.2",
  "log",
 ]
 
 [[package]]
 name = "clap_derive"
-version = "3.1.7"
+version = "3.2.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a3aab4734e083b809aaf5794e14e756d1c798d2c69c7f7de7a09a2f5214993c1"
+checksum = "a7f98063cac4652f23ccda556b8d04347a7fc4b2cff1f7577cc8c6546e0d8078"
 dependencies = [
  "heck 0.4.0",
  "proc-macro-error",
  "proc-macro2",
  "quote",
  "syn",
+]
+
+[[package]]
+name = "clap_lex"
+version = "0.2.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "2850f2f5a82cbf437dd5af4d49848fbdfc27c157c3d010345776f952765261c5"
+dependencies = [
+ "os_str_bytes",
 ]
 
 [[package]]
@@ -257,7 +266,7 @@ version = "0.0.10"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "b35b55e880d42d4626e6a1aa5b4e63a4df61cf024472a31495ecbbb712402985"
 dependencies = [
- "clap 3.1.7",
+ "clap 3.2.2",
  "concolor",
 ]
 
@@ -734,9 +743,6 @@ name = "os_str_bytes"
 version = "6.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "8e22443d1643a904602595ba1cd8f7d896afe56d26712531c5ff73a15b2fbf64"
-dependencies = [
- "memchr",
-]
 
 [[package]]
 name = "os_type"

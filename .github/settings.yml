@@ -1,8 +1,8 @@
 # These settings are synced to GitHub by https://probot.github.io/apps/settings/
 
 repository:
-  description: Interact with the crate's API
-  homepage: docs.rs/cargo-crate-api
+  description: Superseded by cargo-semver-check
+  homepage: https://github.com/obi1kenobi/cargo-semver-check
   topics: rust cargo semver
   has_issues: true
   has_projects: false

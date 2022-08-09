@@ -6,6 +6,8 @@
 ![License](https://img.shields.io/crates/l/cargo-crate-api.svg)
 [![Crates Status](https://img.shields.io/crates/v/cargo-crate-api.svg)](https://crates.io/crates/cargo-crate-api)
 
+See [cargo-semver-check](https://github.com/obi1kenobi/cargo-semver-check)
+
 ## Documentation
 
 - [Installation](#install)
